@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="|" name="API2" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field format="yyyyMMdd" name="date" type="date"/>
+<Field name="sourcemedium" type="string"/>
+<Field name="campaign" type="string"/>
+<Field name="Productname" type="string"/>
+<Field name="ProductCategory" type="string"/>
+<Field name="transactionId" type="string"/>
+<Field name="productSku" type="string"/>
+<Field name="itemQuantity" type="number"/>
+<Field name="itemRevenue" type="number"/>
+</Record>

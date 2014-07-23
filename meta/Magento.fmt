@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="|" name="Magento" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" name="Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Order_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="State" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="ShippingAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalPaid" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalQtyOrdered" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TaxAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalRefunded" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="Quote_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Customer_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="SalesOrderItem" nullable="true" shift="0" size="0" type="string"/>
+<Field delimiter="\r\n" eofAsDelimiter="true" format="yyyy-MM-dd" name="CreatedAt" nullable="true" shift="0" size="0" type="date"/>
+</Record>

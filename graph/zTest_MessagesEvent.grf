@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Wed Jul 16 10:16:18 EST 2014" guiVersion="3.4.4.P" id="1405471485375" licenseType="Commercial" modified="Thu Jul 17 11:57:09 EST 2014" modifiedBy="icognosexpress" name="SMP_Customers" revision="1.38" showComponentDetails="true">
+<Global>
+<Metadata fileURL="${META_DIR}/GD_SMP_MsgEvent.fmt" id="Metadata3"/>
+<Metadata fileURL="${META_DIR}/SMP_BrCastLookUp_csv.fmt" id="Metadata4" previewAttachment="${DATA_SOURCE_DIR}/SMP_BrCastLookUp.csv" previewAttachmentCharset="ISO-8859-1"/>
+<Metadata fileURL="${META_DIR}/SMP_BroadcastEvents.fmt" id="Metadata0"/>
+<Metadata fileURL="${META_DIR}/SMP_BroadcastResponse.fmt" id="Metadata2"/>
+<Metadata fileURL="${META_DIR}/SMP_EmailSearch.fmt" id="Metadata1"/>
+<Metadata fileURL="${META_DIR}/SMP_EventTypeLookUp_csv.fmt" id="Metadata5"/>
+<Metadata id="UDR_ErrorPort">
+<Record fieldDelimiter="|" name="CSV_Reader_ErrorPort" recordDelimiter="\n" type="delimited">
+<Field name="recordNo" type="long"/>
+<Field name="fieldNo" type="integer"/>
+<Field name="originalData" type="string"/>
+<Field name="errorMessage" type="string"/>
+<Field name="fileURL" type="string"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<LookupTable id="LookupTable0" lookupConfig="${META_DIR}/SMP_EventTypeLk.cfg"/>
+<LookupTable id="LookupTable1" lookupConfig="${META_DIR}/SMP_HardBounceLk.cfg"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="${DATA_TMP_DIR}/EmailSearchResults.csv" guiName="CSV Reader" guiX="511" guiY="626" id="CSV_READER" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node enabled="enabled" guiName="ExtHashJoin" guiX="378" guiY="470" id="EXT_HASH_JOIN" joinKey="$BroadcastId=$BroadcastId" joinType="leftOuter" type="EXT_HASH_JOIN">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.ignore = 1;
+	$out.0.EmailId = $in.1.EmailId;
+	$out.0.ClientID = '${CUSTOMER_ID}';
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="ExtHashJoin" guiX="627" guiY="464" id="EXT_HASH_JOIN1" joinKey="$EmailId=$EmailID" joinType="leftOuter" type="EXT_HASH_JOIN">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.SendDate = $in.1.Date;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="LookupJoin" guiX="830" guiY="478" id="LOOKUP_JOIN" joinKey="EventType" leftOuterJoin="true" lookupTable="LookupTable0" type="LOOKUP_JOIN">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.EventType = $in.1.Definition;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="LookupJoin" guiX="1012" guiY="487" id="LOOKUP_JOIN1" joinKey="HardBounceClass" leftOuterJoin="true" lookupTable="LookupTable1" type="LOOKUP_JOIN">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.HardBounceClass = $in.1.Definition;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/SMP_BrcEvent.csv" guiName="SMP BrcEvent" guiX="112" guiY="425" id="SMP_BRC_EVENT" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/SMP_BrcResponse.csv" guiName="SMP BrcResponse" guiX="95" guiY="561" id="SMP_BRC_RESPONSE" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node enabled="enabled" guiName="Trash" guiX="1271" guiY="364" id="TRASH" type="TRASH"/>
+<Edge debugMode="true" fromNode="CSV_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 1 (slave)" metadata="Metadata1" outPort="Port 0 (output)" toNode="EXT_HASH_JOIN1:1"/>
+<Edge debugMode="true" fromNode="EXT_HASH_JOIN:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (driver)" metadata="Metadata3" outPort="Port 0 (out)" toNode="EXT_HASH_JOIN1:0"/>
+<Edge debugMode="true" fromNode="EXT_HASH_JOIN1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="LOOKUP_JOIN:0"/>
+<Edge debugMode="true" fromNode="LOOKUP_JOIN:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (joined records)" toNode="LOOKUP_JOIN1:0"/>
+<Edge debugMode="true" fromNode="LOOKUP_JOIN1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (joined records)" toNode="TRASH:0"/>
+<Edge debugMode="true" fromNode="SMP_BRC_EVENT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (driver)" metadata="Metadata0" outPort="Port 0 (output)" toNode="EXT_HASH_JOIN:0"/>
+<Edge debugMode="true" fromNode="SMP_BRC_RESPONSE:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 1 (slave)" metadata="Metadata2" outPort="Port 0 (output)" toNode="EXT_HASH_JOIN:1"/>
+</Phase>
+</Graph>

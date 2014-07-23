@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="," label="SMP_EventTypeLookUp.csv" name="SMP_EventTypeLookUp_csv" previewAttachment="${DATA_SOURCE_DIR}/SMP_EventTypeLookUp.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="both" quotedStrings="false" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="Code" type="string"/>
+<Field name="Definition" type="string"/>
+<Field eofAsDelimiter="false" name="Notes" type="string"/>
+</Record>

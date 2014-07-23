@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Wed Jul 16 10:16:18 EST 2014" guiVersion="3.4.4.P" id="1405471485375" licenseType="Commercial" modified="Wed Jul 16 16:59:56 EST 2014" modifiedBy="macmac" name="SMP_Customers" revision="1.15" showComponentDetails="true">
+<Global>
+<Metadata fileURL="${META_DIR}/SMP_BroadcastResponse.fmt" id="Metadata0"/>
+<Metadata id="UDR_ErrorPort">
+<Record fieldDelimiter="|" name="CSV_Reader_ErrorPort" recordDelimiter="\n" type="delimited">
+<Field name="recordNo" type="long"/>
+<Field name="fieldNo" type="integer"/>
+<Field name="originalData" type="string"/>
+<Field name="errorMessage" type="string"/>
+<Field name="fileURL" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2" previewAttachmentCharset="UTF-8">
+<Record fieldDelimiter="|" name="GD_SMP_Customers" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="SubscriberId" type="string"/>
+<Field name="EmailAddress" type="string"/>
+<Field name="Name" type="string"/>
+<Field name="ClientID" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="GD_Magento" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" name="Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Order_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="State" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="ShippingAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalPaid" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalQtyOrdered" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TaxAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalRefunded" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="Quote_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Customer_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="SalesOrderItem" nullable="true" shift="0" size="0" type="string"/>
+<Field delimiter="\r\n" eofAsDelimiter="true" format="yyyy-MM-dd" name="CreatedAt" nullable="true" shift="0" size="0" type="date"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="false" folded="false" height="354" id="Note0" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="New note" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="495" x="66" y="686"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node dataPolicy="controlled" enabled="disabled" fileURL="${DATA_TMP_DIR}/MagentoSample.csv" guiName="CSV Reader" guiX="128" guiY="921" id="CSV_READER1" quoteCharacter="&quot;" quotedStrings="true" skipRows="1" type="DATA_READER"/>
+<Node enabled="disabled" fileURL="${DATA_TMP_DIR}/MagentoSample.csv" guiName="CSV Writer" guiX="347" guiY="755" id="CSV_WRITER" outputFieldNames="true" quoteCharacter="&quot;" quotedStrings="true" type="DATA_WRITER"/>
+<Node dataset="dataset.customer" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.customer&quot;,&quot;datasetTitle&quot;:&quot;Customer&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;attr_customer_customerid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;customerid&quot;,&quot;assignedMetadataField&quot;:&quot;SubscriberId&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customer.customername&quot;,&quot;title&quot;:&quot;Customer Name&quot;,&quot;prettyId&quot;:&quot;attr_customer_customername&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customername&quot;,&quot;title&quot;:&quot;Customer Name&quot;,&quot;prettyId&quot;:&quot;customername&quot;,&quot;assignedMetadataField&quot;:&quot;Name&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customer.emailaddress&quot;,&quot;title&quot;:&quot;Customer Email&quot;,&quot;prettyId&quot;:&quot;attr_customer_emailaddress&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.emailaddress&quot;,&quot;title&quot;:&quot;Customer Email&quot;,&quot;prettyId&quot;:&quot;emailaddress&quot;,&quot;assignedMetadataField&quot;:&quot;EmailAddress&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.emailaddress&quot;,&quot;title&quot;:&quot;Customer Email&quot;,&quot;prettyId&quot;:&quot;emailaddress&quot;,&quot;assignedMetadataField&quot;:&quot;EmailAddress&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;attr_client_clientid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;ClientID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="Customers" guiX="499" guiY="149" id="CUSTOMERS" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node enabled="disabled" guiName="DataGenerator" guiX="103" guiY="749" id="DATA_GENERATOR" recordsNumber="1" type="DATA_GENERATOR">
+<attr name="generate"><![CDATA[//#CTL2
+
+// Generates output record.
+function integer generate() {
+	$out.0.Status = '';
+	$out.0.Order_ID = '';
+	$out.0.State = '';
+	$out.0.ShippingAmount = 1;
+	$out.0.TotalPaid = 1;
+	$out.0.TotalQtyOrdered = 1;
+	$out.0.TaxAmount = 1;
+	$out.0.TotalRefunded = 1;
+	$out.0.Quote_ID = '';
+	$out.0.Customer_ID ='';
+	$out.0.SalesOrderItem = '';
+	$out.0.CreatedAt = randomDate("2014.01.01","2014.12.31","yyyy.MM.dd");
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the generate. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if generate() throws an exception.
+// function integer generateOnError(string errorMessage, string stackTrace) {
+// }
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="270" guiY="149" id="REFORMAT" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+		$out.0.* = $in.0.*;
+		$out.0.ClientID = '${CUSTOMER_ID}';
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/SMP_BrcResponse.csv" guiName="SMP BrcResponse" guiX="20" guiY="137" id="SMP_BRC_RESPONSE" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node enabled="disabled" guiName="Trash" guiX="357" guiY="915" id="TRASH1" type="TRASH"/>
+<Edge debugMode="true" fromNode="CSV_READER1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (output)" toNode="CSV_WRITER:0"/>
+<Edge debugMode="true" fromNode="CSV_READER1:1" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 1 (in)" metadata="UDR_ErrorPort" outPort="Port 1 (logs)" toNode="TRASH1:1"/>
+<Edge debugMode="true" fromNode="DATA_GENERATOR:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="TRASH1:0"/>
+<Edge fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="CUSTOMERS:0"/>
+<Edge debugMode="true" fromNode="SMP_BRC_RESPONSE:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (output)" toNode="REFORMAT:0"/>
+</Phase>
+</Graph>

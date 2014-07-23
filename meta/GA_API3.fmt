@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="|" name="API3" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field format="yyyyMMdd" name="date" type="date"/>
+<Field name="sourcemedium" type="string"/>
+<Field name="campaign" type="string"/>
+<Field name="goal1completions" type="number"/>
+<Field name="goal2completions" type="number"/>
+<Field name="goal3completions" type="number"/>
+<Field name="goal4completions" type="number"/>
+<Field name="goal5completions" type="number"/>
+<Field name="goal6completions" type="number"/>
+<Field name="goal7completions" type="number"/>
+<Field name="goal8completions" type="number"/>
+<Field name="goal9completions" type="number"/>
+<Field name="goal10completions" type="number"/>
+</Record>

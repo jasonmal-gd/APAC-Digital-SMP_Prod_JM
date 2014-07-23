@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="|" name="GD_SMP_MsgEvent" previewAttachmentCharset="UTF-8" recordDelimiter="\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" name="AppClickDescription" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="AppClickIPAddress" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="EventType" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="HardBounceClass" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="HardBounceMsg" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="LinkName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="LinkURL" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="OpenUserAgent" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="SubscriberId" nullable="true" shift="0" size="0" type="integer"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="EventTimeUtc" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="LinkClickTimeUtc" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" name="BroadcastId" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="EmailId" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="SendDate" nullable="true" shift="0" size="0" type="date"/>
+<Field name="ignore" type="integer"/>
+<Field name="ClientID" type="string"/>
+</Record>

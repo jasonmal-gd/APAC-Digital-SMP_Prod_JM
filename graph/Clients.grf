@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Tue Jul 15 09:44:22 EST 2014" guiVersion="3.4.4.P" id="1405400041472" licenseType="Commercial" modified="Mon Jul 21 15:03:32 EST 2014" modifiedBy="macmac" name="Clients" revision="1.7" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata0">
+<Record fieldDelimiter="|" name="recordName1" recordDelimiter="\n" type="delimited">
+<Field name="ClientID" type="string"/>
+<Field name="ClientName" type="string"/>
+<Field name="GAProfileID" type="string"/>
+<Field name="AdwordsAccountID" type="string"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" guiName="DataGenerator" guiX="88" guiY="169" id="DATA_GENERATOR" recordsNumber="1" type="DATA_GENERATOR">
+<attr name="generate"><![CDATA[//#CTL2
+
+// Generates output record.
+function integer generate() {
+		
+		$out.0.ClientID ='${CLIENT_ID}';
+		$out.0.ClientName ='${CLIENT_NAME}';
+		$out.0.GAProfileID ='${GA_PROFILE_ID}';
+		$out.0.AdwordsAccountID = '${GAW_CUSTOMER_ID}';
+		
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the generate. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if generate() throws an exception.
+// function integer generateOnError(string errorMessage, string stackTrace) {
+// }
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node dataset="dataset.client" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.client&quot;,&quot;datasetTitle&quot;:&quot;Client&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.adwordsaccountid&quot;,&quot;title&quot;:&quot;Adwords Account ID&quot;,&quot;prettyId&quot;:&quot;attr_client_adwordsaccountid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.adwordsaccountid&quot;,&quot;title&quot;:&quot;Adwords Account ID&quot;,&quot;prettyId&quot;:&quot;adwordsaccountid&quot;,&quot;assignedMetadataField&quot;:&quot;AdwordsAccountID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.adwordsaccountid&quot;,&quot;title&quot;:&quot;Adwords Account ID&quot;,&quot;prettyId&quot;:&quot;adwordsaccountid&quot;,&quot;assignedMetadataField&quot;:&quot;AdwordsAccountID&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;attr_client_clientid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;clientid&quot;,&quot;assignedMetadataField&quot;:&quot;ClientID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;clientid&quot;,&quot;assignedMetadataField&quot;:&quot;ClientID&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.clientname&quot;,&quot;title&quot;:&quot;Client Name&quot;,&quot;prettyId&quot;:&quot;attr_client_clientname&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientname&quot;,&quot;title&quot;:&quot;Client Name&quot;,&quot;prettyId&quot;:&quot;clientname&quot;,&quot;assignedMetadataField&quot;:&quot;ClientName&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientname&quot;,&quot;title&quot;:&quot;Client Name&quot;,&quot;prettyId&quot;:&quot;clientname&quot;,&quot;assignedMetadataField&quot;:&quot;ClientName&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.gaprofileid&quot;,&quot;title&quot;:&quot;GA Profile ID&quot;,&quot;prettyId&quot;:&quot;attr_client_gaprofileid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.gaprofileid&quot;,&quot;title&quot;:&quot;GA Profile ID&quot;,&quot;prettyId&quot;:&quot;gaprofileid&quot;,&quot;assignedMetadataField&quot;:&quot;GAProfileID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.gaprofileid&quot;,&quot;title&quot;:&quot;GA Profile ID&quot;,&quot;prettyId&quot;:&quot;gaprofileid&quot;,&quot;assignedMetadataField&quot;:&quot;GAProfileID&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD Clients" guiX="379" guiY="169" id="GD_CLIENTS" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Edge debugMode="true" fromNode="DATA_GENERATOR:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="GD_CLIENTS:0"/>
+</Phase>
+</Graph>

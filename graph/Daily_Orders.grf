@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Wed Jul 16 10:16:18 EST 2014" guiVersion="3.4.4.P" id="1405486791806" licenseType="Commercial" modified="Tue Jul 22 15:14:26 EST 2014" modifiedBy="macmac" name="Orders" revision="1.34" showComponentDetails="true">
+<Global>
+<Metadata fileURL="${META_DIR}/GA_API2.fmt" id="Metadata3"/>
+<Metadata id="Metadata0" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="GD_Order" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="date" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" name="campaign" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="transactionId" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="productSku" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Order_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="State" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="ShippingAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalPaid" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalQtyOrdered" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TaxAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalRefunded" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="Quote_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Customer_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="ClientID" nullable="true" shift="0" size="0" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="Magento" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" name="Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Order_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="State" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="ShippingAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalPaid" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalQtyOrdered" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TaxAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalRefunded" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="Quote_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Customer_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="SalesOrderItem" nullable="true" shift="0" size="0" type="string"/>
+<Field delimiter="\r\n" eofAsDelimiter="true" format="yyyy-MM-dd" name="CreatedAt" nullable="true" shift="0" size="0" type="date"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/API2.csv" guiName="GA API 2 CSV" guiX="132" guiY="55" id="GA_API_2_CSV" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node dataset="dataset.order" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.order&quot;,&quot;datasetTitle&quot;:&quot;Order&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.order.orderstate&quot;,&quot;title&quot;:&quot;Order State&quot;,&quot;prettyId&quot;:&quot;attr_order_orderstate&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.order.orderstate&quot;,&quot;title&quot;:&quot;Order State&quot;,&quot;prettyId&quot;:&quot;orderstate&quot;,&quot;assignedMetadataField&quot;:&quot;State&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.order.orderstatus&quot;,&quot;title&quot;:&quot;Order Status&quot;,&quot;prettyId&quot;:&quot;attr_order_orderstatus&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.order.orderstatus&quot;,&quot;title&quot;:&quot;Order Status&quot;,&quot;prettyId&quot;:&quot;orderstatus&quot;,&quot;assignedMetadataField&quot;:&quot;Status&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.product.orderid&quot;,&quot;title&quot;:&quot;Order ID&quot;,&quot;prettyId&quot;:&quot;attr_product_orderid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.orderid&quot;,&quot;title&quot;:&quot;Order ID&quot;,&quot;prettyId&quot;:&quot;orderid&quot;,&quot;assignedMetadataField&quot;:&quot;Order_ID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.campaign.campaignid&quot;,&quot;title&quot;:&quot;Campaign ID&quot;,&quot;prettyId&quot;:&quot;attr_campaign_campaignid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignid&quot;,&quot;title&quot;:&quot;Campaign ID&quot;,&quot;prettyId&quot;:&quot;campaign__campaignid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;campaign&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignid&quot;,&quot;title&quot;:&quot;Campaign ID&quot;,&quot;prettyId&quot;:&quot;campaign__campaignid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;attr_client_clientid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;ClientID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;attr_customer_customerid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;customer__customerid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;Customer_ID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;customer__customerid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.googleanalytics1.transactionid&quot;,&quot;title&quot;:&quot;GA ID&quot;,&quot;prettyId&quot;:&quot;attr_googleanalytics1_transactionid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics1.transactionid&quot;,&quot;title&quot;:&quot;GA ID&quot;,&quot;prettyId&quot;:&quot;googleanalytics1__transactionid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;transactionId&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics1.transactionid&quot;,&quot;title&quot;:&quot;GA ID&quot;,&quot;prettyId&quot;:&quot;googleanalytics1__transactionid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.shoppingcart.cartid&quot;,&quot;title&quot;:&quot;Cart ID&quot;,&quot;prettyId&quot;:&quot;attr_shoppingcart_cartid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.shoppingcart.cartid&quot;,&quot;title&quot;:&quot;Cart ID&quot;,&quot;prettyId&quot;:&quot;shoppingcart__cartid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;Quote_ID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.shoppingcart.cartid&quot;,&quot;title&quot;:&quot;Cart ID&quot;,&quot;prettyId&quot;:&quot;shoppingcart__cartid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;date.date&quot;,&quot;title&quot;:&quot;Date (Date)&quot;,&quot;prettyId&quot;:&quot;date&quot;,&quot;assignedMetadataField&quot;:&quot;date&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.order.gst&quot;,&quot;title&quot;:&quot;GST&quot;,&quot;prettyId&quot;:&quot;gst&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TaxAmount&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.order.shippingcost&quot;,&quot;title&quot;:&quot;Shipping Amount&quot;,&quot;prettyId&quot;:&quot;shippingcost&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;ShippingAmount&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.order.demanditems&quot;,&quot;title&quot;:&quot;Total Paid&quot;,&quot;prettyId&quot;:&quot;demanditems&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TotalPaid&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.order.demanditemrevenue&quot;,&quot;title&quot;:&quot;Total Quantity&quot;,&quot;prettyId&quot;:&quot;demanditemrevenue&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TotalQtyOrdered&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.order.totalrefund&quot;,&quot;title&quot;:&quot;Total Refund&quot;,&quot;prettyId&quot;:&quot;totalrefund&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TotalRefunded&quot;}}],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD Order" guiX="929" guiY="287" id="GD_ORDER" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataPolicy="controlled" enabled="enabled" fileURL="${DATA_TMP_DIR}/MagentoDaily_`date2str(today(), &quot;yyyy-MM-dd&quot;)`.csv" guiName="Magento CSV" guiX="126" guiY="255" id="MAGENTO_CSV" quoteCharacter="&quot;" quotedStrings="true" skipRows="1" type="DATA_READER"/>
+<Node enabled="enabled" guiName="Reformat" guiX="384" guiY="55" id="REFORMAT1" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.date = $in.0.date;
+	$out.0.productSku = $in.0.productSku;
+	$out.0.Order_ID = $in.0.transactionId;
+	$out.0.transactionId = $in.0.transactionId;
+	$out.0.ClientID = '${CLIENT_ID}';
+	$out.0.campaign = $in.0.campaign;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="384" guiY="255" id="REFORMAT2" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Order_ID = $in.0.Order_ID;
+	$out.0.transactionId = $in.0.Order_ID;
+	$out.0.Status = $in.0.Status;
+	$out.0.State = $in.0.State;
+	$out.0.ShippingAmount = $in.0.ShippingAmount;
+	$out.0.TotalPaid = $in.0.TotalPaid;
+	$out.0.TotalQtyOrdered = $in.0.TotalQtyOrdered;
+	$out.0.TaxAmount = $in.0.TaxAmount;
+	$out.0.TotalRefunded = $in.0.TotalRefunded;
+	$out.0.Quote_ID = $in.0.Quote_ID;
+	$out.0.date = $in.0.CreatedAt;
+	$out.0.Customer_ID = $in.0.Customer_ID;
+	$out.0.productSku = $in.0.SalesOrderItem;
+	$out.0.ClientID = '${CLIENT_ID}';
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="SimpleGather" guiX="666" guiY="143" id="SIMPLE_GATHER" type="SIMPLE_GATHER"/>
+<Node enabled="disabled" guiName="Trash" guiX="971" guiY="203" id="TRASH" type="TRASH"/>
+<Edge debugMode="true" fromNode="GA_API_2_CSV:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (output)" toNode="REFORMAT1:0"/>
+<Edge debugMode="true" fromNode="MAGENTO_CSV:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (output)" toNode="REFORMAT2:0"/>
+<Edge debugMode="true" fromNode="REFORMAT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:0"/>
+<Edge debugMode="true" fromNode="REFORMAT2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 1 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:1"/>
+<Edge debugMode="true" fromNode="SIMPLE_GATHER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="GD_ORDER:0"/>
+</Phase>
+</Graph>

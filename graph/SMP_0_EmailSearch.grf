@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Mon May 26 11:20:13 EST 2014" guiVersion="3.4.4.P" id="1401086834524" licenseType="Commercial" modified="Wed Jul 16 14:06:20 EST 2014" modifiedBy="macmac" name="SMP" revision="1.162" showComponentDetails="true">
+<Global>
+<Metadata fileURL="${META_DIR}/GD_Customers.fmt" id="Metadata10"/>
+<Metadata fileURL="${META_DIR}/GD_Website.fmt" id="Metadata9"/>
+<Metadata fileURL="${META_DIR}/Response.fmt" id="Metadata0"/>
+<Metadata fileURL="${META_DIR}/SMP_API_EmailSearch.fmt" id="Metadata4"/>
+<Metadata fileURL="${META_DIR}/SMP_BroadcastEvents.fmt" id="Metadata8"/>
+<Metadata fileURL="${META_DIR}/SMP_BroadcastResponse.fmt" id="Metadata6"/>
+<Metadata fileURL="${META_DIR}/SMP_EmailSearch.fmt" id="Metadata2" previewAttachmentCharset="UTF-8"/>
+<Metadata fileURL="${META_DIR}/SMP_GD_Campaign.fmt" id="Metadata1"/>
+<Metadata fileURL="${META_DIR}/SMP_Subscribers.fmt" id="Metadata5"/>
+<Metadata id="Metadata3" previewAttachmentCharset="UTF-8">
+<Record fieldDelimiter="|" name="SMP_Transformation" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="CampaignFolderID" type="string"/>
+<Field name="ListID" type="string"/>
+<Field name="EmailName" type="string"/>
+<Field name="EmailID" type="string"/>
+<Field name="Date" type="date"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="279" id="Note1" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="/Email/Search/" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="1260" x="-463" y="-395"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="${DATA_TMP_DIR}/EmailSearchResults.csv" guiName="CSV Writer" guiX="454" guiY="-360" id="CSV_WRITER" quoteCharacter="&quot;" quotedStrings="true" type="DATA_WRITER"/>
+<Node enabled="enabled" fileURL="${DATA_GOODDATA_DIR}/SMPdebug.xml" guiName="CSV Writer" guiX="-69" guiY="-221" id="CSV_WRITER1" type="DATA_WRITER"/>
+<Node charset="UTF-8" ctlFunctionsSource="//#CTL2&#10;&#10;/**&#10; * Generates request parameters (usually page numbers, offsets, timestamps, signature hashes,etc.)&#10; * Called before each request.&#10; *&#10; * Last response is is only defined if iteration number is greater than one. Therefore, for the very first request&#10; * lastResponseStatus is 200, lastResponseHeaders and lastResponseBody are empty.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * inputEdgeRecord - contains fields of the input edge record&#10; * iterationNumber - starts at 1&#10; * lastResponseStatus - HTTP status of the previous request&#10; * lastResponseHeaders - HTTP headers of the previous request&#10; * lastResponseBody -  body of the previous request&#10; *&#10; * returns a map of params that can be used in the request URL&#10;**/&#10;function map[string, string] generateRequestParameters(map[string, string] inputEdgeRecord, integer iterationNumber, integer lastResponseStatus, map[string, string]lastResponseHeaders, string lastResponseBody) {&#10;&#10;    // Copy all input parameters into the request parameters map.&#10;    map[string, string] requestParams = inputEdgeRecord;&#10;&#10;    /**&#10;     *  PAGING&#10;     *&#10;     *  (Tip: comment/uncomment the code suitable for your use case)&#10;     **/&#10;&#10;    /** Using pages **/&#10;    requestParams[&quot;PAGE_NO&quot;] = toString(iterationNumber);&#10;&#10;    /** Using start offset and end offset **/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;END_OFFSET&quot;] = toString((iterationNumber * RECORDS_PER_PAGE) - 1);&#10;&#10;    /*** Using start offset and records count ***/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;RECORDS_PER_PAGE&quot;] = toString(RECORDS_PER_PAGE);&#10;&#10;    return requestParams;&#10;}&#10;&#10;/**&#10; * Determines the outcome of the response. Used for controlling the paging workflow and detecting errors.&#10; * Called after each request response.&#10; *&#10; * Default implementations returns &quot;DONE_WITH_OUTPUT&quot; to make one REST call and finish.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * responseStatus - response HTTP status&#10; * responseHeaders - response HTTP headers&#10; * responseBody -  response body&#10; *&#10; * returns&#10; *  CONTINUE - continue to next iteration (e.g., next page)&#10; *  DONE_NO_OUTPUT (default) - last iteration finished, no data will be sent to the output port for the last iteration (no data received from the last iteration)&#10; *  DONE_WITH_OUTPUT - last iteration finished, data will be sent to the output for the last iteration (data received from the last iteration)&#10; *  RETRY - retry the last failed request&#10; *  FATAL_ERROR - fatal error, aborts the HTTP connector run&#10;**/&#10;function string checkResponse(integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;    return &quot;DONE_WITH_OUTPUT&quot;;&#10;&#10;    // Example response handling&#10;    // if (responseStatus &gt;= 200  &amp;&amp;  responseStatus &lt; 300) {&#10;    //     return &quot;CONTINUE&quot;;&#10;    // }&#10;    // else if (responseStatus == 404) {&#10;    //     // HTTP status &quot;404 - NOT FOUND&quot; could mean there are no more pages or records&#10;    //     return &quot;DONE_NO_OUTPUT&quot;;&#10;    // }&#10;    // else if (responseStatus &gt;= 500 || responseBody.indexOf('{&quot;error&quot;: &quot;just a temporary error&quot;}') &gt; -1) {&#10;    //     // Internal server errors could be temporary (this sends the last response to the error output port)&#10;    //     return &quot;RETRY&quot;;&#10;    // }&#10;    // else {&#10;    //     // Otherwise abort the HTTP connector run (this sends the last response to the error output port)&#10;    //     return &quot;FATAL_ERROR&quot;;&#10;    // }&#10;}&#10;&#10;/**&#10; * Updates the request params before each request retry attempt if it failed previously.&#10; * Useful for resetting authorization parameter (signatures, tokens, etc.), updating timestamp, etc.&#10; *&#10; * Optional. When not defined, the request stays the same.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * failedRequestParams original parameters of request which failed and should be retried&#10; * retryNumber number of current retry, &quot;1&quot; for the first retry&#10; * lastResponseStatus - HTTP status of the failed request&#10; * lastResponseHeaders - HTTP headers of the failed request&#10; * lastResponseBody -  body of the failed request&#10; *&#10; * returns map of the modified params for the retry request&#10;**/&#10;function map[string, string] modifyRequestParamsBeforeRetryAttempt(map[string, string] failedRequestParams, integer retryNumber,&#10;        integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;&#10;    // Copy all the previous parameters into the retry request parameters map.&#10;    map[string, string] modifiedRequestParams = failedRequestParams;&#10;&#10;    /*** Modify the params of the request ***/&#10;&#10;    // Example of timestamp modification&#10;    // modifiedRequestParams[&quot;TIMESTAMP&quot;] = toString(date2long(today()));&#10;&#10;    return modifiedRequestParams;&#10;}" enabled="enabled" guiName="REST EmailList" guiX="-443" guiY="-348" id="REST_EMAIL_LIST" requestMethod="POST" type="GENERIC_REST_CONNECTOR">
+<attr name="url"><![CDATA[http://api.smartmailpro.com/2.0/Email/Search/]]></attr>
+<attr name="requestHeaders"><![CDATA[API-Key=${SMP_API_KEY}
+Cache-Control=no-cache
+Content-Type=text/json
+Host=api.smartmailpro.com
+]]></attr>
+<attr name="requestBody"><![CDATA[{ "ListId":${SMP_LIST_ID}, 
+  "Limit":1000000,
+"IncludeContent":false }]]></attr>
+</Node>
+<Node enabled="enabled" guiName="SimpleCopy" guiX="181" guiY="-348" id="SIMPLE_COPY" type="SIMPLE_COPY"/>
+<Node enabled="enabled" guiName="SimpleCopy" guiX="-242" guiY="-336" id="SIMPLE_COPY1" type="SIMPLE_COPY"/>
+<Node charset="UTF-8" enabled="enabled" guiName="XMLExtract" guiX="-38" guiY="-360" id="XMLEXTRACT1" schema="${DATA_GOODDATA_DIR}/EmailList.xsd" sourceUri="port:$0.response:discrete" type="XML_EXTRACT">
+<attr name="mapping"><![CDATA[<Mappings>
+	<Mapping element="Smar:EmailList">
+		<Mapping element="Smar:Email" outPort="0"
+				xmlFields="{URN:SmartmailPRO}CampaignFolderId;{URN:SmartmailPRO}EmailId;{URN:SmartmailPRO}EmailName;{URN:SmartmailPRO}ListId;{URN:SmartmailPRO}SentDateUTC"
+				cloverFields="CampaignFolderID;EmailID;EmailName;ListID;Date">
+		</Mapping>
+	</Mapping>
+</Mappings>
+]]></attr>
+<attr name="namespaceBindings"><![CDATA[Smar=URN:SmartmailPRO]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="REST_EMAIL_LIST:0" guiBendpoints="" guiRouter="Manhattan" id="Edge10" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (output)" toNode="SIMPLE_COPY1:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="CSV_WRITER:0"/>
+<Edge fromNode="SIMPLE_COPY1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (input)" metadata="Metadata0" outPort="Port 0 (out)" toNode="XMLEXTRACT1:0"/>
+<Edge fromNode="SIMPLE_COPY1:1" guiBendpoints="" guiRouter="Manhattan" id="Edge8" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 1 (out)" toNode="CSV_WRITER1:0"/>
+<Edge debugMode="true" fromNode="XMLEXTRACT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="SIMPLE_COPY:0"/>
+</Phase>
+</Graph>

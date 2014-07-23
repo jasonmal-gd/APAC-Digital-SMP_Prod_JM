@@ -1,0 +1,11 @@
+Code,Definition,Notes
+10,Open,
+20,Click,
+21,Application click,Indicates click in the online version of email
+30,Soft bounce,
+40,Hard bounce,
+50,List-level unsubscribe,
+51,Account-level unsubscribe,
+52,Feedback loop unsubscribe,
+60,List-level re-subscribe,
+61,Account-level re-subscribe,

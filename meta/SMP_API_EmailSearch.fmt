@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="\t" name="SMP_API_EmailSearch" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="CampaignFolderID" type="string"/>
+<Field name="ListID" type="string"/>
+<Field name="EmailName" type="string"/>
+<Field name="EmailID" type="string"/>
+<Field name="Date" type="date"/>
+<Field name="response" type="string"/>
+</Record>

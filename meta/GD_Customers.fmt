@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="|" name="GD_Customers" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="Email" type="string"/>
+<Field name="SubscriberID" type="string"/>
+<Field name="Name" type="string"/>
+<Field name="SegmentID" type="string"/>
+<Field name="CreatedDate" type="date"/>
+</Record>

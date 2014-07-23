@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="|" name="API1" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field format="yyyyMMdd" name="date" type="date"/>
+<Field name="sourcemedium" type="string"/>
+<Field name="campaign" type="string"/>
+<Field name="deviceCategory" type="string"/>
+<Field name="pagetitle" type="string"/>
+<Field name="pagepath" type="string"/>
+<Field name="hostname" type="string"/>
+<Field name="Users" type="number"/>
+<Field name="Sessions" type="number"/>
+<Field name="bounces" type="number"/>
+</Record>

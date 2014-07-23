@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Tue Jul 15 09:44:22 EST 2014" guiVersion="3.4.4.P" id="1405400627656" licenseType="Commercial" modified="Mon Jul 21 14:55:07 EST 2014" modifiedBy="macmac" name="GA" revision="1.18" showComponentDetails="true">
+<Global>
+<Metadata fileURL="${META_DIR}/GA_API1.fmt" id="Metadata1"/>
+<Metadata fileURL="${META_DIR}/GA_API2.fmt" id="Metadata3"/>
+<Metadata fileURL="${META_DIR}/GAResponse.fmt" id="Metadata0"/>
+<Metadata id="Metadata4" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="GD_GA" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" name="deviceCategory" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="sourcemedium" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="pagetitle" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="pagepath" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="hostname" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="ClientID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="transactionId" nullable="true" shift="0" size="0" type="string"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/API1.csv" guiName="CSV API 1" guiX="15" guiY="248" id="CSV_API_1" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/API2.csv" guiName="CSV API 2" guiX="29" guiY="416" id="CSV_API_2" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node dataset="dataset.googleanalytics1" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.googleanalytics1&quot;,&quot;datasetTitle&quot;:&quot;Google Analytics&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.googleanalytics.channel&quot;,&quot;title&quot;:&quot;GA Channel&quot;,&quot;prettyId&quot;:&quot;attr_googleanalytics_channel&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics.channel&quot;,&quot;title&quot;:&quot;GA Channel&quot;,&quot;prettyId&quot;:&quot;channel&quot;,&quot;assignedMetadataField&quot;:&quot;sourcemedium&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.googleanalytics.device&quot;,&quot;title&quot;:&quot;GA Device&quot;,&quot;prettyId&quot;:&quot;attr_googleanalytics_device&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics.device&quot;,&quot;title&quot;:&quot;GA Device&quot;,&quot;prettyId&quot;:&quot;device&quot;,&quot;assignedMetadataField&quot;:&quot;deviceCategory&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics.device&quot;,&quot;title&quot;:&quot;GA Device&quot;,&quot;prettyId&quot;:&quot;device&quot;,&quot;assignedMetadataField&quot;:&quot;deviceCategory&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.googleanalytics.gahostname&quot;,&quot;title&quot;:&quot;GA Hostname&quot;,&quot;prettyId&quot;:&quot;attr_googleanalytics_gahostname&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics.gahostname&quot;,&quot;title&quot;:&quot;GA Hostname&quot;,&quot;prettyId&quot;:&quot;gahostname&quot;,&quot;assignedMetadataField&quot;:&quot;hostname&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.googleanalytics.gapagepathurl&quot;,&quot;title&quot;:&quot;GA Page Path URL&quot;,&quot;prettyId&quot;:&quot;attr_googleanalytics_gapagepathurl&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics.gapagepathurl&quot;,&quot;title&quot;:&quot;GA Page Path URL&quot;,&quot;prettyId&quot;:&quot;gapagepathurl&quot;,&quot;assignedMetadataField&quot;:&quot;pagepath&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.googleanalytics.gapagetitle&quot;,&quot;title&quot;:&quot;GA Page Title&quot;,&quot;prettyId&quot;:&quot;attr_googleanalytics_gapagetitle&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics.gapagetitle&quot;,&quot;title&quot;:&quot;GA Page Title&quot;,&quot;prettyId&quot;:&quot;gapagetitle&quot;,&quot;assignedMetadataField&quot;:&quot;pagetitle&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.googleanalytics1.transactionid&quot;,&quot;title&quot;:&quot;GA ID&quot;,&quot;prettyId&quot;:&quot;attr_googleanalytics1_transactionid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics1.transactionid&quot;,&quot;title&quot;:&quot;GA ID&quot;,&quot;prettyId&quot;:&quot;transactionid&quot;,&quot;assignedMetadataField&quot;:&quot;transactionId&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics1.transactionid&quot;,&quot;title&quot;:&quot;GA ID&quot;,&quot;prettyId&quot;:&quot;transactionid&quot;,&quot;assignedMetadataField&quot;:&quot;transactionId&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;attr_client_clientid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;ClientID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD GA" guiX="769" guiY="364" id="GD_GA" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node enabled="enabled" guiName="Reformat" guiX="312" guiY="292" id="REFORMAT" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.ClientID = '${CLIENT_ID}';
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="303" guiY="428" id="REFORMAT1" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.ClientID = '${CLIENT_ID}';
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="SimpleGather" guiX="572" guiY="392" id="SIMPLE_GATHER" type="SIMPLE_GATHER"/>
+<Edge debugMode="true" fromNode="CSV_API_1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (output)" toNode="REFORMAT:0"/>
+<Edge debugMode="true" fromNode="CSV_API_2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (output)" toNode="REFORMAT1:0"/>
+<Edge debugMode="true" fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:0"/>
+<Edge debugMode="true" fromNode="REFORMAT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 1 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:1"/>
+<Edge debugMode="true" fromNode="SIMPLE_GATHER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="GD_GA:0"/>
+</Phase>
+</Graph>

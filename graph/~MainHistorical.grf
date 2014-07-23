@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Mon Jul 14 13:35:39 EST 2014" guiVersion="3.4.4.P" id="1405309004807" licenseType="Commercial" modified="Tue Jul 22 15:44:22 EST 2014" modifiedBy="macmac" name="~Main" revision="1.25" showComponentDetails="true">
+<Global>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="false" folded="false" height="325" id="Note0" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="GA Control Panel" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="625" x="31" y="196"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="false" folded="false" height="212" id="Note1" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="AdWords Control Panel Historical Or Daily" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="602" x="31" y="564"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="false" folded="false" height="339" id="Note2" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="SMP Control Panel" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="646" x="31" y="816"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="277" id="Note3" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="GA &amp; Magento &amp; Campaign Control Panel" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="473" x="95" y="1197"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="disabled" graphName="${GRAPH_DIR}/SMP_0_EmailSearch.grf" guiName="RunGraph" guiX="97" guiY="896" id="RUN_GRAPH10" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/GA_DataPull.grf" guiName="RunGraph" guiX="121" guiY="255" id="RUN_GRAPH3" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/0_HISTORICAL_AdWords.grf" guiName="RunGraph" guiX="117" guiY="640" id="RUN_GRAPH8" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/0_DAILY_AdWords.grf" guiName="RunGraph" guiX="351" guiY="640" id="RUN_GRAPH9" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="1">
+<Node enabled="disabled" graphName="${GRAPH_DIR}/SMP_1_BrcResSearch.grf" guiName="RunGraph" guiX="280" guiY="896" id="RUN_GRAPH11" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/SMP_2_BrcEveSearch.grf" guiName="RunGraph" guiX="478" guiY="896" id="RUN_GRAPH12" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/GA.grf" guiName="RunGraph" guiX="351" guiY="253" id="RUN_GRAPH4" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/GA_Records.grf" guiName="RunGraph" guiX="514" guiY="255" id="RUN_GRAPH5" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/GA_Product.grf" guiName="RunGraph" guiX="351" guiY="394" id="RUN_GRAPH6" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/GA_ProductCategory.grf" guiName="RunGraph" guiX="514" guiY="394" id="RUN_GRAPH7" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="2">
+<Node enabled="disabled" graphName="${GRAPH_DIR}/SMP_Customers.grf" guiName="RunGraph" guiX="105" guiY="1055" id="RUN_GRAPH" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/SMP_Messages.grf" guiName="RunGraph" guiX="280" guiY="1055" id="RUN_GRAPH1" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/SMP_MessagesEvent.grf" guiName="RunGraph" guiX="472" guiY="1055" id="RUN_GRAPH2" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="4">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Orders.grf" guiName="RunGraph" guiX="322" guiY="1254" id="RUN_GRAPH13" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/Campaigns.grf" guiName="RunGraph" guiX="121" guiY="1254" id="RUN_GRAPH14" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/OrderItems.grf" guiName="RunGraph" guiX="268" guiY="1372" id="RUN_GRAPH15" type="RUN_GRAPH"/>
+</Phase>
+</Graph>

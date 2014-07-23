@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="|" name="SMP_GD_Campaign" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="CampaignFolderID" type="string"/>
+<Field name="ListID" type="string"/>
+<Field name="EmailName" type="string"/>
+<Field name="EmailID" type="string"/>
+<Field name="ClientID" type="string"/>
+<Field name="CampaignSource" type="string"/>
+<Field name="CampaignType" type="string"/>
+<Field name="CampaignMessage" type="string"/>
+</Record>

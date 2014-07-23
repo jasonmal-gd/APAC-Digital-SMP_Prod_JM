@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Wed Jul 16 10:16:18 EST 2014" guiVersion="3.4.4.P" id="1405471485375" licenseType="Commercial" modified="Mon Jul 21 14:56:59 EST 2014" modifiedBy="macmac" name="SMP_Customers" revision="1.28" showComponentDetails="true">
+<Global>
+<Metadata fileURL="${META_DIR}/SMP_BroadcastResponse.fmt" id="Metadata0"/>
+<Metadata fileURL="${META_DIR}/SMP_EmailSearch.fmt" id="Metadata1"/>
+<Metadata id="UDR_ErrorPort">
+<Record fieldDelimiter="|" name="CSV_Reader_ErrorPort" recordDelimiter="\n" type="delimited">
+<Field name="recordNo" type="long"/>
+<Field name="fieldNo" type="integer"/>
+<Field name="originalData" type="string"/>
+<Field name="errorMessage" type="string"/>
+<Field name="fileURL" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="GD_Messages" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" name="Accepted" nullable="true" shift="0" size="0" type="boolean"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="AcceptedTimeUtc" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" name="AccountUnsubscribes" nullable="true" shift="0" size="0" type="integer"/>
+<Field eofAsDelimiter="false" name="AppClicks" nullable="true" shift="0" size="0" type="integer"/>
+<Field eofAsDelimiter="false" name="BroadcastEmailId" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="BroadcastId" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="EmailId" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="EmailAddress" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="FBLUnsubscribes" nullable="true" shift="0" size="0" type="integer"/>
+<Field eofAsDelimiter="false" name="HardBounces" nullable="true" shift="0" size="0" type="integer"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="LastAccountUnsubscribeTimeUtc" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="LastAppClickTimeUtc" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="LastFBLUnsubscribeTimeUtc" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="LastHardBounceTimeUtc" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="LastLinkClickTimeUtc" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="LastListUnsubscribeTimeUtc" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="LastRenderTimeUtc" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="LastSoftBounceTimeUtc" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" name="LinkClicks" nullable="true" shift="0" size="0" type="integer"/>
+<Field eofAsDelimiter="false" name="ListUnsubscribes" nullable="true" shift="0" size="0" type="integer"/>
+<Field eofAsDelimiter="false" name="Renders" nullable="true" shift="0" size="0" type="integer"/>
+<Field eofAsDelimiter="false" name="SoftBounces" nullable="true" shift="0" size="0" type="integer"/>
+<Field eofAsDelimiter="false" name="SubscriberId" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="SubscriberKey" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="UniqueAppClicks" nullable="true" shift="0" size="0" type="integer"/>
+<Field eofAsDelimiter="false" name="UniqueLinkClicks" nullable="true" shift="0" size="0" type="integer"/>
+<Field eofAsDelimiter="false" format="yyyy-MM-dd" name="SendDate" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" name="ClientID" nullable="true" shift="0" size="0" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2" previewAttachmentCharset="UTF-8">
+<Record fieldDelimiter="|" name="SMP_BroadcastResponse" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="Accepted" type="boolean"/>
+<Field name="AcceptedTimeUtc" type="date"/>
+<Field name="AccountUnsubscribes" type="integer"/>
+<Field name="AppClicks" type="integer"/>
+<Field name="BroadcastEmailId" type="string"/>
+<Field name="BroadcastId" type="string"/>
+<Field name="EmailId" type="string"/>
+<Field name="EmailAddress" type="string"/>
+<Field name="FBLUnsubscribes" type="integer"/>
+<Field name="HardBounces" type="integer"/>
+<Field name="LastAccountUnsubscribeTimeUtc" type="date"/>
+<Field name="LastAppClickTimeUtc" type="date"/>
+<Field name="LastFBLUnsubscribeTimeUtc" type="date"/>
+<Field name="LastHardBounceTimeUtc" type="date"/>
+<Field name="LastLinkClickTimeUtc" type="date"/>
+<Field name="LastListUnsubscribeTimeUtc" type="date"/>
+<Field name="LastRenderTimeUtc" type="date"/>
+<Field name="LastSoftBounceTimeUtc" type="date"/>
+<Field name="LinkClicks" type="integer"/>
+<Field name="ListUnsubscribes" type="integer"/>
+<Field name="Renders" type="integer"/>
+<Field name="SoftBounces" type="integer"/>
+<Field name="SubscriberId" type="string"/>
+<Field name="SubscriberKey" type="string"/>
+<Field name="UniqueAppClicks" type="integer"/>
+<Field name="UniqueLinkClicks" type="integer"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/SMP_BrcResponse.csv" guiName="SMP BrcResponse" guiX="118" guiY="132" id="SMP_BRC_RESPONSE" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Edge debugMode="true" fromNode="SMP_BRC_RESPONSE:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (driver)" metadata="Metadata0" outPort="Port 0 (output)" toNode="EXT_HASH_JOIN:0"/>
+</Phase>
+<Phase number="1">
+<Node enabled="enabled" fileURL="${DATA_TMP_DIR}/EmailSearchResults.csv" guiName="CSV Reader" guiX="94" guiY="322" id="CSV_READER" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node enabled="enabled" guiName="ExtHashJoin" guiX="369" guiY="209" id="EXT_HASH_JOIN" joinKey="$EmailId=$EmailID" joinType="leftOuter" type="EXT_HASH_JOIN">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.SendDate = $in.1.Date;
+	$out.0.ClientID = '${CLIENT_ID}';
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node dataset="dataset.smartmail" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.smartmail&quot;,&quot;datasetTitle&quot;:&quot;Messages&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.smartmail.emailaccepted&quot;,&quot;title&quot;:&quot;Email Accepted&quot;,&quot;prettyId&quot;:&quot;attr_smartmail_emailaccepted&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.smartmail.emailaccepted&quot;,&quot;title&quot;:&quot;Email Accepted&quot;,&quot;prettyId&quot;:&quot;label_emailaccepted&quot;,&quot;assignedMetadataField&quot;:&quot;Accepted&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.campaign.campaignid&quot;,&quot;title&quot;:&quot;Campaign ID&quot;,&quot;prettyId&quot;:&quot;attr_campaign_campaignid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignid&quot;,&quot;title&quot;:&quot;Campaign ID&quot;,&quot;prettyId&quot;:&quot;campaign__campaignid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;EmailId&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignid&quot;,&quot;title&quot;:&quot;Campaign ID&quot;,&quot;prettyId&quot;:&quot;campaign__campaignid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;attr_client_clientid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;ClientID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;attr_customer_customerid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;customer__customerid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;SubscriberId&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;customer__customerid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;dateoflastaccountunsubscribe.date&quot;,&quot;title&quot;:&quot;Date (Last account unsubscribe)&quot;,&quot;prettyId&quot;:&quot;dateoflastaccountunsubscribe&quot;,&quot;assignedMetadataField&quot;:&quot;LastAccountUnsubscribeTimeUtc&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;dateoflastaccountunsubscribe.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last account unsubscribe)&quot;,&quot;prettyId&quot;:&quot;dateoflastaccountunsubscribe_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;dateoflastaccountunsubscribe.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last account unsubscribe)&quot;,&quot;prettyId&quot;:&quot;dateoflastaccountunsubscribe_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;emailaccepted.date&quot;,&quot;title&quot;:&quot;Date (Email Accepted)&quot;,&quot;prettyId&quot;:&quot;date_emailaccepted&quot;,&quot;assignedMetadataField&quot;:&quot;AcceptedTimeUtc&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;emailaccepted.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Email Accepted)&quot;,&quot;prettyId&quot;:&quot;emailaccepted_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;emailaccepted.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Email Accepted)&quot;,&quot;prettyId&quot;:&quot;emailaccepted_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;fblunsubscribe.date&quot;,&quot;title&quot;:&quot;Date (FBL unsubscribe)&quot;,&quot;prettyId&quot;:&quot;fblunsubscribe&quot;,&quot;assignedMetadataField&quot;:&quot;LastFBLUnsubscribeTimeUtc&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;fblunsubscribe.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (FBL unsubscribe)&quot;,&quot;prettyId&quot;:&quot;fblunsubscribe_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;fblunsubscribe.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (FBL unsubscribe)&quot;,&quot;prettyId&quot;:&quot;fblunsubscribe_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;lastapplicationclickthrough.date&quot;,&quot;title&quot;:&quot;Date (Last application clickthrough)&quot;,&quot;prettyId&quot;:&quot;lastapplicationclickthrough&quot;,&quot;assignedMetadataField&quot;:&quot;LastAppClickTimeUtc&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lastapplicationclickthrough.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last application clickthrough)&quot;,&quot;prettyId&quot;:&quot;lastapplicationclickthrough_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lastapplicationclickthrough.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last application clickthrough)&quot;,&quot;prettyId&quot;:&quot;lastapplicationclickthrough_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;lastclickthrough.date&quot;,&quot;title&quot;:&quot;Date (Last clickthrough)&quot;,&quot;prettyId&quot;:&quot;lastclickthrough&quot;,&quot;assignedMetadataField&quot;:&quot;LastLinkClickTimeUtc&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lastclickthrough.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last clickthrough)&quot;,&quot;prettyId&quot;:&quot;lastclickthrough_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lastclickthrough.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last clickthrough)&quot;,&quot;prettyId&quot;:&quot;lastclickthrough_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;lastemailrender.date&quot;,&quot;title&quot;:&quot;Date (Last email render)&quot;,&quot;prettyId&quot;:&quot;lastemailrender&quot;,&quot;assignedMetadataField&quot;:&quot;LastRenderTimeUtc&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lastemailrender.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last email render)&quot;,&quot;prettyId&quot;:&quot;lastemailrender_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lastemailrender.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last email render)&quot;,&quot;prettyId&quot;:&quot;lastemailrender_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;lasthardbounce.date&quot;,&quot;title&quot;:&quot;Date (Last hard bounce)&quot;,&quot;prettyId&quot;:&quot;lasthardbounce&quot;,&quot;assignedMetadataField&quot;:&quot;LastHardBounceTimeUtc&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lasthardbounce.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last hard bounce)&quot;,&quot;prettyId&quot;:&quot;lasthardbounce_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lasthardbounce.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last hard bounce)&quot;,&quot;prettyId&quot;:&quot;lasthardbounce_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;lastlistunsubscribe.date&quot;,&quot;title&quot;:&quot;Date (Last list unsubscribe)&quot;,&quot;prettyId&quot;:&quot;lastlistunsubscribe&quot;,&quot;assignedMetadataField&quot;:&quot;LastListUnsubscribeTimeUtc&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lastlistunsubscribe.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last list unsubscribe)&quot;,&quot;prettyId&quot;:&quot;lastlistunsubscribe_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lastlistunsubscribe.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last list unsubscribe)&quot;,&quot;prettyId&quot;:&quot;lastlistunsubscribe_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;lastsoftbounce.date&quot;,&quot;title&quot;:&quot;Date (Last soft bounce)&quot;,&quot;prettyId&quot;:&quot;lastsoftbounce&quot;,&quot;assignedMetadataField&quot;:&quot;LastSoftBounceTimeUtc&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lastsoftbounce.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last soft bounce)&quot;,&quot;prettyId&quot;:&quot;lastsoftbounce_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;lastsoftbounce.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Last soft bounce)&quot;,&quot;prettyId&quot;:&quot;lastsoftbounce_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;smpemailsent.date&quot;,&quot;title&quot;:&quot;Date (SMP Email Sent)&quot;,&quot;prettyId&quot;:&quot;smpemailsent&quot;,&quot;assignedMetadataField&quot;:&quot;SendDate&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;smpemailsent.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (SMP Email Sent)&quot;,&quot;prettyId&quot;:&quot;smpemailsent_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;smpemailsent.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (SMP Email Sent)&quot;,&quot;prettyId&quot;:&quot;smpemailsent_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.accountunsubscribes&quot;,&quot;title&quot;:&quot;Email Account Unsubscribes&quot;,&quot;prettyId&quot;:&quot;accountunsubscribes&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;AppClicks&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.emailuniqueclicks&quot;,&quot;title&quot;:&quot;Email App. Clicks&quot;,&quot;prettyId&quot;:&quot;emailuniqueclicks&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;AccountUnsubscribes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.emailbounces&quot;,&quot;title&quot;:&quot;Email Bounces&quot;,&quot;prettyId&quot;:&quot;emailbounces&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;HardBounces&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.emailclickthrough&quot;,&quot;title&quot;:&quot;Email Clickthrough&quot;,&quot;prettyId&quot;:&quot;emailclickthrough&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;LinkClicks&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.fblunsubscibes&quot;,&quot;title&quot;:&quot;Email FBL Unsubscibes&quot;,&quot;prettyId&quot;:&quot;fblunsubscibes&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;FBLUnsubscribes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.emaillistunsubscibe&quot;,&quot;title&quot;:&quot;Email List Unsubscibe&quot;,&quot;prettyId&quot;:&quot;emaillistunsubscibe&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;ListUnsubscribes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.emailrenders&quot;,&quot;title&quot;:&quot;Email Renders&quot;,&quot;prettyId&quot;:&quot;emailrenders&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Renders&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.emailsoftbounces&quot;,&quot;title&quot;:&quot;Email Soft Bounces&quot;,&quot;prettyId&quot;:&quot;emailsoftbounces&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;SoftBounces&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.emailuniqueappclicks&quot;,&quot;title&quot;:&quot;Email Unique App. Clicks&quot;,&quot;prettyId&quot;:&quot;emailuniqueappclicks&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;UniqueAppClicks&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.emailuniquelinkclicks&quot;,&quot;title&quot;:&quot;Email Unique Link Clicks&quot;,&quot;prettyId&quot;:&quot;emailuniquelinkclicks&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;UniqueLinkClicks&quot;}}],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD Messages" guiX="628" guiY="215" id="GD_MESSAGES" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Edge debugMode="true" fromNode="CSV_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 1 (slave)" metadata="Metadata1" outPort="Port 0 (output)" toNode="EXT_HASH_JOIN:1"/>
+<Edge debugMode="true" fromNode="EXT_HASH_JOIN:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="GD_MESSAGES:0"/>
+</Phase>
+</Graph>

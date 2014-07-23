@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="|" name="SMP_BroadcastResponse" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="Accepted" type="boolean"/>
+<Field name="AcceptedTimeUtc" type="date"/>
+<Field name="AccountUnsubscribes" type="integer"/>
+<Field name="AppClicks" type="integer"/>
+<Field name="BroadcastEmailId" type="string"/>
+<Field name="BroadcastId" type="string"/>
+<Field name="EmailId" type="string"/>
+<Field name="EmailAddress" type="string"/>
+<Field name="FBLUnsubscribes" type="integer"/>
+<Field name="HardBounces" type="integer"/>
+<Field name="LastAccountUnsubscribeTimeUtc" type="date"/>
+<Field name="LastAppClickTimeUtc" type="date"/>
+<Field name="LastFBLUnsubscribeTimeUtc" type="date"/>
+<Field name="LastHardBounceTimeUtc" type="date"/>
+<Field name="LastLinkClickTimeUtc" type="date"/>
+<Field name="LastListUnsubscribeTimeUtc" type="date"/>
+<Field name="LastRenderTimeUtc" type="date"/>
+<Field name="LastSoftBounceTimeUtc" type="date"/>
+<Field name="LinkClicks" type="integer"/>
+<Field name="ListUnsubscribes" type="integer"/>
+<Field name="Renders" type="integer"/>
+<Field name="SoftBounces" type="integer"/>
+<Field name="SubscriberId" type="string"/>
+<Field name="SubscriberKey" type="string"/>
+<Field name="UniqueAppClicks" type="integer"/>
+<Field name="UniqueLinkClicks" type="integer"/>
+</Record>

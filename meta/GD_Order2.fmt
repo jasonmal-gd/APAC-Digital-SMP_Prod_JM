@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><Record fieldDelimiter="|" name="GD_Order2" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="transactionId" type="string"/>
+<Field name="OrderState" type="string"/>
+<Field name="OrderStatus" type="string"/>
+<Field name="GST" type="number"/>
+<Field name="ShippingAmount" type="number"/>
+<Field name="TotalPaid" type="number"/>
+<Field name="TotalQuantity" type="number"/>
+<Field name="TotalRefund" type="number"/>
+<Field format="yyyy-MM-dd" name="date" type="date"/>
+<Field name="campaign" type="string"/>
+<Field name="APAC_ClientID" type="string"/>
+<Field name="APAC_CustomerID" type="string"/>
+<Field name="productSku" type="string"/>
+<Field name="CartID" type="string"/>
+<Field name="hostname" type="string"/>
+</Record>

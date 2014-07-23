@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="\t" name="Response" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="response" type="string"/>
+</Record>

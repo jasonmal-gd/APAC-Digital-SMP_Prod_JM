@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="URN:SmartmailPRO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BroadcastResponseList" type="urn:BroadcastResponseListType" xmlns:urn="URN:SmartmailPRO"/>
+  <xs:complexType name="BroadcastResponseType">
+    <xs:sequence>
+      <xs:element type="xs:int" name="BroadcastId"/>
+      <xs:element type="xs:byte" name="EmailId"/>
+      <xs:element name="BroadcastEmailId">
+        <xs:simpleType>
+          <xs:restriction base="xs:int">
+            <xs:enumeration value="663348190"/>
+            <xs:enumeration value="663348191"/>
+            <xs:enumeration value="663348192"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="EmailAddress">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="support@smartmailpro.com"/>
+            <xs:enumeration value="jo@jericho.co.nz"/>
+            <xs:enumeration value="amanda@jericho.co.nz"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="SubscriberId">
+        <xs:simpleType>
+          <xs:restriction base="xs:int">
+            <xs:enumeration value="79846831"/>
+            <xs:enumeration value="80040715"/>
+            <xs:enumeration value="81076827"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="SubscriberKey" nillable="true"/>
+      <xs:element type="xs:string" name="Accepted"/>
+      <xs:element type="xs:dateTime" name="AcceptedTimeUtc"/>
+      <xs:element name="Renders">
+        <xs:simpleType>
+          <xs:restriction base="xs:byte">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="LastRenderTimeUtc">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2013-12-04T18:34:20.57"/>
+            <xs:enumeration value=""/>
+            <xs:enumeration value="2013-12-04T19:36:57.513"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:byte" name="LinkClicks"/>
+      <xs:element type="xs:byte" name="UniqueLinkClicks"/>
+      <xs:element type="xs:string" name="LastLinkClickTimeUtc" nillable="true"/>
+      <xs:element type="xs:byte" name="AppClicks"/>
+      <xs:element type="xs:byte" name="UniqueAppClicks"/>
+      <xs:element type="xs:string" name="LastAppClickTimeUtc" nillable="true"/>
+      <xs:element type="xs:byte" name="SoftBounces"/>
+      <xs:element type="xs:string" name="LastSoftBounceTimeUtc" nillable="true"/>
+      <xs:element type="xs:byte" name="HardBounces"/>
+      <xs:element type="xs:string" name="LastHardBounceTimeUtc" nillable="true"/>
+      <xs:element type="xs:byte" name="ListUnsubscribes"/>
+      <xs:element type="xs:string" name="LastListUnsubscribeTimeUtc" nillable="true"/>
+      <xs:element type="xs:string" name="LastListUnsubscribeReason" nillable="true"/>
+      <xs:element type="xs:byte" name="AccountUnsubscribes"/>
+      <xs:element type="xs:string" name="LastAccountUnsubscribeTimeUtc" nillable="true"/>
+      <xs:element type="xs:string" name="LastAccountUnsubscribeReason" nillable="true"/>
+      <xs:element type="xs:byte" name="FBLUnsubscribes"/>
+      <xs:element type="xs:string" name="LastFBLUnsubscribeTimeUtc" nillable="true"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BroadcastResponseListType">
+    <xs:sequence>
+      <xs:element type="urn:BroadcastResponseType" name="BroadcastResponse" maxOccurs="unbounded" minOccurs="0" xmlns:urn="URN:SmartmailPRO"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

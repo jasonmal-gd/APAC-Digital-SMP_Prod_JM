@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Tue Jul 15 09:44:22 EST 2014" guiVersion="3.4.4.P" id="1405400627656" licenseType="Commercial" modified="Mon Jul 21 14:54:48 EST 2014" modifiedBy="macmac" name="GA" revision="1.20" showComponentDetails="true">
+<Global>
+<Metadata fileURL="${META_DIR}/GA_API1.fmt" id="Metadata1"/>
+<Metadata fileURL="${META_DIR}/GA_API2.fmt" id="Metadata3"/>
+<Metadata fileURL="${META_DIR}/GA_API3.fmt" id="Metadata2"/>
+<Metadata fileURL="${META_DIR}/GA_API4.fmt" id="Metadata5"/>
+<Metadata fileURL="${META_DIR}/GAResponse.fmt" id="Metadata0"/>
+<Metadata id="Metadata6" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="GD_GARecords" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field format="yyyyMMdd" name="date" type="date"/>
+<Field eofAsDelimiter="false" name="sourcemedium" nullable="true" shift="0" size="0" type="string"/>
+<Field name="campaign" type="string"/>
+<Field name="Users" type="number"/>
+<Field name="Sessions" type="number"/>
+<Field name="bounces" type="number"/>
+<Field eofAsDelimiter="false" name="transactionId" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="ClientID" nullable="true" shift="0" size="0" type="string"/>
+<Field name="productSku" type="string"/>
+<Field name="goal1completions" type="number"/>
+<Field name="goal2completions" type="number"/>
+<Field name="goal3completions" type="number"/>
+<Field name="goal4completions" type="number"/>
+<Field name="goal5completions" type="number"/>
+<Field name="goal6completions" type="number"/>
+<Field name="goal7completions" type="number"/>
+<Field name="goal8completions" type="number"/>
+<Field name="goal9completions" type="number"/>
+<Field name="goal10completions" type="number"/>
+<Field name="goal11completions" type="number"/>
+<Field name="goal12completions" type="number"/>
+<Field name="goal13completions" type="number"/>
+<Field name="goal14completions" type="number"/>
+<Field name="goal15completions" type="number"/>
+<Field name="goal16completions" type="number"/>
+<Field name="goal17completions" type="number"/>
+<Field name="goal18completions" type="number"/>
+<Field name="goal19completions" type="number"/>
+<Field name="goal20completions" type="number"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="861" id="Note0" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="Load GA Records" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="1046" x="-107" y="223"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/API1.csv" guiName="CSV API 1" guiX="-18" guiY="292" id="CSV_API_1" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/API2.csv" guiName="CSV API 2" guiX="-18" guiY="477" id="CSV_API_2" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/API3.csv" guiName="CSV API 3" guiX="-24" guiY="656" id="CSV_API_3" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/API4.csv" guiName="CSV API 4" guiX="-24" guiY="842" id="CSV_API_4" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node dataset="dataset.googleanalytics" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.googleanalytics&quot;,&quot;datasetTitle&quot;:&quot;Google Analytics Records&quot;,&quot;attributes&quot;:[],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.campaign.campaignid&quot;,&quot;title&quot;:&quot;Campaign ID&quot;,&quot;prettyId&quot;:&quot;attr_campaign_campaignid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignid&quot;,&quot;title&quot;:&quot;Campaign ID&quot;,&quot;prettyId&quot;:&quot;campaign__campaignid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;campaign&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignid&quot;,&quot;title&quot;:&quot;Campaign ID&quot;,&quot;prettyId&quot;:&quot;campaign__campaignid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;attr_client_clientid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;ClientID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.googleanalytics1.transactionid&quot;,&quot;title&quot;:&quot;GA ID&quot;,&quot;prettyId&quot;:&quot;attr_googleanalytics1_transactionid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics1.transactionid&quot;,&quot;title&quot;:&quot;GA ID&quot;,&quot;prettyId&quot;:&quot;googleanalytics1__transactionid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;transactionId&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics1.transactionid&quot;,&quot;title&quot;:&quot;GA ID&quot;,&quot;prettyId&quot;:&quot;googleanalytics1__transactionid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;attr_product_sku&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;product__sku&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;productSku&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;product__sku&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;date.date&quot;,&quot;title&quot;:&quot;Date (Date)&quot;,&quot;prettyId&quot;:&quot;date&quot;,&quot;assignedMetadataField&quot;:&quot;date&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.bouncerate&quot;,&quot;title&quot;:&quot;GA Bounce Rate&quot;,&quot;prettyId&quot;:&quot;bouncerate&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;bounces&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal1&quot;,&quot;title&quot;:&quot;GA Goal 1&quot;,&quot;prettyId&quot;:&quot;goal1&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal1completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal10&quot;,&quot;title&quot;:&quot;GA Goal 10&quot;,&quot;prettyId&quot;:&quot;goal10&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal10completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal11&quot;,&quot;title&quot;:&quot;GA Goal 11&quot;,&quot;prettyId&quot;:&quot;goal11&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal11completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal12&quot;,&quot;title&quot;:&quot;GA Goal 12&quot;,&quot;prettyId&quot;:&quot;goal12&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal12completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal13&quot;,&quot;title&quot;:&quot;GA Goal 13&quot;,&quot;prettyId&quot;:&quot;goal13&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal13completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal14&quot;,&quot;title&quot;:&quot;GA Goal 14&quot;,&quot;prettyId&quot;:&quot;goal14&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal14completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal15&quot;,&quot;title&quot;:&quot;GA Goal 15&quot;,&quot;prettyId&quot;:&quot;goal15&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal15completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal16&quot;,&quot;title&quot;:&quot;GA Goal 16&quot;,&quot;prettyId&quot;:&quot;goal16&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal16completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal17&quot;,&quot;title&quot;:&quot;GA Goal 17&quot;,&quot;prettyId&quot;:&quot;goal17&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal17completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal18&quot;,&quot;title&quot;:&quot;GA Goal 18&quot;,&quot;prettyId&quot;:&quot;goal18&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal18completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal19&quot;,&quot;title&quot;:&quot;GA Goal 19&quot;,&quot;prettyId&quot;:&quot;goal19&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal19completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal2&quot;,&quot;title&quot;:&quot;GA Goal 2&quot;,&quot;prettyId&quot;:&quot;goal2&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal2completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal20&quot;,&quot;title&quot;:&quot;GA Goal 20&quot;,&quot;prettyId&quot;:&quot;goal20&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal20completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal3&quot;,&quot;title&quot;:&quot;GA Goal 3&quot;,&quot;prettyId&quot;:&quot;goal3&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal3completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal4&quot;,&quot;title&quot;:&quot;GA Goal 4&quot;,&quot;prettyId&quot;:&quot;goal4&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal4completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal5&quot;,&quot;title&quot;:&quot;GA Goal 5&quot;,&quot;prettyId&quot;:&quot;goal5&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal5completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal6&quot;,&quot;title&quot;:&quot;GA Goal 6&quot;,&quot;prettyId&quot;:&quot;goal6&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal6completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal7&quot;,&quot;title&quot;:&quot;GA Goal 7&quot;,&quot;prettyId&quot;:&quot;goal7&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal7completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal8&quot;,&quot;title&quot;:&quot;GA Goal 8&quot;,&quot;prettyId&quot;:&quot;goal8&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal8completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal9&quot;,&quot;title&quot;:&quot;GA Goal 9&quot;,&quot;prettyId&quot;:&quot;goal9&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal9completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.sessions&quot;,&quot;title&quot;:&quot;GA Sessions&quot;,&quot;prettyId&quot;:&quot;sessions&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Sessions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.users&quot;,&quot;title&quot;:&quot;GA Users&quot;,&quot;prettyId&quot;:&quot;users&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Users&quot;}}],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD GA Records" guiX="781" guiY="589" id="GD_GA_RECORDS" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node enabled="enabled" guiName="Reformat" guiX="312" guiY="292" id="REFORMAT" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.ClientID = '${CLIENT_ID}';
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="304" guiY="501" id="REFORMAT1" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.ClientID = '${CLIENT_ID}';
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="312" guiY="680" id="REFORMAT2" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.ClientID = '${CLIENT_ID}';
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="312" guiY="842" id="REFORMAT3" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.ClientID = '${CLIENT_ID}';
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="SimpleGather" guiX="579" guiY="580" id="SIMPLE_GATHER" type="SIMPLE_GATHER"/>
+<Edge debugMode="true" fromNode="CSV_API_1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (output)" toNode="REFORMAT:0"/>
+<Edge debugMode="true" fromNode="CSV_API_2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (output)" toNode="REFORMAT1:0"/>
+<Edge debugMode="true" fromNode="CSV_API_3:0" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (output)" toNode="REFORMAT2:0"/>
+<Edge debugMode="true" fromNode="CSV_API_4:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 0 (in)" metadata="Metadata5" outPort="Port 0 (output)" toNode="REFORMAT3:0"/>
+<Edge debugMode="true" fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata6" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:0"/>
+<Edge debugMode="true" fromNode="REFORMAT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 1 (in)" metadata="Metadata6" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:1"/>
+<Edge debugMode="true" fromNode="REFORMAT2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 2 (in)" metadata="Metadata6" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:2"/>
+<Edge debugMode="true" fromNode="REFORMAT3:0" guiBendpoints="" guiRouter="Manhattan" id="Edge8" inPort="Port 3 (in)" metadata="Metadata6" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:3"/>
+<Edge debugMode="true" fromNode="SIMPLE_GATHER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata6" outPort="Port 0 (out)" toNode="GD_GA_RECORDS:0"/>
+</Phase>
+</Graph>

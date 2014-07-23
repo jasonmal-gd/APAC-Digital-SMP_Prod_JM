@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Mon May 26 11:20:13 EST 2014" guiVersion="3.4.4.P" id="1401086834524" licenseType="Commercial" modified="Mon Jul 07 16:59:09 EST 2014" modifiedBy="macmac" name="SMP" revision="1.146" showComponentDetails="true">
+<Global>
+<Metadata fileURL="${META_DIR}/GD_Customers.fmt" id="Metadata10"/>
+<Metadata fileURL="${META_DIR}/GD_Website.fmt" id="Metadata9"/>
+<Metadata fileURL="${META_DIR}/Response.fmt" id="Metadata0"/>
+<Metadata fileURL="${META_DIR}/SMP_API_EmailSearch.fmt" id="Metadata4"/>
+<Metadata fileURL="${META_DIR}/SMP_BroadcastEvents.fmt" id="Metadata8"/>
+<Metadata fileURL="${META_DIR}/SMP_BroadcastResponse.fmt" id="Metadata6" previewAttachmentCharset="UTF-8"/>
+<Metadata fileURL="${META_DIR}/SMP_EmailSearch.fmt" id="Metadata2" previewAttachmentCharset="UTF-8"/>
+<Metadata fileURL="${META_DIR}/SMP_Subscribers.fmt" id="Metadata5"/>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<LookupTable fileURL="${DATA_TMP_DIR}/EmailSearchResults.csv" id="LookupTable0" initialSize="512" key="EmailID" metadata="Metadata2" name="EmailLookUp" type="simpleLookup"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="166" id="Note1" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="/Email/Search/" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="870" x="-190" y="-395"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="false" folded="false" height="325" id="Note2" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="/Email/BroadcastResponses/Search/" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="1104" x="-251" y="131"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="false" folded="false" height="344" id="Note3" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="/Email/BroadcastEvents/Search/" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="1104" x="-219" y="575"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="false" folded="false" height="198" id="Note0" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="/List/3438/Subscribers" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="951" x="-237" y="-156"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="${DATA_TMP_DIR}/EmailSearchResultsTest.csv" guiName="CSV Writer" guiX="499" guiY="-348" id="CSV_WRITER" outputFieldNames="true" type="DATA_WRITER"/>
+<Node dataset="dataset.customer" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.customer&quot;,&quot;datasetTitle&quot;:&quot;Customer&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;attr_customer_customerid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;customerid&quot;,&quot;assignedMetadataField&quot;:&quot;SubscriberID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customer.customername&quot;,&quot;title&quot;:&quot;Customer Name&quot;,&quot;prettyId&quot;:&quot;attr_customer_customername&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customername&quot;,&quot;title&quot;:&quot;Customer Name&quot;,&quot;prettyId&quot;:&quot;customername&quot;,&quot;assignedMetadataField&quot;:&quot;Name&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customer.emailaddress&quot;,&quot;title&quot;:&quot;Customer Email&quot;,&quot;prettyId&quot;:&quot;attr_customer_emailaddress&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.emailaddress&quot;,&quot;title&quot;:&quot;Customer Email&quot;,&quot;prettyId&quot;:&quot;emailaddress&quot;,&quot;assignedMetadataField&quot;:&quot;Email&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customer.segmentid&quot;,&quot;title&quot;:&quot;Segment ID&quot;,&quot;prettyId&quot;:&quot;attr_customer_segmentid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.segmentid&quot;,&quot;title&quot;:&quot;Segment ID&quot;,&quot;prettyId&quot;:&quot;segmentid&quot;,&quot;assignedMetadataField&quot;:&quot;SegmentID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.segmentid&quot;,&quot;title&quot;:&quot;Segment ID&quot;,&quot;prettyId&quot;:&quot;segmentid&quot;,&quot;assignedMetadataField&quot;:&quot;SegmentID&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;date.date&quot;,&quot;title&quot;:&quot;Date (Date)&quot;,&quot;prettyId&quot;:&quot;date&quot;,&quot;assignedMetadataField&quot;:&quot;Date&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="disabled" guiName="GD Dataset Writer" guiX="730" guiY="-124" id="GD_DATASET_WRITER2" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node enabled="disabled" guiName="Reformat" guiX="284" guiY="-83" id="REFORMAT3" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node charset="UTF-8" ctlFunctionsSource="//#CTL2&#10;&#10;/**&#10; * Generates request parameters (usually page numbers, offsets, timestamps, signature hashes,etc.)&#10; * Called before each request.&#10; *&#10; * Last response is is only defined if iteration number is greater than one. Therefore, for the very first request&#10; * lastResponseStatus is 200, lastResponseHeaders and lastResponseBody are empty.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * inputEdgeRecord - contains fields of the input edge record&#10; * iterationNumber - starts at 1&#10; * lastResponseStatus - HTTP status of the previous request&#10; * lastResponseHeaders - HTTP headers of the previous request&#10; * lastResponseBody -  body of the previous request&#10; *&#10; * returns a map of params that can be used in the request URL&#10;**/&#10;function map[string, string] generateRequestParameters(map[string, string] inputEdgeRecord, integer iterationNumber, integer lastResponseStatus, map[string, string]lastResponseHeaders, string lastResponseBody) {&#10;&#10;    // Copy all input parameters into the request parameters map.&#10;    map[string, string] requestParams = inputEdgeRecord;&#10;&#10;    /**&#10;     *  PAGING&#10;     *&#10;     *  (Tip: comment/uncomment the code suitable for your use case)&#10;     **/&#10;&#10;    /** Using pages **/&#10;    requestParams[&quot;PAGE_NO&quot;] = toString(iterationNumber);&#10;&#10;    /** Using start offset and end offset **/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;END_OFFSET&quot;] = toString((iterationNumber * RECORDS_PER_PAGE) - 1);&#10;&#10;    /*** Using start offset and records count ***/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;RECORDS_PER_PAGE&quot;] = toString(RECORDS_PER_PAGE);&#10;&#10;    return requestParams;&#10;}&#10;&#10;/**&#10; * Determines the outcome of the response. Used for controlling the paging workflow and detecting errors.&#10; * Called after each request response.&#10; *&#10; * Default implementations returns &quot;DONE_WITH_OUTPUT&quot; to make one REST call and finish.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * responseStatus - response HTTP status&#10; * responseHeaders - response HTTP headers&#10; * responseBody -  response body&#10; *&#10; * returns&#10; *  CONTINUE - continue to next iteration (e.g., next page)&#10; *  DONE_NO_OUTPUT (default) - last iteration finished, no data will be sent to the output port for the last iteration (no data received from the last iteration)&#10; *  DONE_WITH_OUTPUT - last iteration finished, data will be sent to the output for the last iteration (data received from the last iteration)&#10; *  RETRY - retry the last failed request&#10; *  FATAL_ERROR - fatal error, aborts the HTTP connector run&#10;**/&#10;function string checkResponse(integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;    return &quot;DONE_WITH_OUTPUT&quot;;&#10;&#10;    // Example response handling&#10;    // if (responseStatus &gt;= 200  &amp;&amp;  responseStatus &lt; 300) {&#10;    //     return &quot;CONTINUE&quot;;&#10;    // }&#10;    // else if (responseStatus == 404) {&#10;    //     // HTTP status &quot;404 - NOT FOUND&quot; could mean there are no more pages or records&#10;    //     return &quot;DONE_NO_OUTPUT&quot;;&#10;    // }&#10;    // else if (responseStatus &gt;= 500 || responseBody.indexOf('{&quot;error&quot;: &quot;just a temporary error&quot;}') &gt; -1) {&#10;    //     // Internal server errors could be temporary (this sends the last response to the error output port)&#10;    //     return &quot;RETRY&quot;;&#10;    // }&#10;    // else {&#10;    //     // Otherwise abort the HTTP connector run (this sends the last response to the error output port)&#10;    //     return &quot;FATAL_ERROR&quot;;&#10;    // }&#10;}&#10;&#10;/**&#10; * Updates the request params before each request retry attempt if it failed previously.&#10; * Useful for resetting authorization parameter (signatures, tokens, etc.), updating timestamp, etc.&#10; *&#10; * Optional. When not defined, the request stays the same.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * failedRequestParams original parameters of request which failed and should be retried&#10; * retryNumber number of current retry, &quot;1&quot; for the first retry&#10; * lastResponseStatus - HTTP status of the failed request&#10; * lastResponseHeaders - HTTP headers of the failed request&#10; * lastResponseBody -  body of the failed request&#10; *&#10; * returns map of the modified params for the retry request&#10;**/&#10;function map[string, string] modifyRequestParamsBeforeRetryAttempt(map[string, string] failedRequestParams, integer retryNumber,&#10;        integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;&#10;    // Copy all the previous parameters into the retry request parameters map.&#10;    map[string, string] modifiedRequestParams = failedRequestParams;&#10;&#10;    /*** Modify the params of the request ***/&#10;&#10;    // Example of timestamp modification&#10;    // modifiedRequestParams[&quot;TIMESTAMP&quot;] = toString(date2long(today()));&#10;&#10;    return modifiedRequestParams;&#10;}" enabled="enabled" guiName="REST EmailList" guiX="-177" guiY="-348" id="REST_EMAIL_LIST" requestMethod="POST" type="GENERIC_REST_CONNECTOR">
+<attr name="url"><![CDATA[http://api.smartmailpro.com/2.0/Email/Search/]]></attr>
+<attr name="requestHeaders"><![CDATA[API-Key=${SMP_API_KEY}
+Cache-Control=no-cache
+Content-Type=text/json
+Host=api.smartmailpro.com
+]]></attr>
+<attr name="requestBody"><![CDATA[{ "ListId":${SMP_LIST_ID}, 
+  "Limit":1000000,
+"IncludeContent":false }]]></attr>
+</Node>
+<Node charset="UTF-8" ctlFunctionsSource="//#CTL2&#10;&#10;/**&#10; * Generates request parameters (usually page numbers, offsets, timestamps, signature hashes,etc.)&#10; * Called before each request.&#10; *&#10; * Last response is is only defined if iteration number is greater than one. Therefore, for the very first request&#10; * lastResponseStatus is 200, lastResponseHeaders and lastResponseBody are empty.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * inputEdgeRecord - contains fields of the input edge record&#10; * iterationNumber - starts at 1&#10; * lastResponseStatus - HTTP status of the previous request&#10; * lastResponseHeaders - HTTP headers of the previous request&#10; * lastResponseBody -  body of the previous request&#10; *&#10; * returns a map of params that can be used in the request URL&#10;**/&#10;function map[string, string] generateRequestParameters(map[string, string] inputEdgeRecord, integer iterationNumber, integer lastResponseStatus, map[string, string]lastResponseHeaders, string lastResponseBody) {&#10;&#10;    // Copy all input parameters into the request parameters map.&#10;    map[string, string] requestParams = inputEdgeRecord;&#10;&#10;    /**&#10;     *  PAGING&#10;     *&#10;     *  (Tip: comment/uncomment the code suitable for your use case)&#10;     **/&#10;&#10;    /** Using pages **/&#10;    requestParams[&quot;PAGE_NO&quot;] = toString(iterationNumber);&#10;&#10;    /** Using start offset and end offset **/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;END_OFFSET&quot;] = toString((iterationNumber * RECORDS_PER_PAGE) - 1);&#10;&#10;    /*** Using start offset and records count ***/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;RECORDS_PER_PAGE&quot;] = toString(RECORDS_PER_PAGE);&#10;&#10;    return requestParams;&#10;}&#10;&#10;/**&#10; * Determines the outcome of the response. Used for controlling the paging workflow and detecting errors.&#10; * Called after each request response.&#10; *&#10; * Default implementations returns &quot;DONE_WITH_OUTPUT&quot; to make one REST call and finish.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * responseStatus - response HTTP status&#10; * responseHeaders - response HTTP headers&#10; * responseBody -  response body&#10; *&#10; * returns&#10; *  CONTINUE - continue to next iteration (e.g., next page)&#10; *  DONE_NO_OUTPUT (default) - last iteration finished, no data will be sent to the output port for the last iteration (no data received from the last iteration)&#10; *  DONE_WITH_OUTPUT - last iteration finished, data will be sent to the output for the last iteration (data received from the last iteration)&#10; *  RETRY - retry the last failed request&#10; *  FATAL_ERROR - fatal error, aborts the HTTP connector run&#10;**/&#10;function string checkResponse(integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;    return &quot;DONE_WITH_OUTPUT&quot;;&#10;&#10;    // Example response handling&#10;    // if (responseStatus &gt;= 200  &amp;&amp;  responseStatus &lt; 300) {&#10;    //     return &quot;CONTINUE&quot;;&#10;    // }&#10;    // else if (responseStatus == 404) {&#10;    //     // HTTP status &quot;404 - NOT FOUND&quot; could mean there are no more pages or records&#10;    //     return &quot;DONE_NO_OUTPUT&quot;;&#10;    // }&#10;    // else if (responseStatus &gt;= 500 || responseBody.indexOf('{&quot;error&quot;: &quot;just a temporary error&quot;}') &gt; -1) {&#10;    //     // Internal server errors could be temporary (this sends the last response to the error output port)&#10;    //     return &quot;RETRY&quot;;&#10;    // }&#10;    // else {&#10;    //     // Otherwise abort the HTTP connector run (this sends the last response to the error output port)&#10;    //     return &quot;FATAL_ERROR&quot;;&#10;    // }&#10;}&#10;&#10;/**&#10; * Updates the request params before each request retry attempt if it failed previously.&#10; * Useful for resetting authorization parameter (signatures, tokens, etc.), updating timestamp, etc.&#10; *&#10; * Optional. When not defined, the request stays the same.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * failedRequestParams original parameters of request which failed and should be retried&#10; * retryNumber number of current retry, &quot;1&quot; for the first retry&#10; * lastResponseStatus - HTTP status of the failed request&#10; * lastResponseHeaders - HTTP headers of the failed request&#10; * lastResponseBody -  body of the failed request&#10; *&#10; * returns map of the modified params for the retry request&#10;**/&#10;function map[string, string] modifyRequestParamsBeforeRetryAttempt(map[string, string] failedRequestParams, integer retryNumber,&#10;        integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;&#10;    // Copy all the previous parameters into the retry request parameters map.&#10;    map[string, string] modifiedRequestParams = failedRequestParams;&#10;&#10;    /*** Modify the params of the request ***/&#10;&#10;    // Example of timestamp modification&#10;    // modifiedRequestParams[&quot;TIMESTAMP&quot;] = toString(date2long(today()));&#10;&#10;    return modifiedRequestParams;&#10;}" enabled="disabled" guiName="REST Subscribers" guiX="-209" guiY="-101" id="REST_SUBSCRIBERS" requestMethod="GET" type="GENERIC_REST_CONNECTOR">
+<attr name="url"><![CDATA[http://api.smartmailpro.com/2.0/List/${SMP_LIST_ID}/Subscribers]]></attr>
+<attr name="requestHeaders"><![CDATA[API-Key=${SMP_API_KEY}
+Cache-Control=no-cache
+Content-Type=text/json
+Host=api.smartmailpro.com
+]]></attr>
+</Node>
+<Node enabled="disabled" guiName="Trash" guiX="490" guiY="-83" id="TRASH" type="TRASH"/>
+<Node charset="UTF-8" enabled="enabled" guiName="XMLExtract" guiX="118" guiY="-360" id="XMLEXTRACT1" schema="${DATA_GOODDATA_DIR}/EmailList.xsd" sourceUri="port:$0.response:discrete" type="XML_EXTRACT">
+<attr name="mapping"><![CDATA[<Mappings>
+	<Mapping element="Smar:EmailList">
+		<Mapping element="Smar:Email" outPort="0"
+				xmlFields="{URN:SmartmailPRO}CampaignFolderId;{URN:SmartmailPRO}EmailId;{URN:SmartmailPRO}ListId"
+				cloverFields="CampaignFolderID;EmailID;ListID">
+		</Mapping>
+	</Mapping>
+</Mappings>
+]]></attr>
+<attr name="namespaceBindings"><![CDATA[Smar=URN:SmartmailPRO]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="disabled" guiName="XMLExtract" guiX="46" guiY="-113" id="XMLEXTRACT2" schema="${DATA_GOODDATA_DIR}//SubscriberList.xsd" sourceUri="port:$0.response:discrete" type="XML_EXTRACT">
+<attr name="mapping"><![CDATA[<Mappings>
+	<Mapping element="{URN:SmartmailPRO}SubscriberList" outPort="0">
+		<Mapping element="{URN:SmartmailPRO}Subscriber" outPort="0"
+				xmlFields="{URN:SmartmailPRO}CreatedDate;{URN:SmartmailPRO}EmailAddress;{URN:SmartmailPRO}LastName;{URN:SmartmailPRO}ListId;{URN:SmartmailPRO}SubscriberId"
+				cloverFields="CreatedDate;Email;Name;ListID;SubscriberID">
+		</Mapping>
+	</Mapping>
+</Mappings>
+]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="REFORMAT3:0" guiBendpoints="" guiRouter="Manhattan" id="Edge31" inPort="Port 0 (in)" metadata="Metadata10" outPort="Port 0 (out)" toNode="TRASH:0"/>
+<Edge debugMode="true" fromNode="REST_EMAIL_LIST:0" guiBendpoints="" guiRouter="Manhattan" id="Edge10" inPort="Port 0 (input)" metadata="Metadata0" outPort="Port 0 (output)" toNode="XMLEXTRACT1:0"/>
+<Edge debugMode="true" fromNode="REST_SUBSCRIBERS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge29" inPort="Port 0 (input)" metadata="Metadata0" outPort="Port 0 (output)" toNode="XMLEXTRACT2:0"/>
+<Edge debugMode="true" fromNode="XMLEXTRACT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="CSV_WRITER:0"/>
+<Edge debugMode="true" fromNode="XMLEXTRACT2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge30" inPort="Port 0 (in)" metadata="Metadata5" outPort="Port 0 (out)" toNode="REFORMAT3:0"/>
+</Phase>
+<Phase number="1">
+<Node enabled="disabled" fileURL="${DATA_TMP_DIR}/EmailSearchResults.csv" guiName="CSV Reader" guiX="-237" guiY="197" id="CSV_READER" numRecords="30" skipSourceRows="15" type="DATA_READER"/>
+<Node enabled="disabled" fileURL="${DATA_TMP_DIR}/EmailSearchResults.csv" guiName="CSV Reader" guiX="-187" guiY="639" id="CSV_READER1" numRecords="30" skipSourceRows="15" type="DATA_READER"/>
+<Node enabled="disabled" fileURL="${DATA_SOURCE_DIR}/SMP_BrcResSearch.csv" guiName="CSV Writer" guiX="198" guiY="345" id="CSV_WRITER1" outputFieldNames="true" quotedStrings="true" type="DATA_WRITER"/>
+<Node enabled="disabled" fileURL="${DATA_TMP_DIR}/SMP_BroadcastEvents.xml" guiName="CSV Writer" guiX="735" guiY="595" id="CSV_WRITER2" type="DATA_WRITER"/>
+<Node enabled="disabled" fileURL="${DATA_TMP_DIR}/SMP_BroadcastResponse.xml" guiName="CSV Writer" guiX="703" guiY="151" id="CSV_WRITER3" type="DATA_WRITER"/>
+<Node enabled="disabled" fileURL="${DATA_SOURCE_DIR}/SMP_BrcEventsSearch.csv" guiName="CSV Writer" guiX="679" guiY="789" id="CSV_WRITER4" outputFieldNames="true" quotedStrings="true" type="DATA_WRITER"/>
+<Node enabled="passThrough" guiName="ExtFilter" guiX="-48" guiY="197" id="EXT_FILTER" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+$in.0.EmailID == '90971'
+
+OR
+$in.0.EmailID == '91271'
+
+OR
+$in.0.EmailID == '91260'
+]]></attr>
+</Node>
+<Node enabled="passThrough" guiName="ExtFilter" guiX="-16" guiY="641" id="EXT_FILTER1" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+$in.0.EmailID == '90971'
+
+OR
+$in.0.EmailID == '91271'
+
+OR
+$in.0.EmailID == '91260'
+]]></attr>
+</Node>
+<Node dataset="dataset.smartmail" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.smartmail&quot;,&quot;datasetTitle&quot;:&quot;Smart Mail&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.smartmail.emailname&quot;,&quot;title&quot;:&quot;Email Name&quot;,&quot;prettyId&quot;:&quot;attr_smartmail_emailname&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.smartmail.emailname&quot;,&quot;title&quot;:&quot;Email Name&quot;,&quot;prettyId&quot;:&quot;emailname&quot;,&quot;assignedMetadataField&quot;:&quot;EmailName&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.smartmail.emailname&quot;,&quot;title&quot;:&quot;Email Name&quot;,&quot;prettyId&quot;:&quot;emailname&quot;,&quot;assignedMetadataField&quot;:&quot;EmailName&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.campaign.campaignname&quot;,&quot;title&quot;:&quot;Campaign Name&quot;,&quot;prettyId&quot;:&quot;attr_campaign_campaignname&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignname&quot;,&quot;title&quot;:&quot;Campaign Name&quot;,&quot;prettyId&quot;:&quot;campaign__campaignname&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;CampaignName&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignname&quot;,&quot;title&quot;:&quot;Campaign Name&quot;,&quot;prettyId&quot;:&quot;campaign__campaignname&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;attr_client_clientid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;APAC_ClientID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;attr_customer_customerid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;customer__customerid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;SubscriberId&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;customer__customerid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;date.date&quot;,&quot;title&quot;:&quot;Date (Date)&quot;,&quot;prettyId&quot;:&quot;date&quot;,&quot;assignedMetadataField&quot;:&quot;Date&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.campaigncost&quot;,&quot;title&quot;:&quot;Email Clicks&quot;,&quot;prettyId&quot;:&quot;campaigncost&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;LinkClicks&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.smartmail.emailuniqueclicks&quot;,&quot;title&quot;:&quot;Email Unique Clicks&quot;,&quot;prettyId&quot;:&quot;emailuniqueclicks&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;UniqueLinkClicks&quot;}}],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="disabled" guiName="GD SMP" guiX="703" guiY="345" id="GD_SMP" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.website" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.website&quot;,&quot;datasetTitle&quot;:&quot;Website&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.website.we&quot;,&quot;title&quot;:&quot;Webpage URL&quot;,&quot;prettyId&quot;:&quot;attr_website_we&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.we&quot;,&quot;title&quot;:&quot;Webpage URL&quot;,&quot;prettyId&quot;:&quot;we&quot;,&quot;assignedMetadataField&quot;:&quot;WebURL&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.we&quot;,&quot;title&quot;:&quot;Webpage URL&quot;,&quot;prettyId&quot;:&quot;we&quot;,&quot;assignedMetadataField&quot;:&quot;WebURL&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.website.website&quot;,&quot;title&quot;:&quot;Website Name&quot;,&quot;prettyId&quot;:&quot;attr_website_website&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.website&quot;,&quot;title&quot;:&quot;Website Name&quot;,&quot;prettyId&quot;:&quot;website&quot;,&quot;assignedMetadataField&quot;:&quot;WebNamex2&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.website.websitepage&quot;,&quot;title&quot;:&quot;Webpage Name&quot;,&quot;prettyId&quot;:&quot;attr_website_websitepage&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.websitepage&quot;,&quot;title&quot;:&quot;Webpage Name&quot;,&quot;prettyId&quot;:&quot;websitepage&quot;,&quot;assignedMetadataField&quot;:&quot;WebName&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.website.websiteurl&quot;,&quot;title&quot;:&quot;Website URL&quot;,&quot;prettyId&quot;:&quot;attr_website_websiteurl&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.websiteurl&quot;,&quot;title&quot;:&quot;Website URL&quot;,&quot;prettyId&quot;:&quot;websiteurl&quot;,&quot;assignedMetadataField&quot;:&quot;WebURLx2&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="disabled" guiName="GD Website" guiX="900" guiY="819" id="GD_WEBSITE" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node enabled="disabled" guiName="LookupJoin" guiX="420" guiY="472" id="LOOKUP_JOIN" joinKey="EmailId" leftOuterJoin="true" lookupTable="LookupTable0" type="LOOKUP_JOIN">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.EmailName = $in.1.EmailName;
+	$out.0.APAC_ClientID = '${CUSTOMER_ID}';
+	$out.0.CampaignName = 'Email';
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="disabled" guiName="Reformat" guiX="302" guiY="200" id="REFORMAT" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.response = $in.0.response;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="disabled" guiName="Reformat" guiX="334" guiY="644" id="REFORMAT1" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.response = $in.0.response;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="disabled" guiName="Reformat" guiX="208" guiY="819" id="REFORMAT2" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.WebName = $in.0.LinkName;
+	string [] hostname;
+	
+	if ($in.0.LinkURL !=''){
+	hostname = split($in.0.LinkURL,'/');
+	$out.0.WebURL = chop(hostname[2],'www.');
+	} else $out.0.WebURL = null;
+	
+	//$out.0.WebNamex2 = $in.0.LinkName;
+	$out.0.WebURLx2 = $in.0.LinkURL;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node charset="UTF-8" ctlFunctionsSource="//#CTL2&#10;&#10;/**&#10; * Generates request parameters (usually page numbers, offsets, timestamps, signature hashes,etc.)&#10; * Called before each request.&#10; *&#10; * Last response is is only defined if iteration number is greater than one. Therefore, for the very first request&#10; * lastResponseStatus is 200, lastResponseHeaders and lastResponseBody are empty.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * inputEdgeRecord - contains fields of the input edge record&#10; * iterationNumber - starts at 1&#10; * lastResponseStatus - HTTP status of the previous request&#10; * lastResponseHeaders - HTTP headers of the previous request&#10; * lastResponseBody -  body of the previous request&#10; *&#10; * returns a map of params that can be used in the request URL&#10;**/&#10;function map[string, string] generateRequestParameters(map[string, string] inputEdgeRecord, integer iterationNumber, integer lastResponseStatus, map[string, string]lastResponseHeaders, string lastResponseBody) {&#10;&#10;    // Copy all input parameters into the request parameters map.&#10;    map[string, string] requestParams = inputEdgeRecord;&#10;&#10;    /**&#10;     *  PAGING&#10;     *&#10;     *  (Tip: comment/uncomment the code suitable for your use case)&#10;     **/&#10;&#10;    /** Using pages **/&#10;    requestParams[&quot;PAGE_NO&quot;] = toString(iterationNumber);&#10;&#10;    /** Using start offset and end offset **/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;END_OFFSET&quot;] = toString((iterationNumber * RECORDS_PER_PAGE) - 1);&#10;&#10;    /*** Using start offset and records count ***/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;RECORDS_PER_PAGE&quot;] = toString(RECORDS_PER_PAGE);&#10;&#10;    return requestParams;&#10;}&#10;&#10;/**&#10; * Determines the outcome of the response. Used for controlling the paging workflow and detecting errors.&#10; * Called after each request response.&#10; *&#10; * Default implementations returns &quot;DONE_WITH_OUTPUT&quot; to make one REST call and finish.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * responseStatus - response HTTP status&#10; * responseHeaders - response HTTP headers&#10; * responseBody -  response body&#10; *&#10; * returns&#10; *  CONTINUE - continue to next iteration (e.g., next page)&#10; *  DONE_NO_OUTPUT (default) - last iteration finished, no data will be sent to the output port for the last iteration (no data received from the last iteration)&#10; *  DONE_WITH_OUTPUT - last iteration finished, data will be sent to the output for the last iteration (data received from the last iteration)&#10; *  RETRY - retry the last failed request&#10; *  FATAL_ERROR - fatal error, aborts the HTTP connector run&#10;**/&#10;function string checkResponse(integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;    return &quot;DONE_WITH_OUTPUT&quot;;&#10;&#10;    // Example response handling&#10;    // if (responseStatus &gt;= 200  &amp;&amp;  responseStatus &lt; 300) {&#10;    //     return &quot;CONTINUE&quot;;&#10;    // }&#10;    // else if (responseStatus == 404) {&#10;    //     // HTTP status &quot;404 - NOT FOUND&quot; could mean there are no more pages or records&#10;    //     return &quot;DONE_NO_OUTPUT&quot;;&#10;    // }&#10;    // else if (responseStatus &gt;= 500 || responseBody.indexOf('{&quot;error&quot;: &quot;just a temporary error&quot;}') &gt; -1) {&#10;    //     // Internal server errors could be temporary (this sends the last response to the error output port)&#10;    //     return &quot;RETRY&quot;;&#10;    // }&#10;    // else {&#10;    //     // Otherwise abort the HTTP connector run (this sends the last response to the error output port)&#10;    //     return &quot;FATAL_ERROR&quot;;&#10;    // }&#10;}&#10;&#10;/**&#10; * Updates the request params before each request retry attempt if it failed previously.&#10; * Useful for resetting authorization parameter (signatures, tokens, etc.), updating timestamp, etc.&#10; *&#10; * Optional. When not defined, the request stays the same.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * failedRequestParams original parameters of request which failed and should be retried&#10; * retryNumber number of current retry, &quot;1&quot; for the first retry&#10; * lastResponseStatus - HTTP status of the failed request&#10; * lastResponseHeaders - HTTP headers of the failed request&#10; * lastResponseBody -  body of the failed request&#10; *&#10; * returns map of the modified params for the retry request&#10;**/&#10;function map[string, string] modifyRequestParamsBeforeRetryAttempt(map[string, string] failedRequestParams, integer retryNumber,&#10;        integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;&#10;    // Copy all the previous parameters into the retry request parameters map.&#10;    map[string, string] modifiedRequestParams = failedRequestParams;&#10;&#10;    /*** Modify the params of the request ***/&#10;&#10;    // Example of timestamp modification&#10;    // modifiedRequestParams[&quot;TIMESTAMP&quot;] = toString(date2long(today()));&#10;&#10;    return modifiedRequestParams;&#10;}" enabled="disabled" guiName="REST Events" guiX="150" guiY="641" id="REST_EVENTS" requestDelayInSeconds="5" requestMethod="POST" type="GENERIC_REST_CONNECTOR">
+<attr name="url"><![CDATA[http://api.smartmailpro.com/2.0/Email/BroadcastEvents/Search/]]></attr>
+<attr name="requestHeaders"><![CDATA[API-Key=${SMP_API_KEY}
+Cache-Control=no-cache
+Content-Type=text/json
+Host=api.smartmailpro.com
+]]></attr>
+<attr name="requestBody"><![CDATA[{ 	"ListId":${SMP_LIST_ID}, 
+	"EmailId":${EmailID},
+	"ResponseFrom":"\/Date(928106400000+1200)\/",
+	"Page":1,
+	"Limit":1000000
+ }]]></attr>
+</Node>
+<Node charset="UTF-8" ctlFunctionsSource="//#CTL2&#10;&#10;/**&#10; * Generates request parameters (usually page numbers, offsets, timestamps, signature hashes,etc.)&#10; * Called before each request.&#10; *&#10; * Last response is is only defined if iteration number is greater than one. Therefore, for the very first request&#10; * lastResponseStatus is 200, lastResponseHeaders and lastResponseBody are empty.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * inputEdgeRecord - contains fields of the input edge record&#10; * iterationNumber - starts at 1&#10; * lastResponseStatus - HTTP status of the previous request&#10; * lastResponseHeaders - HTTP headers of the previous request&#10; * lastResponseBody -  body of the previous request&#10; *&#10; * returns a map of params that can be used in the request URL&#10;**/&#10;function map[string, string] generateRequestParameters(map[string, string] inputEdgeRecord, integer iterationNumber, integer lastResponseStatus, map[string, string]lastResponseHeaders, string lastResponseBody) {&#10;&#10;    // Copy all input parameters into the request parameters map.&#10;    map[string, string] requestParams = inputEdgeRecord;&#10;&#10;    /**&#10;     *  PAGING&#10;     *&#10;     *  (Tip: comment/uncomment the code suitable for your use case)&#10;     **/&#10;&#10;    /** Using pages **/&#10;    requestParams[&quot;PAGE_NO&quot;] = toString(iterationNumber);&#10;&#10;    /** Using start offset and end offset **/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;END_OFFSET&quot;] = toString((iterationNumber * RECORDS_PER_PAGE) - 1);&#10;&#10;    /*** Using start offset and records count ***/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;RECORDS_PER_PAGE&quot;] = toString(RECORDS_PER_PAGE);&#10;&#10;    return requestParams;&#10;}&#10;&#10;/**&#10; * Determines the outcome of the response. Used for controlling the paging workflow and detecting errors.&#10; * Called after each request response.&#10; *&#10; * Default implementations returns &quot;DONE_WITH_OUTPUT&quot; to make one REST call and finish.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * responseStatus - response HTTP status&#10; * responseHeaders - response HTTP headers&#10; * responseBody -  response body&#10; *&#10; * returns&#10; *  CONTINUE - continue to next iteration (e.g., next page)&#10; *  DONE_NO_OUTPUT (default) - last iteration finished, no data will be sent to the output port for the last iteration (no data received from the last iteration)&#10; *  DONE_WITH_OUTPUT - last iteration finished, data will be sent to the output for the last iteration (data received from the last iteration)&#10; *  RETRY - retry the last failed request&#10; *  FATAL_ERROR - fatal error, aborts the HTTP connector run&#10;**/&#10;function string checkResponse(integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;    return &quot;DONE_WITH_OUTPUT&quot;;&#10;&#10;    // Example response handling&#10;    // if (responseStatus &gt;= 200  &amp;&amp;  responseStatus &lt; 300) {&#10;    //     return &quot;CONTINUE&quot;;&#10;    // }&#10;    // else if (responseStatus == 404) {&#10;    //     // HTTP status &quot;404 - NOT FOUND&quot; could mean there are no more pages or records&#10;    //     return &quot;DONE_NO_OUTPUT&quot;;&#10;    // }&#10;    // else if (responseStatus &gt;= 500 || responseBody.indexOf('{&quot;error&quot;: &quot;just a temporary error&quot;}') &gt; -1) {&#10;    //     // Internal server errors could be temporary (this sends the last response to the error output port)&#10;    //     return &quot;RETRY&quot;;&#10;    // }&#10;    // else {&#10;    //     // Otherwise abort the HTTP connector run (this sends the last response to the error output port)&#10;    //     return &quot;FATAL_ERROR&quot;;&#10;    // }&#10;}&#10;&#10;/**&#10; * Updates the request params before each request retry attempt if it failed previously.&#10; * Useful for resetting authorization parameter (signatures, tokens, etc.), updating timestamp, etc.&#10; *&#10; * Optional. When not defined, the request stays the same.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * failedRequestParams original parameters of request which failed and should be retried&#10; * retryNumber number of current retry, &quot;1&quot; for the first retry&#10; * lastResponseStatus - HTTP status of the failed request&#10; * lastResponseHeaders - HTTP headers of the failed request&#10; * lastResponseBody -  body of the failed request&#10; *&#10; * returns map of the modified params for the retry request&#10;**/&#10;function map[string, string] modifyRequestParamsBeforeRetryAttempt(map[string, string] failedRequestParams, integer retryNumber,&#10;        integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;&#10;    // Copy all the previous parameters into the retry request parameters map.&#10;    map[string, string] modifiedRequestParams = failedRequestParams;&#10;&#10;    /*** Modify the params of the request ***/&#10;&#10;    // Example of timestamp modification&#10;    // modifiedRequestParams[&quot;TIMESTAMP&quot;] = toString(date2long(today()));&#10;&#10;    return modifiedRequestParams;&#10;}" enabled="disabled" guiName="REST Response" guiX="118" guiY="197" id="REST_RESPONSE" requestDelayInSeconds="5" requestMethod="POST" type="GENERIC_REST_CONNECTOR">
+<attr name="url"><![CDATA[http://api.smartmailpro.com/2.0/Email/BroadcastResponses/Search/]]></attr>
+<attr name="requestHeaders"><![CDATA[API-Key=${SMP_API_KEY}
+Cache-Control=no-cache
+Content-Type=text/json
+Host=api.smartmailpro.com
+]]></attr>
+<attr name="requestBody"><![CDATA[{ 	"ListId":${SMP_LIST_ID}, 
+	"EmailId":${EmailID},
+	"ResponseFrom":"\/Date(928106400000+1200)\/",
+	"Page":1,
+	"Limit":1000000
+ }]]></attr>
+</Node>
+<Node enabled="disabled" guiName="SimpleCopy" guiX="474" guiY="197" id="SIMPLE_COPY1" type="SIMPLE_COPY"/>
+<Node enabled="disabled" guiName="SimpleCopy" guiX="506" guiY="641" id="SIMPLE_COPY2" type="SIMPLE_COPY"/>
+<Node enabled="disabled" guiName="Trash" guiX="511" guiY="819" id="TRASH1" type="TRASH"/>
+<Node enabled="disabled" guiName="Trash" guiX="-9" guiY="499" id="TRASH2" type="TRASH"/>
+<Node charset="UTF-8" enabled="disabled" guiName="XMLExtract" guiX="-63" guiY="345" id="XMLEXTRACT3" schema="${DATA_GOODDATA_DIR}//BroadcastResponseList.xsd" sourceUri="port:$0.response:discrete" type="XML_EXTRACT">
+<attr name="mapping"><![CDATA[<Mappings>
+	<Mapping element="Smar:BroadcastResponseList">
+		<Mapping element="Smar:BroadcastResponse" outPort="0"
+				xmlFields="{URN:SmartmailPRO}Accepted;{URN:SmartmailPRO}AcceptedTimeUtc;{URN:SmartmailPRO}AccountUnsubscribes;{URN:SmartmailPRO}AppClicks;{URN:SmartmailPRO}BroadcastEmailId;{URN:SmartmailPRO}BroadcastId;{URN:SmartmailPRO}EmailAddress;{URN:SmartmailPRO}EmailId;{URN:SmartmailPRO}FBLUnsubscribes;{URN:SmartmailPRO}HardBounces;{URN:SmartmailPRO}LastAccountUnsubscribeTimeUtc;{URN:SmartmailPRO}LastAppClickTimeUtc;{URN:SmartmailPRO}LastFBLUnsubscribeTimeUtc;{URN:SmartmailPRO}LastHardBounceTimeUtc;{URN:SmartmailPRO}LastLinkClickTimeUtc;{URN:SmartmailPRO}LastListUnsubscribeTimeUtc;{URN:SmartmailPRO}LastRenderTimeUtc;{URN:SmartmailPRO}LastSoftBounceTimeUtc;{URN:SmartmailPRO}LinkClicks;{URN:SmartmailPRO}ListUnsubscribes;{URN:SmartmailPRO}Renders;{URN:SmartmailPRO}SoftBounces;{URN:SmartmailPRO}SubscriberId;{URN:SmartmailPRO}SubscriberKey;{URN:SmartmailPRO}UniqueAppClicks;{URN:SmartmailPRO}UniqueLinkClicks"
+				cloverFields="Accepted;AcceptedTimeUtc;AccountUnsubscribes;AppClicks;BroadcastEmailId;BroadcastId;EmailAddress;EmailId;FBLUnsubscribes;HardBounces;LastAccountUnsubscribeTimeUtc;LastAppClickTimeUtc;LastFBLUnsubscribeTimeUtc;LastHardBounceTimeUtc;LastLinkClickTimeUtc;LastListUnsubscribeTimeUtc;LastRenderTimeUtc;LastSoftBounceTimeUtc;LinkClicks;ListUnsubscribes;Renders;SoftBounces;SubscriberId;SubscriberKey;UniqueAppClicks;UniqueLinkClicks">
+		</Mapping>
+	</Mapping>
+</Mappings>
+]]></attr>
+<attr name="namespaceBindings"><![CDATA[Smar=URN:SmartmailPRO]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="disabled" guiName="XMLExtract" guiX="-31" guiY="789" id="XMLEXTRACT4" schema="${DATA_GOODDATA_DIR}//BroadcastEventList.xsd" sourceUri="port:$0.response:discrete" type="XML_EXTRACT">
+<attr name="mapping"><![CDATA[<Mappings>
+	<Mapping element="Smar:BroadcastEventList">
+		<Mapping element="Smar:BroadcastEvent" outPort="0"
+				xmlFields="{URN:SmartmailPRO}AppClickDescription;{URN:SmartmailPRO}AppClickIPAddress;{URN:SmartmailPRO}AppClickType;{URN:SmartmailPRO}BroadcastId;{URN:SmartmailPRO}EmailAddress;{URN:SmartmailPRO}EventTimeUtc;{URN:SmartmailPRO}EventType;{URN:SmartmailPRO}HardBounceClass;{URN:SmartmailPRO}HardBounceMsg;{URN:SmartmailPRO}LinkClickTimeUtc;{URN:SmartmailPRO}LinkName;{URN:SmartmailPRO}LinkUrl;{URN:SmartmailPRO}OpenUserAgent;{URN:SmartmailPRO}SubscriberId;{URN:SmartmailPRO}SubscriberKey"
+				cloverFields="AppClickDescription;AppClickIPAddress;AppClickType;BroadcastId;EmailAddress;EventTimeUtc;EventType;HardBounceClass;HardBounceMsg;LinkClickTimeUtc;LinkName;LinkURL;OpenUserAgent;SubscriberId;SubscriberKey">
+		</Mapping>
+	</Mapping>
+</Mappings>
+]]></attr>
+<attr name="namespaceBindings"><![CDATA[Smar=URN:SmartmailPRO]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="CSV_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (output)" toNode="EXT_FILTER:0"/>
+<Edge debugMode="true" fromNode="CSV_READER1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge21" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (output)" toNode="EXT_FILTER1:0"/>
+<Edge debugMode="true" fromNode="EXT_FILTER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge8" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (accepted)" toNode="REST_RESPONSE:0"/>
+<Edge debugMode="true" fromNode="EXT_FILTER1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge23" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (accepted)" toNode="REST_EVENTS:0"/>
+<Edge debugMode="true" fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="SIMPLE_COPY1:0"/>
+<Edge debugMode="true" fromNode="REFORMAT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge25" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="SIMPLE_COPY2:0"/>
+<Edge debugMode="true" fromNode="REFORMAT2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge28" inPort="Port 0 (in)" metadata="Metadata9" outPort="Port 0 (out)" toNode="TRASH1:0"/>
+<Edge debugMode="true" fromNode="REST_EVENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge19" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (output)" toNode="REFORMAT1:0"/>
+<Edge debugMode="true" fromNode="REST_RESPONSE:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (output)" toNode="REFORMAT:0"/>
+<Edge fromNode="SIMPLE_COPY1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge14" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="CSV_WRITER3:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY1:1" guiBendpoints="" guiRouter="Manhattan" id="Edge15" inPort="Port 0 (input)" metadata="Metadata0" outPort="Port 1 (out)" toNode="XMLEXTRACT3:0"/>
+<Edge fromNode="SIMPLE_COPY2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge24" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="CSV_WRITER2:0"/>
+<Edge fromNode="SIMPLE_COPY2:1" guiBendpoints="" guiRouter="Manhattan" id="Edge27" inPort="Port 0 (input)" metadata="Metadata0" outPort="Port 1 (out)" toNode="XMLEXTRACT4:0"/>
+<Edge debugMode="true" fromNode="XMLEXTRACT3:0" guiBendpoints="" guiRouter="Manhattan" id="Edge12" inPort="Port 0 (in)" metadata="Metadata6" outPort="Port 0 (out)" toNode="CSV_WRITER1:0"/>
+<Edge debugMode="true" fromNode="XMLEXTRACT4:0" guiBendpoints="" guiRouter="Manhattan" id="Edge26" inPort="Port 0 (in)" metadata="Metadata8" outPort="Port 0 (out)" toNode="CSV_WRITER4:0"/>
+</Phase>
+</Graph>

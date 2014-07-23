@@ -1,0 +1,5 @@
+Code,Definition
+-1,Subscriber hasn't been involved in any Broadcasts
+0,Subscriber has no bounces
+1,The last Subscriber's bounce is soft
+2,The last Subscriber's bounce is hard

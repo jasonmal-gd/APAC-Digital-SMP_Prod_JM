@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Mon Jul 14 13:35:39 EST 2014" guiVersion="3.4.4.P" id="1405309004807" licenseType="Commercial" modified="Thu Jul 17 11:13:51 EST 2014" modifiedBy="icognosexpress" name="~Main" revision="1.29" showComponentDetails="true">
+<Global>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="405" id="Note0" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="GA Control Panel Daily" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="695" x="95" y="132">
+<attr name="text"><![CDATA[Update GA Start and End parameters to YESTERDAY ]]></attr>
+</Note>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="212" id="Note1" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="AdWords Control Panel Daily" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="602" x="123" y="565"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="339" id="Note2" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="SMP Control Panel Daily" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="646" x="101" y="822"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="277" id="Note3" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="GA &amp; Magento &amp; Campaign Control Panel Daily" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="581" x="95" y="1197"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="204" id="Note4" textColorB="0" textColorG="0" textColorR="0" textFontSize="8" title="Load New Client Daily" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="10" width="357" x="294" y="-116">
+<attr name="text"><![CDATA[Take Client's parameters from Schedulers]]></attr>
+</Note>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Daily_SMP_0_EmailSearch.grf" guiName="RunGraph" guiX="167" guiY="902" id="RUN_GRAPH10" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/GA_DataPull.grf" guiName="RunGraph" guiX="183" guiY="255" id="RUN_GRAPH3" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Clients.grf" guiName="RunGraph" guiX="409" guiY="-34" id="RUN_GRAPH8" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/0_DAILY_AdWords.grf" guiName="RunGraph" guiX="443" guiY="641" id="RUN_GRAPH9" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="1">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/SMP_1_BrcResSearch.grf" guiName="RunGraph" guiX="350" guiY="902" id="RUN_GRAPH11" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/SMP_2_BrcEveSearch.grf" guiName="RunGraph" guiX="548" guiY="902" id="RUN_GRAPH12" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Daily_GA.grf" guiName="RunGraph" guiX="415" guiY="273" id="RUN_GRAPH4" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Daily_GA_Records.grf" guiName="RunGraph" guiX="578" guiY="267" id="RUN_GRAPH5" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Daily_GA_Product.grf" guiName="RunGraph" guiX="415" guiY="400" id="RUN_GRAPH6" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Daily_GA_ProductCAT.grf" guiName="RunGraph" guiX="578" guiY="400" id="RUN_GRAPH7" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="2">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Daily_SMP_Customers.grf" guiName="RunGraph" guiX="105" guiY="1055" id="RUN_GRAPH" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Daily_SMP_Messages.grf" guiName="RunGraph" guiX="280" guiY="1055" id="RUN_GRAPH1" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Daily_SMP_MessagesEvent.grf" guiName="RunGraph" guiX="472" guiY="1055" id="RUN_GRAPH2" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="4">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Daily_Campaigns.grf" guiName="RunGraph" guiX="367" guiY="1311" id="RUN_GRAPH13" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/Daily_Orders.grf" guiName="RunGraph" guiX="153" guiY="1311" id="RUN_GRAPH14" type="RUN_GRAPH"/>
+</Phase>
+</Graph>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="|" label="AAU_adwords_Daily_data.csv" name="GD_Adwords" previewAttachmentCharset="ISO-8859-1" quoteChar="both" quotedStrings="false" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field label="Campaign ID" name="Campaign_ID" type="string"/>
+<Field label="Account ID" name="Account_ID" type="string"/>
+<Field format="yyyy-MM-dd" label="Day" name="Day" type="date"/>
+<Field label="Campaign" name="Campaign" type="string"/>
+<Field format="#.#%" label="Search Exact match IS" name="Search_Exact_match_IS" type="number"/>
+<Field label="Impressions" name="Impressions" type="number"/>
+<Field label="Clicks" name="Clicks" type="number"/>
+<Field format="#.#" label="Total cost" name="Total_cost" type="number"/>
+<Field eofAsDelimiter="false" format="#.#" label="Avg. position" name="Avg_position" type="number"/>
+<Field name="Client" type="string"/>
+<Field name="Campaignx2" type="string"/>
+</Record>

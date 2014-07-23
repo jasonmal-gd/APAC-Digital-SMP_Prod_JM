@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="URN:SmartmailPRO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EmailList" type="urn:EmailListType" xmlns:urn="URN:SmartmailPRO"/>
+  <xs:complexType name="EmailType">
+    <xs:sequence>
+      <xs:element name="CampaignFolderId">
+        <xs:simpleType>
+          <xs:restriction base="xs:short">
+            <xs:enumeration value="7421"/>
+            <xs:enumeration value="7890"/>
+            <xs:enumeration value="8192"/>
+            <xs:enumeration value="7924"/>
+            <xs:enumeration value="8480"/>
+            <xs:enumeration value="8737"/>
+            <xs:enumeration value="8990"/>
+            <xs:enumeration value="9456"/>
+            <xs:enumeration value="9785"/>
+            <xs:enumeration value="11608"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="CustomData" nillable="true"/>
+      <xs:element type="xs:int" name="EmailId"/>
+      <xs:element type="xs:string" name="EmailName"/>
+      <xs:element name="FromAddressId">
+        <xs:simpleType>
+          <xs:restriction base="xs:short">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="5525"/>
+            <xs:enumeration value="5565"/>
+            <xs:enumeration value="5486"/>
+            <xs:enumeration value="5337"/>
+            <xs:enumeration value="5567"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="FromName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=""/>
+            <xs:enumeration value="Cellarmaster Wines"/>
+            <xs:enumeration value="{merge:{field:ReferrerEmail}}"/>
+            <xs:enumeration value="Orders Cellarmaster Wines"/>
+            <xs:enumeration value="{merge:{field:ReferrerEmail}}@e.cellarmasterwines.com"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="HTMLContent" nillable="true"/>
+      <xs:element type="xs:short" name="ListId"/>
+      <xs:element name="ReplyAddressId">
+        <xs:simpleType>
+          <xs:restriction base="xs:short">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="4942"/>
+            <xs:enumeration value="4975"/>
+            <xs:enumeration value="4902"/>
+            <xs:enumeration value="4754"/>
+            <xs:enumeration value="5044"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Sent">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false"/>
+            <xs:enumeration value="true"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="Subject"/>
+      <xs:element name="TemplateId">
+        <xs:simpleType>
+          <xs:restriction base="xs:short">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="5930"/>
+            <xs:enumeration value="5945"/>
+            <xs:enumeration value="6080"/>
+            <xs:enumeration value="6082"/>
+            <xs:enumeration value="6130"/>
+            <xs:enumeration value="6119"/>
+            <xs:enumeration value="6654"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="TextContent" nillable="true"/>
+      <xs:element type="xs:string" name="SentDateUTC" nillable="true"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EmailListType">
+    <xs:sequence>
+      <xs:element type="urn:EmailType" name="Email" maxOccurs="unbounded" minOccurs="0" xmlns:urn="URN:SmartmailPRO"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="," label="SMP_BrCastLookUp.csv" name="SMP_BrCastLookUp_csv" previewAttachment="${DATA_SOURCE_DIR}/SMP_BrCastLookUp.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="both" quotedStrings="false" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="Code" type="string"/>
+<Field eofAsDelimiter="false" name="Definition" type="string"/>
+</Record>

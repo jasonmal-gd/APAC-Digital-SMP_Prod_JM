@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Wed Jul 09 13:35:15 EST 2014" guiVersion="3.4.4.P" id="1405064618167" licenseType="Commercial" modified="Fri Jul 11 18:10:27 EST 2014" modifiedBy="macmac" name="Test" revision="1.11" showComponentDetails="true">
+<Global>
+<Metadata id="UDR_ErrorPort">
+<Record fieldDelimiter="|" name="CSV_Reader_ErrorPort" recordDelimiter="\n" type="delimited">
+<Field name="recordNo" type="long"/>
+<Field name="fieldNo" type="integer"/>
+<Field name="originalData" type="string"/>
+<Field name="errorMessage" type="string"/>
+<Field name="fileURL" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0" previewAttachmentCharset="UTF-8">
+<Record fieldDelimiter="|" name="SMP_BroadcastEvents" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="AppClickDescription" type="string"/>
+<Field name="AppClickIPAddress" type="string"/>
+<Field name="AppClickType" type="integer"/>
+<Field name="BroadcastId" type="string"/>
+<Field name="EmailAddress" type="string"/>
+<Field name="EventTimeUtc" type="date"/>
+<Field name="EventType" type="integer"/>
+<Field name="HardBounceClass" type="integer"/>
+<Field name="HardBounceMsg" type="string"/>
+<Field name="LinkClickTimeUtc" type="date"/>
+<Field name="LinkName" type="string"/>
+<Field name="LinkURL" type="string"/>
+<Field name="OpenUserAgent" type="string"/>
+<Field name="SubscriberId" type="integer"/>
+<Field name="SubscriberKey" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1" previewAttachmentCharset="UTF-8">
+<Record fieldDelimiter="|" name="SMP_BroadcastResponse" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="Accepted" type="boolean"/>
+<Field name="AcceptedTimeUtc" type="date"/>
+<Field name="AccountUnsubscribes" type="integer"/>
+<Field name="AppClicks" type="integer"/>
+<Field name="BroadcastEmailId" type="string"/>
+<Field name="BroadcastId" type="string"/>
+<Field name="EmailId" type="string"/>
+<Field name="EmailAddress" type="string"/>
+<Field name="FBLUnsubscribes" type="integer"/>
+<Field name="HardBounces" type="integer"/>
+<Field name="LastAccountUnsubscribeTimeUtc" type="date"/>
+<Field name="LastAppClickTimeUtc" type="date"/>
+<Field name="LastFBLUnsubscribeTimeUtc" type="date"/>
+<Field name="LastHardBounceTimeUtc" type="date"/>
+<Field name="LastLinkClickTimeUtc" type="date"/>
+<Field name="LastListUnsubscribeTimeUtc" type="date"/>
+<Field name="LastRenderTimeUtc" type="date"/>
+<Field name="LastSoftBounceTimeUtc" type="date"/>
+<Field name="LinkClicks" type="integer"/>
+<Field name="ListUnsubscribes" type="integer"/>
+<Field name="Renders" type="integer"/>
+<Field name="SoftBounces" type="integer"/>
+<Field name="SubscriberId" type="string"/>
+<Field name="SubscriberKey" type="string"/>
+<Field name="UniqueAppClicks" type="integer"/>
+<Field name="UniqueLinkClicks" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="SMP_GD_MsgEvents" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="AppClickDescription" type="string"/>
+<Field name="AppClickIPAddress" type="string"/>
+<Field name="AppClickType" type="integer"/>
+<Field name="BroadcastId" type="string"/>
+<Field name="EmailAddress" type="string"/>
+<Field name="EventTimeUtc" type="date"/>
+<Field name="EventType" type="integer"/>
+<Field name="HardBounceClass" type="integer"/>
+<Field name="HardBounceMsg" type="string"/>
+<Field name="LinkClickTimeUtc" type="date"/>
+<Field name="LinkName" type="string"/>
+<Field name="LinkURL" type="string"/>
+<Field name="OpenUserAgent" type="string"/>
+<Field name="SubscriberId" type="integer"/>
+<Field name="SubscriberKey" type="integer"/>
+<Field name="EmailId" type="string"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<LookupTable charset="UTF-8" id="LookupTable0" initialSize="512" key="BroadcastId" keyDuplicates="true" metadata="Metadata1" name="EmailIDLookUp" type="simpleLookup"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="100" id="Note0" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="New note" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="100" x="580" y="20">
+<attr name="text"><![CDATA[Cannot Join on Broadcast ID]]></attr>
+</Note>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node dataPolicy="controlled" enabled="enabled" fileURL="${DATA_SOURCE_DIR}/SMP_BrcResponse.csv" guiName="CSV Reader" guiX="103" guiY="373" id="CSV_READER" quotedStrings="true" type="DATA_READER"/>
+<Node dataPolicy="controlled" enabled="enabled" fileURL="${DATA_SOURCE_DIR}/SMP_BrcEventsSearch.csv" guiName="CSV Reader" guiX="154" guiY="104" id="CSV_READER1" quotedStrings="true" trim="true" type="DATA_READER"/>
+<Node enabled="disabled" guiName="ExtHashJoin" guiX="603" guiY="193" id="EXT_HASH_JOIN" joinKey="$BroadcastId=$BroadcastId" joinType="inner" type="EXT_HASH_JOIN">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.EmailId = $in.1.EmailId;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="disabled" guiName="LookupJoin" guiX="603" guiY="425" id="LOOKUP_JOIN" joinKey="BroadcastId" leftOuterJoin="true" lookupTable="LookupTable0" type="LOOKUP_JOIN">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.EmailId = $in.1.EmailId;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Trash" guiX="807" guiY="302" id="TRASH" type="TRASH"/>
+<Node enabled="enabled" guiName="Trash" guiX="396" guiY="385" id="TRASH1" type="TRASH"/>
+<Node enabled="enabled" guiName="Trash" guiX="338" guiY="501" id="TRASH2" type="TRASH"/>
+<Node enabled="enabled" guiName="Trash" guiX="269" guiY="267" id="TRASH3" type="TRASH"/>
+<Node enabled="disabled" guiName="Trash" guiX="822" guiY="460" id="TRASH4" type="TRASH"/>
+<Edge debugMode="true" fromNode="CSV_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 1 (slave)" metadata="Metadata1" outPort="Port 0 (output)" toNode="EXT_HASH_JOIN:1"/>
+<Edge debugMode="true" fromNode="CSV_READER:1" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="UDR_ErrorPort" outPort="Port 1 (logs)" toNode="TRASH2:0"/>
+<Edge debugMode="true" fromNode="CSV_READER1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (driver)" metadata="Metadata0" outPort="Port 0 (output)" toNode="EXT_HASH_JOIN:0"/>
+<Edge debugMode="true" fromNode="CSV_READER1:1" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="UDR_ErrorPort" outPort="Port 1 (logs)" toNode="TRASH3:0"/>
+<Edge debugMode="true" fromNode="EXT_HASH_JOIN:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="TRASH:0"/>
+<Edge debugMode="true" fromNode="LOOKUP_JOIN:1" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 1 (skipped records)" toNode="TRASH4:0"/>
+</Phase>
+</Graph>

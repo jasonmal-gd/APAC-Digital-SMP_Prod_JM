@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Wed May 21 09:53:46 EST 2014" guiVersion="3.4.4.P" id="1400720968823" licenseType="Commercial" modified="Mon Jul 21 14:58:02 EST 2014" modifiedBy="macmac" name="GA_Data" revision="1.120" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata2" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="API1" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field format="yyyyMMdd" name="date" type="date"/>
+<Field name="sourcemedium" type="string"/>
+<Field name="campaign" type="string"/>
+<Field name="deviceCategory" type="string"/>
+<Field name="pagetitle" type="string"/>
+<Field name="pagepath" type="string"/>
+<Field name="hostname" type="string"/>
+<Field name="Users" type="number"/>
+<Field name="Sessions" type="number"/>
+<Field name="bounces" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="API2" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field format="yyyyMMdd" name="date" type="date"/>
+<Field name="sourcemedium" type="string"/>
+<Field name="campaign" type="string"/>
+<Field name="Productname" type="string"/>
+<Field name="ProductCategory" type="string"/>
+<Field name="transactionId" type="string"/>
+<Field name="productSku" type="string"/>
+<Field name="itemQuantity" type="number"/>
+<Field name="itemRevenue" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata4" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="API3" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field format="yyyyMMdd" name="date" type="date"/>
+<Field name="sourcemedium" type="string"/>
+<Field name="campaign" type="string"/>
+<Field name="goal1completions" type="number"/>
+<Field name="goal2completions" type="number"/>
+<Field name="goal3completions" type="number"/>
+<Field name="goal4completions" type="number"/>
+<Field name="goal5completions" type="number"/>
+<Field name="goal6completions" type="number"/>
+<Field name="goal7completions" type="number"/>
+<Field name="goal8completions" type="number"/>
+<Field name="goal9completions" type="number"/>
+<Field name="goal10completions" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata5" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="API4" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field format="yyyyMMdd" name="date" type="date"/>
+<Field name="sourcemedium" type="string"/>
+<Field name="campaign" type="string"/>
+<Field name="goal11completions" type="number"/>
+<Field name="goal12completions" type="number"/>
+<Field name="goal13completions" type="number"/>
+<Field name="goal14completions" type="number"/>
+<Field name="goal15completions" type="number"/>
+<Field name="goal16completions" type="number"/>
+<Field name="goal17completions" type="number"/>
+<Field name="goal18completions" type="number"/>
+<Field name="goal19completions" type="number"/>
+<Field name="goal20completions" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata7" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="GA_Upload" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field format="yyyyMMdd" name="date" type="date"/>
+<Field name="sourcemedium" type="string"/>
+<Field name="campaign" type="string"/>
+<Field name="Productname" type="string"/>
+<Field name="ProductCategory" type="string"/>
+<Field name="transactionId" type="string"/>
+<Field name="productSku" type="string"/>
+<Field name="itemQuantity" type="number"/>
+<Field name="itemRevenue" type="number"/>
+<Field name="deviceCategory" type="string"/>
+<Field name="pagetitle" type="string"/>
+<Field name="pagepath" type="string"/>
+<Field name="hostname" type="string"/>
+<Field name="Users" type="number"/>
+<Field name="Sessions" type="number"/>
+<Field name="bounces" type="number"/>
+<Field name="goal11completions" type="number"/>
+<Field name="goal12completions" type="number"/>
+<Field name="goal13completions" type="number"/>
+<Field name="goal14completions" type="number"/>
+<Field name="goal15completions" type="number"/>
+<Field name="goal16completions" type="number"/>
+<Field name="goal17completions" type="number"/>
+<Field name="goal18completions" type="number"/>
+<Field name="goal19completions" type="number"/>
+<Field name="goal20completions" type="number"/>
+<Field name="goal1completions" type="number"/>
+<Field name="goal2completions" type="number"/>
+<Field name="goal3completions" type="number"/>
+<Field name="goal4completions" type="number"/>
+<Field name="goal5completions" type="number"/>
+<Field name="goal6completions" type="number"/>
+<Field name="goal7completions" type="number"/>
+<Field name="goal8completions" type="number"/>
+<Field name="goal9completions" type="number"/>
+<Field name="goal10completions" type="number"/>
+<Field name="APAC_ClientID" type="string"/>
+<Field name="GA_ProfileID" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata8" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="GD_Campaign" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="campaign" type="string"/>
+<Field name="CampaignType" type="string"/>
+<Field name="CampaignMsg" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata10">
+<Record fieldDelimiter="|" name="GD_Client" recordDelimiter="\n" type="delimited">
+<Field name="GA_ProfileID" type="string"/>
+<Field name="APAC_ClientID" type="string"/>
+<Field name="GAdWordsID" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata13" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="GD_Order2" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="transactionId" type="string"/>
+<Field name="OrderState" type="string"/>
+<Field name="OrderStatus" type="string"/>
+<Field name="GST" type="number"/>
+<Field name="ShippingAmount" type="number"/>
+<Field name="TotalPaid" type="number"/>
+<Field name="TotalQuantity" type="number"/>
+<Field name="TotalRefund" type="number"/>
+<Field format="yyyyMMdd" name="date" type="date"/>
+<Field name="campaign" type="string"/>
+<Field name="APAC_ClientID" type="string"/>
+<Field name="APAC_CustomerID" type="string"/>
+<Field name="productSku" type="string"/>
+<Field name="CartID" type="string"/>
+<Field name="hostname" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata11" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="GD_Product" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="Productname" type="string"/>
+<Field name="ProductCategory" type="string"/>
+<Field name="ProductSet" type="string"/>
+<Field name="productSku" type="string"/>
+<Field name="ProductCategoryKey" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata9">
+<Record fieldDelimiter="|" name="GD_Website" recordDelimiter="\n" type="delimited">
+<Field name="WebName" type="string"/>
+<Field name="WebURL" type="string"/>
+<Field name="WebNamex2" type="string"/>
+<Field name="WebURLx2" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="Response" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="response" type="string"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="false" folded="false" height="237" id="Note1" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="Test Demo" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="920" x="-399" y="1809"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="1538" id="Note2" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="Loading GA, Product, Campaign, Client and Website datasets " titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="1773" x="-783" y="70"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node charset="UTF-8" enabled="disabled" fileURL="port:$0.response:discrete" guiName="API2" guiX="116" guiY="1839" id="API5" type="JSON_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<Context xpath="root/object">
+	   <Context xpath="rows" outPort="0">
+	    <Mapping xpath="rows[1]" cloverField="date"/>
+		<Mapping xpath="rows[2]" cloverField="sourcemedium"/>
+		<Mapping xpath="rows[3]" cloverField="campaign"/>
+		<Mapping xpath="rows[4]" cloverField="Productname"/>
+		<Mapping xpath="rows[5]" cloverField="ProductCategory"/>
+		<Mapping xpath="rows[6]" cloverField="transactionId"/>
+		<Mapping xpath="rows[7]" cloverField="productSku"/>
+		<Mapping xpath="rows[8]" cloverField="itemQuantity"/>
+		<Mapping xpath="rows[9]" cloverField="itemRevenue"/>
+	   </Context>
+	</Context>]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATA_TRANSFORM_DIR}/GA_HistoricalData${GA_START}--${GA_END}.csv" guiName="CSV Writer" guiX="-30" guiY="417" id="CSV_WRITER" outputFieldNames="true" type="DATA_WRITER"/>
+<Node enabled="disabled" fileURL="${DATA_GOODDATA_DIR}/Out.jcsv" guiName="CSV Writer" guiX="393" guiY="1883" id="CSV_WRITER1" outputFieldNames="true" type="DATA_WRITER"/>
+<Node enabled="disabled" fileURL="${DATA_GOODDATA_DIR}/test.json" guiName="CSV Writer" guiX="77" guiY="1951" id="CSV_WRITER3" type="DATA_WRITER"/>
+<Node enabled="enabled" guiName="DataGenerator" guiX="190" guiY="222" id="DATA_GENERATOR" recordsNumber="1" type="DATA_GENERATOR">
+<attr name="generate"><![CDATA[//#CTL2
+
+// Generates output record.
+function integer generate() {
+		$out.0.GA_ProfileID ='${GA_PROFILE_ID}';
+		$out.0.APAC_ClientID = '${CLIENT_ID}';
+		$out.0.GAdWordsID = '${GAW_CUSTOMER_ID}';
+		
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the generate. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if generate() throws an exception.
+// function integer generateOnError(string errorMessage, string stackTrace) {
+// }
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node dataset="dataset.campaign" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.campaign&quot;,&quot;datasetTitle&quot;:&quot;Campaign&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.campaign.campaignname&quot;,&quot;title&quot;:&quot;Campaign Name&quot;,&quot;prettyId&quot;:&quot;attr_campaign_campaignname&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignname&quot;,&quot;title&quot;:&quot;Campaign Name&quot;,&quot;prettyId&quot;:&quot;campaignname&quot;,&quot;assignedMetadataField&quot;:&quot;campaign&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.campaign.campaigntype&quot;,&quot;title&quot;:&quot;Campaign Type&quot;,&quot;prettyId&quot;:&quot;attr_campaign_campaigntype&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaigntype&quot;,&quot;title&quot;:&quot;Campaign Type&quot;,&quot;prettyId&quot;:&quot;campaigntype&quot;,&quot;assignedMetadataField&quot;:&quot;CampaignType&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaigntype&quot;,&quot;title&quot;:&quot;Campaign Type&quot;,&quot;prettyId&quot;:&quot;campaigntype&quot;,&quot;assignedMetadataField&quot;:&quot;CampaignType&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.campaign.message&quot;,&quot;title&quot;:&quot;Campaign Message&quot;,&quot;prettyId&quot;:&quot;attr_campaign_message&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.message&quot;,&quot;title&quot;:&quot;Campaign Message&quot;,&quot;prettyId&quot;:&quot;message&quot;,&quot;assignedMetadataField&quot;:&quot;CampaignMsg&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD Campaign" guiX="424" guiY="342" id="GD_CAMPAIGN" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.client" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.client&quot;,&quot;datasetTitle&quot;:&quot;Client&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.adwordsaccountid&quot;,&quot;title&quot;:&quot;Adwords Account ID&quot;,&quot;prettyId&quot;:&quot;attr_client_adwordsaccountid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.adwordsaccountid&quot;,&quot;title&quot;:&quot;Adwords Account ID&quot;,&quot;prettyId&quot;:&quot;adwordsaccountid&quot;,&quot;assignedMetadataField&quot;:&quot;GAdWordsID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;attr_client_clientid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;clientid&quot;,&quot;assignedMetadataField&quot;:&quot;APAC_ClientID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;clientid&quot;,&quot;assignedMetadataField&quot;:&quot;APAC_ClientID&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.gaprofileid&quot;,&quot;title&quot;:&quot;GA Profile ID&quot;,&quot;prettyId&quot;:&quot;attr_client_gaprofileid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.gaprofileid&quot;,&quot;title&quot;:&quot;GA Profile ID&quot;,&quot;prettyId&quot;:&quot;gaprofileid&quot;,&quot;assignedMetadataField&quot;:&quot;GA_ProfileID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD Client Writer" guiX="475" guiY="148" id="GD_CLIENT_WRITER" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.googleanalytics" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.googleanalytics&quot;,&quot;datasetTitle&quot;:&quot;Google Analytics&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.googleanalytics.channel&quot;,&quot;title&quot;:&quot;Channel&quot;,&quot;prettyId&quot;:&quot;attr_googleanalytics_channel&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics.channel&quot;,&quot;title&quot;:&quot;Channel&quot;,&quot;prettyId&quot;:&quot;channel&quot;,&quot;assignedMetadataField&quot;:&quot;sourcemedium&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.googleanalytics.device&quot;,&quot;title&quot;:&quot;Device&quot;,&quot;prettyId&quot;:&quot;attr_googleanalytics_device&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics.device&quot;,&quot;title&quot;:&quot;Device&quot;,&quot;prettyId&quot;:&quot;device&quot;,&quot;assignedMetadataField&quot;:&quot;deviceCategory&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.googleanalytics.device&quot;,&quot;title&quot;:&quot;Device&quot;,&quot;prettyId&quot;:&quot;device&quot;,&quot;assignedMetadataField&quot;:&quot;deviceCategory&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.campaign.campaignname&quot;,&quot;title&quot;:&quot;Campaign Name&quot;,&quot;prettyId&quot;:&quot;attr_campaign_campaignname&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignname&quot;,&quot;title&quot;:&quot;Campaign Name&quot;,&quot;prettyId&quot;:&quot;campaign__campaignname&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;campaign&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignname&quot;,&quot;title&quot;:&quot;Campaign Name&quot;,&quot;prettyId&quot;:&quot;campaign__campaignname&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;attr_client_clientid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;APAC_ClientID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;attr_product_sku&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;product__sku&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;productSku&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;product__sku&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.website.website&quot;,&quot;title&quot;:&quot;Website Name&quot;,&quot;prettyId&quot;:&quot;attr_website_website&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.website&quot;,&quot;title&quot;:&quot;Website Name&quot;,&quot;prettyId&quot;:&quot;website__website&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;hostname&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.website&quot;,&quot;title&quot;:&quot;Website Name&quot;,&quot;prettyId&quot;:&quot;website__website&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;date.date&quot;,&quot;title&quot;:&quot;Date (Date)&quot;,&quot;prettyId&quot;:&quot;date&quot;,&quot;assignedMetadataField&quot;:&quot;date&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.bouncerate&quot;,&quot;title&quot;:&quot;Bounce Rate&quot;,&quot;prettyId&quot;:&quot;bouncerate&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;bounces&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal1&quot;,&quot;title&quot;:&quot;Goal 1&quot;,&quot;prettyId&quot;:&quot;goal1&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal1completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal10&quot;,&quot;title&quot;:&quot;Goal 10&quot;,&quot;prettyId&quot;:&quot;goal10&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal10completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal11&quot;,&quot;title&quot;:&quot;Goal 11&quot;,&quot;prettyId&quot;:&quot;goal11&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal11completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal12&quot;,&quot;title&quot;:&quot;Goal 12&quot;,&quot;prettyId&quot;:&quot;goal12&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal12completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal13&quot;,&quot;title&quot;:&quot;Goal 13&quot;,&quot;prettyId&quot;:&quot;goal13&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal13completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal14&quot;,&quot;title&quot;:&quot;Goal 14&quot;,&quot;prettyId&quot;:&quot;goal14&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal14completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal15&quot;,&quot;title&quot;:&quot;Goal 15&quot;,&quot;prettyId&quot;:&quot;goal15&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal15completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal16&quot;,&quot;title&quot;:&quot;Goal 16&quot;,&quot;prettyId&quot;:&quot;goal16&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal16completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal17&quot;,&quot;title&quot;:&quot;Goal 17&quot;,&quot;prettyId&quot;:&quot;goal17&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal17completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal18&quot;,&quot;title&quot;:&quot;Goal 18&quot;,&quot;prettyId&quot;:&quot;goal18&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal18completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal19&quot;,&quot;title&quot;:&quot;Goal 19&quot;,&quot;prettyId&quot;:&quot;goal19&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal19completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal2&quot;,&quot;title&quot;:&quot;Goal 2&quot;,&quot;prettyId&quot;:&quot;goal2&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal2completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal20&quot;,&quot;title&quot;:&quot;Goal 20&quot;,&quot;prettyId&quot;:&quot;goal20&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal20completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal3&quot;,&quot;title&quot;:&quot;Goal 3&quot;,&quot;prettyId&quot;:&quot;goal3&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal3completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal4&quot;,&quot;title&quot;:&quot;Goal 4&quot;,&quot;prettyId&quot;:&quot;goal4&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal4completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal5&quot;,&quot;title&quot;:&quot;Goal 5&quot;,&quot;prettyId&quot;:&quot;goal5&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal5completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal6&quot;,&quot;title&quot;:&quot;Goal 6&quot;,&quot;prettyId&quot;:&quot;goal6&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal6completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal7&quot;,&quot;title&quot;:&quot;Goal 7&quot;,&quot;prettyId&quot;:&quot;goal7&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal7completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal8&quot;,&quot;title&quot;:&quot;Goal 8&quot;,&quot;prettyId&quot;:&quot;goal8&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal8completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.goal9&quot;,&quot;title&quot;:&quot;Goal 9&quot;,&quot;prettyId&quot;:&quot;goal9&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;goal9completions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.sessions&quot;,&quot;title&quot;:&quot;Sessions&quot;,&quot;prettyId&quot;:&quot;sessions&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Sessions&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.googleanalytics.users&quot;,&quot;title&quot;:&quot;Users&quot;,&quot;prettyId&quot;:&quot;users&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Users&quot;}}],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD GA Writer" guiX="833" guiY="794" id="GD_GA_WRITER" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.order" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.order&quot;,&quot;datasetTitle&quot;:&quot;Order&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.order.orderstate&quot;,&quot;title&quot;:&quot;Order State&quot;,&quot;prettyId&quot;:&quot;attr_order_orderstate&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.order.orderstate&quot;,&quot;title&quot;:&quot;Order State&quot;,&quot;prettyId&quot;:&quot;orderstate&quot;,&quot;assignedMetadataField&quot;:&quot;OrderState&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.order.orderstate&quot;,&quot;title&quot;:&quot;Order State&quot;,&quot;prettyId&quot;:&quot;orderstate&quot;,&quot;assignedMetadataField&quot;:&quot;OrderState&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.order.orderstatus&quot;,&quot;title&quot;:&quot;Order Status&quot;,&quot;prettyId&quot;:&quot;attr_order_orderstatus&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.order.orderstatus&quot;,&quot;title&quot;:&quot;Order Status&quot;,&quot;prettyId&quot;:&quot;orderstatus&quot;,&quot;assignedMetadataField&quot;:&quot;OrderStatus&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.order.orderstatus&quot;,&quot;title&quot;:&quot;Order Status&quot;,&quot;prettyId&quot;:&quot;orderstatus&quot;,&quot;assignedMetadataField&quot;:&quot;OrderStatus&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.product.orderid&quot;,&quot;title&quot;:&quot;Order ID&quot;,&quot;prettyId&quot;:&quot;attr_product_orderid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.orderid&quot;,&quot;title&quot;:&quot;Order ID&quot;,&quot;prettyId&quot;:&quot;orderid&quot;,&quot;assignedMetadataField&quot;:&quot;transactionId&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.campaign.campaignname&quot;,&quot;title&quot;:&quot;Campaign Name&quot;,&quot;prettyId&quot;:&quot;attr_campaign_campaignname&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignname&quot;,&quot;title&quot;:&quot;Campaign Name&quot;,&quot;prettyId&quot;:&quot;campaign__campaignname&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;campaign&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.campaign.campaignname&quot;,&quot;title&quot;:&quot;Campaign Name&quot;,&quot;prettyId&quot;:&quot;campaign__campaignname&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;attr_client_clientid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;APAC_ClientID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.client.clientid&quot;,&quot;title&quot;:&quot;Client ID&quot;,&quot;prettyId&quot;:&quot;client__clientid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;attr_customer_customerid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;customer__customerid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;APAC_CustomerID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customer.customerid&quot;,&quot;title&quot;:&quot;Customer ID&quot;,&quot;prettyId&quot;:&quot;customer__customerid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;attr_product_sku&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;product__sku&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;productSku&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;product__sku&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.shoppingcart.cartid&quot;,&quot;title&quot;:&quot;Cart ID&quot;,&quot;prettyId&quot;:&quot;attr_shoppingcart_cartid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.shoppingcart.cartid&quot;,&quot;title&quot;:&quot;Cart ID&quot;,&quot;prettyId&quot;:&quot;shoppingcart__cartid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;CartID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.shoppingcart.cartid&quot;,&quot;title&quot;:&quot;Cart ID&quot;,&quot;prettyId&quot;:&quot;shoppingcart__cartid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.website.website&quot;,&quot;title&quot;:&quot;Website Name&quot;,&quot;prettyId&quot;:&quot;attr_website_website&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.website&quot;,&quot;title&quot;:&quot;Website Name&quot;,&quot;prettyId&quot;:&quot;website__website&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;hostname&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.website&quot;,&quot;title&quot;:&quot;Website Name&quot;,&quot;prettyId&quot;:&quot;website__website&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;date.date&quot;,&quot;title&quot;:&quot;Date (Date)&quot;,&quot;prettyId&quot;:&quot;date&quot;,&quot;assignedMetadataField&quot;:&quot;date&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;date.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Date)&quot;,&quot;prettyId&quot;:&quot;date_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.order.gst&quot;,&quot;title&quot;:&quot;GST&quot;,&quot;prettyId&quot;:&quot;gst&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;GST&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.order.shippingcost&quot;,&quot;title&quot;:&quot;Shipping Amount&quot;,&quot;prettyId&quot;:&quot;shippingcost&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;ShippingAmount&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.order.demanditems&quot;,&quot;title&quot;:&quot;Total Paid&quot;,&quot;prettyId&quot;:&quot;demanditems&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TotalPaid&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.order.demanditemrevenue&quot;,&quot;title&quot;:&quot;Total Quantity&quot;,&quot;prettyId&quot;:&quot;demanditemrevenue&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TotalQuantity&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.order.totalrefund&quot;,&quot;title&quot;:&quot;Total Refund&quot;,&quot;prettyId&quot;:&quot;totalrefund&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TotalRefund&quot;}}],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD Order Writer" guiX="200" guiY="976" id="GD_ORDER_WRITER" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.product" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.product&quot;,&quot;datasetTitle&quot;:&quot;Product&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.product.productname&quot;,&quot;title&quot;:&quot;Product Name&quot;,&quot;prettyId&quot;:&quot;attr_product_productname&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.productname&quot;,&quot;title&quot;:&quot;Product Name&quot;,&quot;prettyId&quot;:&quot;productname&quot;,&quot;assignedMetadataField&quot;:&quot;Productname&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.productname&quot;,&quot;title&quot;:&quot;Product Name&quot;,&quot;prettyId&quot;:&quot;productname&quot;,&quot;assignedMetadataField&quot;:&quot;Productname&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.product.productset&quot;,&quot;title&quot;:&quot;Product Set&quot;,&quot;prettyId&quot;:&quot;attr_product_productset&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.productset&quot;,&quot;title&quot;:&quot;Product Set&quot;,&quot;prettyId&quot;:&quot;productset&quot;,&quot;assignedMetadataField&quot;:&quot;ProductSet&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.productset&quot;,&quot;title&quot;:&quot;Product Set&quot;,&quot;prettyId&quot;:&quot;productset&quot;,&quot;assignedMetadataField&quot;:&quot;ProductSet&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.product.producttype&quot;,&quot;title&quot;:&quot;Product Type&quot;,&quot;prettyId&quot;:&quot;attr_product_producttype&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.producttype&quot;,&quot;title&quot;:&quot;Product Type&quot;,&quot;prettyId&quot;:&quot;producttype&quot;,&quot;assignedMetadataField&quot;:&quot;ProductCategory&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;attr_product_sku&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;sku&quot;,&quot;assignedMetadataField&quot;:&quot;productSku&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;sku&quot;,&quot;assignedMetadataField&quot;:&quot;productSku&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.productcategory.categoryname&quot;,&quot;title&quot;:&quot;Product Category&quot;,&quot;prettyId&quot;:&quot;attr_productcategory_categoryname&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.productcategory.categoryname&quot;,&quot;title&quot;:&quot;Product Category&quot;,&quot;prettyId&quot;:&quot;productcategory__categoryname&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;ProductCategoryKey&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.productcategory.categoryname&quot;,&quot;title&quot;:&quot;Product Category&quot;,&quot;prettyId&quot;:&quot;productcategory__categoryname&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD Product Writer" guiX="187" guiY="824" id="GD_PRODUCT_WRITER" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.website" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.website&quot;,&quot;datasetTitle&quot;:&quot;Website&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.website.we&quot;,&quot;title&quot;:&quot;Webpage URL&quot;,&quot;prettyId&quot;:&quot;attr_website_we&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.we&quot;,&quot;title&quot;:&quot;Webpage URL&quot;,&quot;prettyId&quot;:&quot;we&quot;,&quot;assignedMetadataField&quot;:&quot;WebURL&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.we&quot;,&quot;title&quot;:&quot;Webpage URL&quot;,&quot;prettyId&quot;:&quot;we&quot;,&quot;assignedMetadataField&quot;:&quot;WebURL&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.website.website&quot;,&quot;title&quot;:&quot;Website Name&quot;,&quot;prettyId&quot;:&quot;attr_website_website&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.website&quot;,&quot;title&quot;:&quot;Website Name&quot;,&quot;prettyId&quot;:&quot;website&quot;,&quot;assignedMetadataField&quot;:&quot;WebNamex2&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.website.websitepage&quot;,&quot;title&quot;:&quot;Webpage Name&quot;,&quot;prettyId&quot;:&quot;attr_website_websitepage&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.websitepage&quot;,&quot;title&quot;:&quot;Webpage Name&quot;,&quot;prettyId&quot;:&quot;websitepage&quot;,&quot;assignedMetadataField&quot;:&quot;WebName&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.website.websiteurl&quot;,&quot;title&quot;:&quot;Website URL&quot;,&quot;prettyId&quot;:&quot;attr_website_websiteurl&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.website.websiteurl&quot;,&quot;title&quot;:&quot;Website URL&quot;,&quot;prettyId&quot;:&quot;websiteurl&quot;,&quot;assignedMetadataField&quot;:&quot;WebURLx2&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD Website Writer" guiX="424" guiY="447" id="GD_WEBSITE_WRITER" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node charset="UTF-8" enabled="enabled" fileURL="port:$0.response:discrete" guiName="JSonReaderAPI1" guiX="-469" guiY="541" id="JSON_READER_API1" type="JSON_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<Context xpath="root/object">
+	   <Context xpath="rows" outPort="0">
+	    <Mapping xpath="rows[1]" cloverField="date"/>
+		<Mapping xpath="rows[2]" cloverField="sourcemedium"/>
+		<Mapping xpath="rows[3]" cloverField="campaign"/>
+		<Mapping xpath="rows[4]" cloverField="deviceCategory"/>
+		<Mapping xpath="rows[5]" cloverField="pagetitle"/>
+		<Mapping xpath="rows[6]" cloverField="pagepath"/>
+		<Mapping xpath="rows[7]" cloverField="hostname"/>
+		<Mapping xpath="rows[8]" cloverField="Users"/>
+		<Mapping xpath="rows[9]" cloverField="Sessions"/>
+		<Mapping xpath="rows[10]" cloverField="bounces"/>
+		
+	   </Context>
+	</Context>]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="port:$0.response:discrete" guiName="JSonReaderAPI2" guiX="-469" guiY="695" id="JSON_READER_API2" type="JSON_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<Context xpath="root/object">
+	   <Context xpath="rows" outPort="0">
+	    <Mapping xpath="rows[1]" cloverField="date"/>
+		<Mapping xpath="rows[2]" cloverField="sourcemedium"/>
+		<Mapping xpath="rows[3]" cloverField="campaign"/>
+		<Mapping xpath="rows[4]" cloverField="Productname"/>
+		<Mapping xpath="rows[5]" cloverField="ProductCategory"/>
+		<Mapping xpath="rows[6]" cloverField="transactionId"/>
+		<Mapping xpath="rows[7]" cloverField="productSku"/>
+		<Mapping xpath="rows[8]" cloverField="itemQuantity"/>
+		<Mapping xpath="rows[9]" cloverField="itemRevenue"/>
+	   </Context>
+	</Context>]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="port:$0.response:discrete" guiName="JSonReaderAPI3" guiX="-329" guiY="1103" id="JSON_READER_API3" type="JSON_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<Context xpath="root/object">
+	   <Context xpath="rows" outPort="0">
+	    <Mapping xpath="rows[1]" cloverField="date"/>
+		<Mapping xpath="rows[2]" cloverField="sourcemedium"/>
+		<Mapping xpath="rows[3]" cloverField="campaign"/>
+		<Mapping xpath="rows[4]" cloverField="goal1completions"/>
+		<Mapping xpath="rows[5]" cloverField="goal2completions"/>
+		<Mapping xpath="rows[6]" cloverField="goal3completions"/>
+		<Mapping xpath="rows[7]" cloverField="goal4completions"/>
+		<Mapping xpath="rows[8]" cloverField="goal5completions"/>
+		<Mapping xpath="rows[9]" cloverField="goal6completions"/>
+		<Mapping xpath="rows[10]" cloverField="goal7completions"/>
+		<Mapping xpath="rows[11]" cloverField="goal8completions"/>
+		<Mapping xpath="rows[12]" cloverField="goal9completions"/>
+		<Mapping xpath="rows[13]" cloverField="goal10completions"/>
+	   </Context>
+	</Context>]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="port:$0.response:discrete" guiName="JsonReaderAPI4" guiX="-329" guiY="1217" id="JSON_READER_API4" type="JSON_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<Context xpath="root/object">
+	   <Context xpath="rows" outPort="0">
+	    <Mapping xpath="rows[1]" cloverField="date"/>
+		<Mapping xpath="rows[2]" cloverField="sourcemedium"/>
+		<Mapping xpath="rows[3]" cloverField="campaign"/>
+		<Mapping xpath="rows[4]" cloverField="goal11completions"/>
+		<Mapping xpath="rows[5]" cloverField="goal12completions"/>
+		<Mapping xpath="rows[6]" cloverField="goal13completions"/>
+		<Mapping xpath="rows[7]" cloverField="goal14completions"/>
+		<Mapping xpath="rows[8]" cloverField="goal15completions"/>
+		<Mapping xpath="rows[9]" cloverField="goal16completions"/>
+		<Mapping xpath="rows[10]" cloverField="goal17completions"/>
+		<Mapping xpath="rows[11]" cloverField="goal18completions"/>
+		<Mapping xpath="rows[12]" cloverField="goal19completions"/>
+		<Mapping xpath="rows[13]" cloverField="goal20completions"/>
+	   </Context>
+	</Context>]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="187" guiY="591" id="REFORMAT" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="187" guiY="684" id="REFORMAT1" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="145" guiY="1115" id="REFORMAT2" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="180" guiY="1211" id="REFORMAT3" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="151" guiY="350" id="REFORMAT4" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+		$out.0.* = $in.0.*;
+		$out.0.CampaignType = 'Google Analytics';
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="190" guiY="463" id="REFORMAT5" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.WebName = $in.0.hostname;
+	$out.0.WebURL = $in.0.hostname;
+	$out.0.WebNamex2 = $in.0.hostname;
+	$out.0.WebURLx2 = $in.0.hostname;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="24" guiY="748" id="REFORMAT6" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="-3" guiY="976" id="REFORMAT7" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.TotalQuantity = $in.0.itemQuantity;
+	$out.0.TotalPaid = $in.0.itemRevenue;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="625" guiY="794" id="REFORMAT8" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+		$out.0.* = $in.0.*;
+		$out.0.APAC_ClientID = '${CLIENT_ID}';
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node authConfiguration="{&quot;authMethod&quot;:&quot;OAUTH_2&quot;,&quot;authCredentials&quot;:{&quot;REFRESH_TOKEN&quot;:&quot;${GA_REF_TOKEN}&quot;,&quot;CLIENT_ID&quot;:&quot;${GA_CLIENT_ID}&quot;,&quot;REFRESH_TOKEN_URL&quot;:&quot;${GOOGLE_TOKEN_URL}&quot;,&quot;CLIENT_SECRET&quot;:&quot;${GA_CLIENT_SECRET}&quot;}}" charset="UTF-8" ctlFunctionsSource="//#CTL2&#10;number index;&#10;/**&#10; * Generates request parameters (usually page numbers, offsets, timestamps, signature hashes,etc.)&#10; * Called before each request.&#10; *&#10; * Last response is is only defined if iteration number is greater than one. Therefore, for the very first request&#10; * lastResponseStatus is 200, lastResponseHeaders and lastResponseBody are empty.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * inputEdgeRecord - contains fields of the input edge record&#10; * iterationNumber - starts at 1&#10; * lastResponseStatus - HTTP status of the previous request&#10; * lastResponseHeaders - HTTP headers of the previous request&#10; * lastResponseBody -  body of the previous request&#10; *&#10; * returns a map of params that can be used in the request URL&#10;**/&#10;function map[string, string] generateRequestParameters(map[string, string] inputEdgeRecord, integer iterationNumber, integer lastResponseStatus, map[string, string]lastResponseHeaders, string lastResponseBody) {&#10;&#10;    // Copy all input parameters into the request parameters map.&#10;    map[string, string] requestParams = inputEdgeRecord;&#10;&#10;    /**&#10;     *  PAGING&#10;     *&#10;     *  (Tip: comment/uncomment the code suitable for your use case)&#10;     **/&#10;&#10;    /** Using pages **/&#10;    integer RECORDS_PER_PAGE = 10000;&#10;    &#10;&#9;if (iterationNumber == 0 OR iterationNumber ==1)&#10;&#9;requestParams[&quot;START_INDEX&quot;] =&quot;&amp;start-index=1&quot;;&#10;&#9;else requestParams[&quot;START_INDEX&quot;] =&quot;&amp;start-index=&quot;+toString(((iterationNumber-1) * RECORDS_PER_PAGE)+1);&#10;&#9;index=((iterationNumber-1) * RECORDS_PER_PAGE)+1;&#10;&#10;    /** Using start offset and end offset **/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;END_OFFSET&quot;] = toString((iterationNumber * RECORDS_PER_PAGE) - 1);&#10;&#10;    /*** Using start offset and records count ***/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;RECORDS_PER_PAGE&quot;] = toString(RECORDS_PER_PAGE);&#10;&#10;    return requestParams;&#10;}&#10;&#10;/**&#10; * Determines the outcome of the response. Used for controlling the paging workflow and detecting errors.&#10; * Called after each request response.&#10; *&#10; * Default implementations returns &quot;DONE_WITH_OUTPUT&quot; to make one REST call and finish.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * responseStatus - response HTTP status&#10; * responseHeaders - response HTTP headers&#10; * responseBody -  response body&#10; *&#10; * returns&#10; *  CONTINUE - continue to next iteration (e.g., next page)&#10; *  DONE_NO_OUTPUT (default) - last iteration finished, no data will be sent to the output port for the last iteration (no data received from the last iteration)&#10; *  DONE_WITH_OUTPUT - last iteration finished, data will be sent to the output for the last iteration (data received from the last iteration)&#10; *  RETRY - retry the last failed request&#10; *  FATAL_ERROR - fatal error, aborts the HTTP connector run&#10;**/&#10;function string checkResponse(integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;  // return &quot;DONE_WITH_OUTPUT&quot;;&#10;&#10;    // Example response handling&#10;     if (responseStatus &gt;= 200  &amp;&amp;  responseStatus &lt; 300) {&#10;         return &quot;CONTINUE&quot;;&#10;     }&#10;     else if (responseStatus == 404) {&#10;    //     // HTTP status &quot;404 - NOT FOUND&quot; could mean there are no more pages or records&#10;         return &quot;DONE_NO_OUTPUT&quot;;&#10;     }&#10;     else if (responseStatus &gt;= 500 || responseBody.indexOf('{&quot;error&quot;: &quot;just a temporary error&quot;}') &gt; -1) {&#10;    //     // Internal server errors could be temporary (this sends the last response to the error output port)&#10;         return &quot;RETRY&quot;;&#10;     }&#10;     else {&#10;    //     // Otherwise abort the HTTP connector run (this sends the last response to the error output port)&#10;         return &quot;FATAL_ERROR&quot;;&#10;     }&#10;&#10;}&#10;&#10;/**&#10; * Updates the request params before each request retry attempt if it failed previously.&#10; * Useful for resetting authorization parameter (signatures, tokens, etc.), updating timestamp, etc.&#10; *&#10; * Optional. When not defined, the request stays the same.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * failedRequestParams original parameters of request which failed and should be retried&#10; * retryNumber number of current retry, &quot;1&quot; for the first retry&#10; * lastResponseStatus - HTTP status of the failed request&#10; * lastResponseHeaders - HTTP headers of the failed request&#10; * lastResponseBody -  body of the failed request&#10; *&#10; * returns map of the modified params for the retry request&#10;**/&#10;function map[string, string] modifyRequestParamsBeforeRetryAttempt(map[string, string] failedRequestParams, integer retryNumber,&#10;        integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;&#10;    // Copy all the previous parameters into the retry request parameters map.&#10;    map[string, string] modifiedRequestParams = failedRequestParams;&#10;&#10;    /*** Modify the params of the request ***/&#10;&#10;    // Example of timestamp modification&#10;    // modifiedRequestParams[&quot;TIMESTAMP&quot;] = toString(date2long(today()));&#10;&#10;    return modifiedRequestParams;&#10;}" enabled="enabled" guiName="REST API1 GD" guiX="-763" guiY="541" id="REST_API1_GD" maxPageNumber="20" requestDelayInSeconds="2" requestMethod="GET" type="GENERIC_REST_CONNECTOR">
+<attr name="url"><![CDATA[https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A${GA_PROFILE_ID}&start-date=${GA_START}&end-date=${GA_END}&metrics=ga%3AUsers%2Cga%3ASessions%2Cga%3Abounces&dimensions=ga%3Adate%2Cga%3AsourceMedium%2Cga%3Acampaign%2Cga%3AdeviceCategory%2Cga%3Apagetitle%2Cga%3Apagepath%2Cga%3Ahostname&max-results=${GA_ROWS}&samplingLevel=HIGHER_PRECISION&${START_INDEX}]]></attr>
+</Node>
+<Node authConfiguration="{&quot;authMethod&quot;:&quot;OAUTH_2&quot;,&quot;authCredentials&quot;:{&quot;REFRESH_TOKEN&quot;:&quot;${GA_REF_TOKEN}&quot;,&quot;CLIENT_ID&quot;:&quot;${GA_CLIENT_ID}&quot;,&quot;REFRESH_TOKEN_URL&quot;:&quot;${GOOGLE_TOKEN_URL}&quot;,&quot;CLIENT_SECRET&quot;:&quot;${GA_CLIENT_SECRET}&quot;}}" charset="UTF-8" ctlFunctionsSource="//#CTL2&#10;number index;&#10;/**&#10; * Generates request parameters (usually page numbers, offsets, timestamps, signature hashes,etc.)&#10; * Called before each request.&#10; *&#10; * Last response is is only defined if iteration number is greater than one. Therefore, for the very first request&#10; * lastResponseStatus is 200, lastResponseHeaders and lastResponseBody are empty.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * inputEdgeRecord - contains fields of the input edge record&#10; * iterationNumber - starts at 1&#10; * lastResponseStatus - HTTP status of the previous request&#10; * lastResponseHeaders - HTTP headers of the previous request&#10; * lastResponseBody -  body of the previous request&#10; *&#10; * returns a map of params that can be used in the request URL&#10;**/&#10;function map[string, string] generateRequestParameters(map[string, string] inputEdgeRecord, integer iterationNumber, integer lastResponseStatus, map[string, string]lastResponseHeaders, string lastResponseBody) {&#10;&#10;    // Copy all input parameters into the request parameters map.&#10;    map[string, string] requestParams = inputEdgeRecord;&#10;&#10;    /**&#10;     *  PAGING&#10;     *&#10;     *  (Tip: comment/uncomment the code suitable for your use case)&#10;     **/&#10;&#10;    /** Using pages **/&#10;    integer RECORDS_PER_PAGE = 10000;&#10;    &#10;&#9;if (iterationNumber == 0 OR iterationNumber ==1)&#10;&#9;requestParams[&quot;START_INDEX&quot;] =&quot;&amp;start-index=1&quot;;&#10;&#9;else requestParams[&quot;START_INDEX&quot;] =&quot;&amp;start-index=&quot;+toString(((iterationNumber-1) * RECORDS_PER_PAGE)+1);&#10;&#9;index=((iterationNumber-1) * RECORDS_PER_PAGE)+1;&#10;&#10;    /** Using start offset and end offset **/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;END_OFFSET&quot;] = toString((iterationNumber * RECORDS_PER_PAGE) - 1);&#10;&#10;    /*** Using start offset and records count ***/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;RECORDS_PER_PAGE&quot;] = toString(RECORDS_PER_PAGE);&#10;&#10;    return requestParams;&#10;}&#10;&#10;/**&#10; * Determines the outcome of the response. Used for controlling the paging workflow and detecting errors.&#10; * Called after each request response.&#10; *&#10; * Default implementations returns &quot;DONE_WITH_OUTPUT&quot; to make one REST call and finish.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * responseStatus - response HTTP status&#10; * responseHeaders - response HTTP headers&#10; * responseBody -  response body&#10; *&#10; * returns&#10; *  CONTINUE - continue to next iteration (e.g., next page)&#10; *  DONE_NO_OUTPUT (default) - last iteration finished, no data will be sent to the output port for the last iteration (no data received from the last iteration)&#10; *  DONE_WITH_OUTPUT - last iteration finished, data will be sent to the output for the last iteration (data received from the last iteration)&#10; *  RETRY - retry the last failed request&#10; *  FATAL_ERROR - fatal error, aborts the HTTP connector run&#10;**/&#10;function string checkResponse(integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;  // return &quot;DONE_WITH_OUTPUT&quot;;&#10;&#10;    // Example response handling&#10;     if (responseStatus &gt;= 200  &amp;&amp;  responseStatus &lt; 300) {&#10;         return &quot;CONTINUE&quot;;&#10;     }&#10;     else if (responseStatus == 404) {&#10;    //     // HTTP status &quot;404 - NOT FOUND&quot; could mean there are no more pages or records&#10;         return &quot;DONE_NO_OUTPUT&quot;;&#10;     }&#10;     else if (responseStatus &gt;= 500 || responseBody.indexOf('{&quot;error&quot;: &quot;just a temporary error&quot;}') &gt; -1) {&#10;    //     // Internal server errors could be temporary (this sends the last response to the error output port)&#10;         return &quot;RETRY&quot;;&#10;     }&#10;     else {&#10;    //     // Otherwise abort the HTTP connector run (this sends the last response to the error output port)&#10;         return &quot;FATAL_ERROR&quot;;&#10;     }&#10;&#10;}&#10;&#10;/**&#10; * Updates the request params before each request retry attempt if it failed previously.&#10; * Useful for resetting authorization parameter (signatures, tokens, etc.), updating timestamp, etc.&#10; *&#10; * Optional. When not defined, the request stays the same.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * failedRequestParams original parameters of request which failed and should be retried&#10; * retryNumber number of current retry, &quot;1&quot; for the first retry&#10; * lastResponseStatus - HTTP status of the failed request&#10; * lastResponseHeaders - HTTP headers of the failed request&#10; * lastResponseBody -  body of the failed request&#10; *&#10; * returns map of the modified params for the retry request&#10;**/&#10;function map[string, string] modifyRequestParamsBeforeRetryAttempt(map[string, string] failedRequestParams, integer retryNumber,&#10;        integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;&#10;    // Copy all the previous parameters into the retry request parameters map.&#10;    map[string, string] modifiedRequestParams = failedRequestParams;&#10;&#10;    /*** Modify the params of the request ***/&#10;&#10;    // Example of timestamp modification&#10;    // modifiedRequestParams[&quot;TIMESTAMP&quot;] = toString(date2long(today()));&#10;&#10;    return modifiedRequestParams;&#10;}" enabled="enabled" guiName="REST API2 GD" guiX="-763" guiY="707" id="REST_API2_GD" maxPageNumber="20" requestDelayInSeconds="3" requestMethod="GET" type="GENERIC_REST_CONNECTOR">
+<attr name="url"><![CDATA[https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A${GA_PROFILE_ID}&start-date=${GA_START}&end-date=${GA_END}&metrics=ga%3AitemQuantity%2Cga%3AitemRevenue&dimensions=ga%3Adate%2Cga%3AsourceMedium%2Cga%3Acampaign%2Cga%3AProductname%2Cga%3AProductCategory%2Cga%3AtransactionId%2Cga%3AproductSku&max-results=${GA_ROWS}&samplingLevel=HIGHER_PRECISION${START_INDEX}]]></attr>
+</Node>
+<Node authConfiguration="{&quot;authMethod&quot;:&quot;OAUTH_2&quot;,&quot;authCredentials&quot;:{&quot;REFRESH_TOKEN&quot;:&quot;${GA_REF_TOKEN}&quot;,&quot;CLIENT_ID&quot;:&quot;${GA_CLIENT_ID}&quot;,&quot;REFRESH_TOKEN_URL&quot;:&quot;${GOOGLE_TOKEN_URL}&quot;,&quot;CLIENT_SECRET&quot;:&quot;${GA_CLIENT_SECRET}&quot;}}" charset="UTF-8" ctlFunctionsSource="//#CTL2&#10;number index;&#10;/**&#10; * Generates request parameters (usually page numbers, offsets, timestamps, signature hashes,etc.)&#10; * Called before each request.&#10; *&#10; * Last response is is only defined if iteration number is greater than one. Therefore, for the very first request&#10; * lastResponseStatus is 200, lastResponseHeaders and lastResponseBody are empty.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * inputEdgeRecord - contains fields of the input edge record&#10; * iterationNumber - starts at 1&#10; * lastResponseStatus - HTTP status of the previous request&#10; * lastResponseHeaders - HTTP headers of the previous request&#10; * lastResponseBody -  body of the previous request&#10; *&#10; * returns a map of params that can be used in the request URL&#10;**/&#10;function map[string, string] generateRequestParameters(map[string, string] inputEdgeRecord, integer iterationNumber, integer lastResponseStatus, map[string, string]lastResponseHeaders, string lastResponseBody) {&#10;&#10;    // Copy all input parameters into the request parameters map.&#10;    map[string, string] requestParams = inputEdgeRecord;&#10;&#10;    /**&#10;     *  PAGING&#10;     *&#10;     *  (Tip: comment/uncomment the code suitable for your use case)&#10;     **/&#10;&#10;    /** Using pages **/&#10;    integer RECORDS_PER_PAGE = 10000;&#10;    &#10;&#9;if (iterationNumber == 0 OR iterationNumber ==1)&#10;&#9;requestParams[&quot;START_INDEX&quot;] =&quot;&amp;start-index=1&quot;;&#10;&#9;else requestParams[&quot;START_INDEX&quot;] =&quot;&amp;start-index=&quot;+toString(((iterationNumber-1) * RECORDS_PER_PAGE)+1);&#10;&#9;index=((iterationNumber-1) * RECORDS_PER_PAGE)+1;&#10;&#10;    /** Using start offset and end offset **/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;END_OFFSET&quot;] = toString((iterationNumber * RECORDS_PER_PAGE) - 1);&#10;&#10;    /*** Using start offset and records count ***/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;RECORDS_PER_PAGE&quot;] = toString(RECORDS_PER_PAGE);&#10;&#10;    return requestParams;&#10;}&#10;&#10;/**&#10; * Determines the outcome of the response. Used for controlling the paging workflow and detecting errors.&#10; * Called after each request response.&#10; *&#10; * Default implementations returns &quot;DONE_WITH_OUTPUT&quot; to make one REST call and finish.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * responseStatus - response HTTP status&#10; * responseHeaders - response HTTP headers&#10; * responseBody -  response body&#10; *&#10; * returns&#10; *  CONTINUE - continue to next iteration (e.g., next page)&#10; *  DONE_NO_OUTPUT (default) - last iteration finished, no data will be sent to the output port for the last iteration (no data received from the last iteration)&#10; *  DONE_WITH_OUTPUT - last iteration finished, data will be sent to the output for the last iteration (data received from the last iteration)&#10; *  RETRY - retry the last failed request&#10; *  FATAL_ERROR - fatal error, aborts the HTTP connector run&#10;**/&#10;function string checkResponse(integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;  // return &quot;DONE_WITH_OUTPUT&quot;;&#10;&#10;    // Example response handling&#10;     if (responseStatus &gt;= 200  &amp;&amp;  responseStatus &lt; 300) {&#10;         return &quot;CONTINUE&quot;;&#10;     }&#10;     else if (responseStatus == 404) {&#10;    //     // HTTP status &quot;404 - NOT FOUND&quot; could mean there are no more pages or records&#10;         return &quot;DONE_NO_OUTPUT&quot;;&#10;     }&#10;     else if (responseStatus &gt;= 500 || responseBody.indexOf('{&quot;error&quot;: &quot;just a temporary error&quot;}') &gt; -1) {&#10;    //     // Internal server errors could be temporary (this sends the last response to the error output port)&#10;         return &quot;RETRY&quot;;&#10;     }&#10;     else {&#10;    //     // Otherwise abort the HTTP connector run (this sends the last response to the error output port)&#10;         return &quot;FATAL_ERROR&quot;;&#10;     }&#10;&#10;}&#10;&#10;/**&#10; * Updates the request params before each request retry attempt if it failed previously.&#10; * Useful for resetting authorization parameter (signatures, tokens, etc.), updating timestamp, etc.&#10; *&#10; * Optional. When not defined, the request stays the same.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * failedRequestParams original parameters of request which failed and should be retried&#10; * retryNumber number of current retry, &quot;1&quot; for the first retry&#10; * lastResponseStatus - HTTP status of the failed request&#10; * lastResponseHeaders - HTTP headers of the failed request&#10; * lastResponseBody -  body of the failed request&#10; *&#10; * returns map of the modified params for the retry request&#10;**/&#10;function map[string, string] modifyRequestParamsBeforeRetryAttempt(map[string, string] failedRequestParams, integer retryNumber,&#10;        integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;&#10;    // Copy all the previous parameters into the retry request parameters map.&#10;    map[string, string] modifiedRequestParams = failedRequestParams;&#10;&#10;    /*** Modify the params of the request ***/&#10;&#10;    // Example of timestamp modification&#10;    // modifiedRequestParams[&quot;TIMESTAMP&quot;] = toString(date2long(today()));&#10;&#10;    return modifiedRequestParams;&#10;}" enabled="enabled" guiName="REST API3 GD" guiX="-712" guiY="1088" id="REST_API3_GD" maxPageNumber="20" requestDelayInSeconds="4" requestMethod="GET" type="GENERIC_REST_CONNECTOR">
+<attr name="url"><![CDATA[https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A${GA_PROFILE_ID}&start-date=${GA_START}&end-date=${GA_END}&metrics=ga%3Agoal1completions%2Cga%3Agoal2completions%2Cga%3Agoal3completions%2Cga%3Agoal4completions%2Cga%3Agoal5completions%2Cga%3Agoal6completions%2Cga%3Agoal7completions%2Cga%3Agoal8completions%2Cga%3Agoal9completions%2Cga%3Agoal10completions&dimensions=ga%3Adate%2Cga%3AsourceMedium%2Cga%3Acampaign&max-results=${GA_ROWS}&samplingLevel=HIGHER_PRECISION&start-index=1]]></attr>
+</Node>
+<Node authConfiguration="{&quot;authMethod&quot;:&quot;OAUTH_2&quot;,&quot;authCredentials&quot;:{&quot;REFRESH_TOKEN&quot;:&quot;${GA_REF_TOKEN}&quot;,&quot;CLIENT_ID&quot;:&quot;${GA_CLIENT_ID}&quot;,&quot;REFRESH_TOKEN_URL&quot;:&quot;${GOOGLE_TOKEN_URL}&quot;,&quot;CLIENT_SECRET&quot;:&quot;${GA_CLIENT_SECRET}&quot;}}" charset="UTF-8" ctlFunctionsSource="//#CTL2&#10;number index;&#10;/**&#10; * Generates request parameters (usually page numbers, offsets, timestamps, signature hashes,etc.)&#10; * Called before each request.&#10; *&#10; * Last response is is only defined if iteration number is greater than one. Therefore, for the very first request&#10; * lastResponseStatus is 200, lastResponseHeaders and lastResponseBody are empty.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * inputEdgeRecord - contains fields of the input edge record&#10; * iterationNumber - starts at 1&#10; * lastResponseStatus - HTTP status of the previous request&#10; * lastResponseHeaders - HTTP headers of the previous request&#10; * lastResponseBody -  body of the previous request&#10; *&#10; * returns a map of params that can be used in the request URL&#10;**/&#10;function map[string, string] generateRequestParameters(map[string, string] inputEdgeRecord, integer iterationNumber, integer lastResponseStatus, map[string, string]lastResponseHeaders, string lastResponseBody) {&#10;&#10;    // Copy all input parameters into the request parameters map.&#10;    map[string, string] requestParams = inputEdgeRecord;&#10;&#10;    /**&#10;     *  PAGING&#10;     *&#10;     *  (Tip: comment/uncomment the code suitable for your use case)&#10;     **/&#10;&#10;    /** Using pages **/&#10;    integer RECORDS_PER_PAGE = 10000;&#10;    &#10;&#9;if (iterationNumber == 0 OR iterationNumber ==1)&#10;&#9;requestParams[&quot;START_INDEX&quot;] =&quot;&amp;start-index=1&quot;;&#10;&#9;else requestParams[&quot;START_INDEX&quot;] =&quot;&amp;start-index=&quot;+toString(((iterationNumber-1) * RECORDS_PER_PAGE)+1);&#10;&#9;index=((iterationNumber-1) * RECORDS_PER_PAGE)+1;&#10;&#10;    /** Using start offset and end offset **/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;END_OFFSET&quot;] = toString((iterationNumber * RECORDS_PER_PAGE) - 1);&#10;&#10;    /*** Using start offset and records count ***/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;RECORDS_PER_PAGE&quot;] = toString(RECORDS_PER_PAGE);&#10;&#10;    return requestParams;&#10;}&#10;&#10;/**&#10; * Determines the outcome of the response. Used for controlling the paging workflow and detecting errors.&#10; * Called after each request response.&#10; *&#10; * Default implementations returns &quot;DONE_WITH_OUTPUT&quot; to make one REST call and finish.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * responseStatus - response HTTP status&#10; * responseHeaders - response HTTP headers&#10; * responseBody -  response body&#10; *&#10; * returns&#10; *  CONTINUE - continue to next iteration (e.g., next page)&#10; *  DONE_NO_OUTPUT (default) - last iteration finished, no data will be sent to the output port for the last iteration (no data received from the last iteration)&#10; *  DONE_WITH_OUTPUT - last iteration finished, data will be sent to the output for the last iteration (data received from the last iteration)&#10; *  RETRY - retry the last failed request&#10; *  FATAL_ERROR - fatal error, aborts the HTTP connector run&#10;**/&#10;function string checkResponse(integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;  // return &quot;DONE_WITH_OUTPUT&quot;;&#10;&#10;    // Example response handling&#10;     if (responseStatus &gt;= 200  &amp;&amp;  responseStatus &lt; 300) {&#10;         return &quot;CONTINUE&quot;;&#10;     }&#10;     else if (responseStatus == 404) {&#10;    //     // HTTP status &quot;404 - NOT FOUND&quot; could mean there are no more pages or records&#10;         return &quot;DONE_NO_OUTPUT&quot;;&#10;     }&#10;     else if (responseStatus &gt;= 500 || responseBody.indexOf('{&quot;error&quot;: &quot;just a temporary error&quot;}') &gt; -1) {&#10;    //     // Internal server errors could be temporary (this sends the last response to the error output port)&#10;         return &quot;RETRY&quot;;&#10;     }&#10;     else {&#10;    //     // Otherwise abort the HTTP connector run (this sends the last response to the error output port)&#10;         return &quot;FATAL_ERROR&quot;;&#10;     }&#10;&#10;}&#10;&#10;/**&#10; * Updates the request params before each request retry attempt if it failed previously.&#10; * Useful for resetting authorization parameter (signatures, tokens, etc.), updating timestamp, etc.&#10; *&#10; * Optional. When not defined, the request stays the same.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * failedRequestParams original parameters of request which failed and should be retried&#10; * retryNumber number of current retry, &quot;1&quot; for the first retry&#10; * lastResponseStatus - HTTP status of the failed request&#10; * lastResponseHeaders - HTTP headers of the failed request&#10; * lastResponseBody -  body of the failed request&#10; *&#10; * returns map of the modified params for the retry request&#10;**/&#10;function map[string, string] modifyRequestParamsBeforeRetryAttempt(map[string, string] failedRequestParams, integer retryNumber,&#10;        integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;&#10;    // Copy all the previous parameters into the retry request parameters map.&#10;    map[string, string] modifiedRequestParams = failedRequestParams;&#10;&#10;    /*** Modify the params of the request ***/&#10;&#10;    // Example of timestamp modification&#10;    // modifiedRequestParams[&quot;TIMESTAMP&quot;] = toString(date2long(today()));&#10;&#10;    return modifiedRequestParams;&#10;}" enabled="enabled" guiName="REST API3 GD" guiX="-712" guiY="1229" id="REST_API3_GD1" maxPageNumber="20" requestDelayInSeconds="5" requestMethod="GET" type="GENERIC_REST_CONNECTOR">
+<attr name="url"><![CDATA[https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A${GA_PROFILE_ID}&start-date=${GA_START}&end-date=${GA_END}&metrics=ga%3Agoal11completions%2Cga%3Agoal12completions%2Cga%3Agoal13completions%2Cga%3Agoal14completions%2Cga%3Agoal15completions%2Cga%3Agoal16completions%2Cga%3Agoal17completions%2Cga%3Agoal18completions%2Cga%3Agoal19completions%2Cga%3Agoal20completions&dimensions=ga%3Adate%2Cga%3AsourceMedium%2Cga%3Acampaign&max-results=${GA_ROWS}&samplingLevel=HIGHER_PRECISION&start-index=1]]></attr>
+</Node>
+<Node authConfiguration="{&quot;authMethod&quot;:&quot;OAUTH_2&quot;,&quot;authCredentials&quot;:{&quot;REFRESH_TOKEN&quot;:&quot;1/46wh40BR_RfOpXIteFdlwvdTGSKwN5Rtgbo0expHxWo&quot;,&quot;CLIENT_ID&quot;:&quot;356851111882-q5jd1d2n8dj8m7h786hjdhockdopgkg8.apps.googleusercontent.com&quot;,&quot;REFRESH_TOKEN_URL&quot;:&quot;https://accounts.google.com/o/oauth2/token&quot;,&quot;CLIENT_SECRET&quot;:&quot;Ny5UHgUmNpYjeHsRvQ7NPMeDEptx6woJRgyg6WTqpMY=&quot;}}" charset="UTF-8" ctlFunctionsSource="//#CTL2&#10;number index;&#10;/**&#10; * Generates request parameters (usually page numbers, offsets, timestamps, signature hashes,etc.)&#10; * Called before each request.&#10; *&#10; * Last response is is only defined if iteration number is greater than one. Therefore, for the very first request&#10; * lastResponseStatus is 200, lastResponseHeaders and lastResponseBody are empty.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * inputEdgeRecord - contains fields of the input edge record&#10; * iterationNumber - starts at 1&#10; * lastResponseStatus - HTTP status of the previous request&#10; * lastResponseHeaders - HTTP headers of the previous request&#10; * lastResponseBody -  body of the previous request&#10; *&#10; * returns a map of params that can be used in the request URL&#10;**/&#10;function map[string, string] generateRequestParameters(map[string, string] inputEdgeRecord, integer iterationNumber, integer lastResponseStatus, map[string, string]lastResponseHeaders, string lastResponseBody) {&#10;&#10;    // Copy all input parameters into the request parameters map.&#10;    map[string, string] requestParams = inputEdgeRecord;&#10;&#10;    /**&#10;     *  PAGING&#10;     *&#10;     *  (Tip: comment/uncomment the code suitable for your use case)&#10;     **/&#10;&#10;    /** Using pages **/&#10;    integer RECORDS_PER_PAGE = 10000;&#10;    &#10;&#9;if (iterationNumber == 0 OR iterationNumber ==1)&#10;&#9;requestParams[&quot;START_INDEX&quot;] =&quot;&amp;start-index=1&quot;;&#10;&#9;else requestParams[&quot;START_INDEX&quot;] =&quot;&amp;start-index=&quot;+toString(((iterationNumber-1) * RECORDS_PER_PAGE)+1);&#10;&#9;index=((iterationNumber-1) * RECORDS_PER_PAGE)+1;&#10;&#10;    /** Using start offset and end offset **/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;END_OFFSET&quot;] = toString((iterationNumber * RECORDS_PER_PAGE) - 1);&#10;&#10;    /*** Using start offset and records count ***/&#10;    // integer RECORDS_PER_PAGE = 1000;&#10;    // requestParams[&quot;START_OFFSET&quot;] = toString((iterationNumber - 1) * RECORDS_PER_PAGE); //starts at 0&#10;    // requestParams[&quot;RECORDS_PER_PAGE&quot;] = toString(RECORDS_PER_PAGE);&#10;&#10;    return requestParams;&#10;}&#10;&#10;/**&#10; * Determines the outcome of the response. Used for controlling the paging workflow and detecting errors.&#10; * Called after each request response.&#10; *&#10; * Default implementations returns &quot;DONE_WITH_OUTPUT&quot; to make one REST call and finish.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * responseStatus - response HTTP status&#10; * responseHeaders - response HTTP headers&#10; * responseBody -  response body&#10; *&#10; * returns&#10; *  CONTINUE - continue to next iteration (e.g., next page)&#10; *  DONE_NO_OUTPUT (default) - last iteration finished, no data will be sent to the output port for the last iteration (no data received from the last iteration)&#10; *  DONE_WITH_OUTPUT - last iteration finished, data will be sent to the output for the last iteration (data received from the last iteration)&#10; *  RETRY - retry the last failed request&#10; *  FATAL_ERROR - fatal error, aborts the HTTP connector run&#10;**/&#10;function string checkResponse(integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;  // return &quot;DONE_WITH_OUTPUT&quot;;&#10;&#10;    // Example response handling&#10;     if (responseStatus &gt;= 200  &amp;&amp;  responseStatus &lt; 300) {&#10;         return &quot;CONTINUE&quot;;&#10;     }&#10;     else if (responseStatus == 404) {&#10;    //     // HTTP status &quot;404 - NOT FOUND&quot; could mean there are no more pages or records&#10;         return &quot;DONE_NO_OUTPUT&quot;;&#10;     }&#10;     else if (responseStatus &gt;= 500 || responseBody.indexOf('{&quot;error&quot;: &quot;just a temporary error&quot;}') &gt; -1) {&#10;    //     // Internal server errors could be temporary (this sends the last response to the error output port)&#10;         return &quot;RETRY&quot;;&#10;     }&#10;     else {&#10;    //     // Otherwise abort the HTTP connector run (this sends the last response to the error output port)&#10;         return &quot;FATAL_ERROR&quot;;&#10;     }&#10;&#10;}&#10;&#10;/**&#10; * Updates the request params before each request retry attempt if it failed previously.&#10; * Useful for resetting authorization parameter (signatures, tokens, etc.), updating timestamp, etc.&#10; *&#10; * Optional. When not defined, the request stays the same.&#10; *&#10; * If input port is connected, incoming data record can be accessed through $in.0.fieldName&#10; *&#10; * failedRequestParams original parameters of request which failed and should be retried&#10; * retryNumber number of current retry, &quot;1&quot; for the first retry&#10; * lastResponseStatus - HTTP status of the failed request&#10; * lastResponseHeaders - HTTP headers of the failed request&#10; * lastResponseBody -  body of the failed request&#10; *&#10; * returns map of the modified params for the retry request&#10;**/&#10;function map[string, string] modifyRequestParamsBeforeRetryAttempt(map[string, string] failedRequestParams, integer retryNumber,&#10;        integer responseStatus, map[string, string] responseHeaders, string responseBody) {&#10;&#10;    // Copy all the previous parameters into the retry request parameters map.&#10;    map[string, string] modifiedRequestParams = failedRequestParams;&#10;&#10;    /*** Modify the params of the request ***/&#10;&#10;    // Example of timestamp modification&#10;    // modifiedRequestParams[&quot;TIMESTAMP&quot;] = toString(date2long(today()));&#10;&#10;    return modifiedRequestParams;&#10;}" enabled="disabled" guiName="REST Connector-GD" guiX="-299" guiY="1851" id="REST_CONNECTOR_GD" maxPageNumber="10" requestDelayInSeconds="2" requestMethod="GET" type="GENERIC_REST_CONNECTOR">
+<attr name="url"><![CDATA[https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A${GA_PROFILE_ID}&start-date=${GA_START}&end-date=${GA_END}&metrics=ga%3AitemQuantity%2Cga%3AitemRevenue&dimensions=ga%3Adate%2Cga%3AsourceMedium%2Cga%3Acampaign%2Cga%3AProductname%2Cga%3AProductCategory%2Cga%3AtransactionId%2Cga%3AproductSku&max-results=10000&samplingLevel=HIGHER_PRECISION${START_INDEX}]]></attr>
+</Node>
+<Node enabled="enabled" guiName="SimpleCopy" guiX="-5" guiY="564" id="SIMPLE_COPY1" type="SIMPLE_COPY"/>
+<Node enabled="enabled" guiName="SimpleCopy" guiX="-202" guiY="704" id="SIMPLE_COPY2" type="SIMPLE_COPY"/>
+<Node enabled="disabled" guiName="SimpleCopy" guiX="-114" guiY="1851" id="SIMPLE_COPY3" type="SIMPLE_COPY"/>
+<Node enabled="enabled" guiName="SimpleGather" guiX="437" guiY="785" id="SIMPLE_GATHER" type="SIMPLE_GATHER"/>
+<Node enabled="disabled" guiName="Trash" guiX="1068" guiY="760" id="TRASH" type="TRASH"/>
+<Edge debugMode="true" fromNode="API5:0" guiBendpoints="" guiRouter="Manhattan" id="Edge28" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="CSV_WRITER1:0"/>
+<Edge debugMode="true" fromNode="DATA_GENERATOR:0" guiBendpoints="" guiRouter="Manhattan" id="Edge20" inPort="Port 0 (in)" metadata="Metadata10" outPort="Port 0 (out)" toNode="GD_CLIENT_WRITER:0"/>
+<Edge debugMode="true" fromNode="JSON_READER_API1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="SIMPLE_COPY1:0"/>
+<Edge debugMode="true" fromNode="JSON_READER_API2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="SIMPLE_COPY2:0"/>
+<Edge debugMode="true" fromNode="JSON_READER_API3:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="REFORMAT2:0"/>
+<Edge debugMode="true" fromNode="JSON_READER_API4:0" guiBendpoints="" guiRouter="Manhattan" id="Edge8" inPort="Port 0 (in)" metadata="Metadata5" outPort="Port 0 (out)" toNode="REFORMAT3:0"/>
+<Edge debugMode="true" fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge9" inPort="Port 0 (in)" metadata="Metadata7" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:0"/>
+<Edge debugMode="true" fromNode="REFORMAT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge11" inPort="Port 1 (in)" metadata="Metadata7" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:1"/>
+<Edge debugMode="true" fromNode="REFORMAT2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge12" inPort="Port 2 (in)" metadata="Metadata7" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:2"/>
+<Edge debugMode="true" fromNode="REFORMAT3:0" guiBendpoints="" guiRouter="Manhattan" id="Edge13" inPort="Port 3 (in)" metadata="Metadata7" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:3"/>
+<Edge debugMode="true" fromNode="REFORMAT4:0" guiBendpoints="" guiRouter="Manhattan" id="Edge16" inPort="Port 0 (in)" metadata="Metadata8" outPort="Port 0 (out)" toNode="GD_CAMPAIGN:0"/>
+<Edge debugMode="true" fromNode="REFORMAT5:0" guiBendpoints="" guiRouter="Manhattan" id="Edge17" inPort="Port 0 (in)" metadata="Metadata9" outPort="Port 0 (out)" toNode="GD_WEBSITE_WRITER:0"/>
+<Edge debugMode="true" fromNode="REFORMAT6:0" guiBendpoints="" guiRouter="Manhattan" id="Edge23" inPort="Port 0 (in)" metadata="Metadata11" outPort="Port 0 (out)" toNode="GD_PRODUCT_WRITER:0"/>
+<Edge debugMode="true" fromNode="REFORMAT7:0" guiBendpoints="" guiRouter="Manhattan" id="Edge25" inPort="Port 0 (in)" metadata="Metadata13" outPort="Port 0 (out)" toNode="GD_ORDER_WRITER:0"/>
+<Edge debugMode="true" fromNode="REFORMAT8:0" guiBendpoints="" guiRouter="Manhattan" id="Edge26" inPort="Port 0 (in)" metadata="Metadata7" outPort="Port 0 (out)" toNode="GD_GA_WRITER:0"/>
+<Edge debugMode="true" fromNode="REST_API1_GD:0" guiBendpoints="" guiRouter="Manhattan" id="Edge27" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (output)" toNode="JSON_READER_API1:0"/>
+<Edge debugMode="true" fromNode="REST_API2_GD:0" guiBendpoints="" guiRouter="Manhattan" id="Edge31" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (output)" toNode="JSON_READER_API2:0"/>
+<Edge fromNode="REST_API3_GD:0" guiBendpoints="" guiRouter="Manhattan" id="Edge32" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (output)" toNode="JSON_READER_API3:0"/>
+<Edge debugMode="true" fromNode="REST_API3_GD1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge33" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (output)" toNode="JSON_READER_API4:0"/>
+<Edge debugMode="true" fromNode="REST_CONNECTOR_GD:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (output)" toNode="SIMPLE_COPY3:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge15" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="REFORMAT4:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY1:1" guiBendpoints="" guiRouter="Manhattan" id="Edge18" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 1 (out)" toNode="REFORMAT5:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY1:2" guiBendpoints="" guiRouter="Manhattan" id="Edge14" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 2 (out)" toNode="REFORMAT:0"/>
+<Edge fromNode="SIMPLE_COPY1:3" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 3 (out)" toNode="CSV_WRITER:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge21" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="REFORMAT1:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY2:1" guiBendpoints="" guiRouter="Manhattan" id="Edge22" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 1 (out)" toNode="REFORMAT6:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY2:2" guiBendpoints="" guiRouter="Manhattan" id="Edge24" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 2 (out)" toNode="REFORMAT7:0"/>
+<Edge fromNode="SIMPLE_COPY3:0" guiBendpoints="" guiRouter="Manhattan" id="Edge29" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="API5:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY3:1" guiBendpoints="" guiRouter="Manhattan" id="Edge30" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 1 (out)" toNode="CSV_WRITER3:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_GATHER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge10" inPort="Port 0 (in)" metadata="Metadata7" outPort="Port 0 (out)" toNode="REFORMAT8:0"/>
+</Phase>
+</Graph>

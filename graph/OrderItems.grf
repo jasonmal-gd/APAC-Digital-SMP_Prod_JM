@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Wed Jul 16 10:16:18 EST 2014" guiVersion="3.4.4.P" id="1405486791806" licenseType="Commercial" modified="Tue Jul 22 15:02:22 EST 2014" modifiedBy="macmac" name="Orders" revision="1.42" showComponentDetails="true">
+<Global>
+<Metadata fileURL="${META_DIR}/GA_API2.fmt" id="Metadata3"/>
+<Metadata id="Metadata0" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="GD_OrderItems" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" name="ItemtID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="ItemCost" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="itemQuantity" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="ItemPrice" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="ItemBasePrice" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="Order_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="productSku" nullable="true" shift="0" size="0" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="Magento" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" name="Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Order_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="State" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="ShippingAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalPaid" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalQtyOrdered" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TaxAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalRefunded" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="Quote_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Customer_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="SalesOrderItem" nullable="true" shift="0" size="0" type="string"/>
+<Field delimiter="\r\n" eofAsDelimiter="true" format="yyyy-MM-dd" name="CreatedAt" nullable="true" shift="0" size="0" type="date"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/API2.csv" guiName="GA API 2 CSV" guiX="132" guiY="55" id="GA_API_2_CSV" quoteCharacter="&quot;" quotedStrings="true" type="DATA_READER"/>
+<Node dataset="dataset.orderitems" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.orderitems&quot;,&quot;datasetTitle&quot;:&quot;Order Items&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.orderitems.itemid&quot;,&quot;title&quot;:&quot;Item ID&quot;,&quot;prettyId&quot;:&quot;attr_orderitems_itemid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.orderitems.itemid&quot;,&quot;title&quot;:&quot;Item ID&quot;,&quot;prettyId&quot;:&quot;itemid&quot;,&quot;assignedMetadataField&quot;:&quot;ItemtID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.product.orderid&quot;,&quot;title&quot;:&quot;Order ID&quot;,&quot;prettyId&quot;:&quot;attr_product_orderid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.orderid&quot;,&quot;title&quot;:&quot;Order ID&quot;,&quot;prettyId&quot;:&quot;product__orderid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;Order_ID&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.orderid&quot;,&quot;title&quot;:&quot;Order ID&quot;,&quot;prettyId&quot;:&quot;product__orderid&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;attr_product_sku&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;product__sku&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;productSku&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.product.sku&quot;,&quot;title&quot;:&quot;SKU&quot;,&quot;prettyId&quot;:&quot;product__sku&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.orderitems.itembaseprice&quot;,&quot;title&quot;:&quot;Item Base Price&quot;,&quot;prettyId&quot;:&quot;itembaseprice&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;ItemBasePrice&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.orderitems.itemprice&quot;,&quot;title&quot;:&quot;Item Cost&quot;,&quot;prettyId&quot;:&quot;itemprice&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;ItemCost&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.orderitems.itemprice1&quot;,&quot;title&quot;:&quot;Item Price&quot;,&quot;prettyId&quot;:&quot;itemprice1&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;ItemPrice&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.orderitems.itemquantity&quot;,&quot;title&quot;:&quot;Item Quantity&quot;,&quot;prettyId&quot;:&quot;itemquantity&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;itemQuantity&quot;}}],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="GD Order Items" guiX="929" guiY="287" id="GD_ORDER_ITEMS" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataPolicy="controlled" enabled="enabled" fileURL="${DATA_TMP_DIR}/MagentoDaily_`date2str(today(), &quot;yyyy-MM-dd&quot;)`.csv" guiName="Magento CSV" guiX="126" guiY="255" id="MAGENTO_CSV" quoteCharacter="&quot;" quotedStrings="true" skipRows="1" type="DATA_READER"/>
+<Node enabled="enabled" guiName="Reformat" guiX="384" guiY="55" id="REFORMAT1" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.* = $in.0.*;
+	$out.0.productSku = $in.0.productSku;
+	$out.0.Order_ID = $in.0.transactionId;
+	$out.0.ItemPrice = $in.0.itemRevenue;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="384" guiY="255" id="REFORMAT2" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="SimpleGather" guiX="666" guiY="143" id="SIMPLE_GATHER" type="SIMPLE_GATHER"/>
+<Node enabled="disabled" guiName="Trash" guiX="971" guiY="203" id="TRASH" type="TRASH"/>
+<Edge debugMode="true" fromNode="GA_API_2_CSV:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (output)" toNode="REFORMAT1:0"/>
+<Edge debugMode="true" fromNode="MAGENTO_CSV:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (output)" toNode="REFORMAT2:0"/>
+<Edge debugMode="true" fromNode="REFORMAT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:0"/>
+<Edge debugMode="true" fromNode="REFORMAT2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 1 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="SIMPLE_GATHER:1"/>
+<Edge debugMode="true" fromNode="SIMPLE_GATHER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="GD_ORDER_ITEMS:0"/>
+</Phase>
+</Graph>

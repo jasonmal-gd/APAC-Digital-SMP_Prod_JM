@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="|" name="SMP_BroadcastEvents" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="AppClickDescription" type="string"/>
+<Field name="AppClickIPAddress" type="string"/>
+<Field name="AppClickType" type="integer"/>
+<Field name="BroadcastId" type="string"/>
+<Field name="EmailAddress" type="string"/>
+<Field name="EventTimeUtc" type="date"/>
+<Field name="EventType" type="string"/>
+<Field name="HardBounceClass" type="string"/>
+<Field name="HardBounceMsg" type="string"/>
+<Field name="LinkClickTimeUtc" type="date"/>
+<Field name="LinkName" type="string"/>
+<Field name="LinkURL" type="string"/>
+<Field name="OpenUserAgent" type="string"/>
+<Field name="SubscriberId" type="integer"/>
+<Field name="SubscriberKey" type="integer"/>
+</Record>

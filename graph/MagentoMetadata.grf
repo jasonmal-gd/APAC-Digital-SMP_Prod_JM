@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="macmac" created="Wed Jul 16 10:16:18 EST 2014" guiVersion="3.4.4.P" id="1405495232678" licenseType="Commercial" modified="Wed Jul 16 17:23:41 EST 2014" modifiedBy="macmac" name="MagentoMetadata" revision="1.2" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata1" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="GD_Magento" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" name="Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Order_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="State" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="ShippingAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalPaid" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalQtyOrdered" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TaxAmount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="TotalRefunded" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" name="Quote_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="Customer_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" name="SalesOrderItem" nullable="true" shift="0" size="0" type="string"/>
+<Field delimiter="\n" eofAsDelimiter="false" format="yyyy-MM-dd" name="CreatedAt" nullable="true" shift="0" size="0" type="date"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="${DATA_TMP_DIR}/test.txt" guiName="CSV Reader" guiX="220" guiY="261" id="CSV_READER" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="${DATA_TMP_DIR}/MagentoSample.csv" guiName="CSV Writer" guiX="495" guiY="249" id="CSV_WRITER" outputFieldNames="true" quoteCharacter="&quot;" quotedStrings="true" type="DATA_WRITER"/>
+<Edge debugMode="true" fromNode="CSV_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (output)" toNode="CSV_WRITER:0"/>
+</Phase>
+</Graph>

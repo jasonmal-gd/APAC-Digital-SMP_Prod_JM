@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record fieldDelimiter="|" name="GD_Website" recordDelimiter="\n" type="delimited">
+<Field name="WebName" type="string"/>
+<Field name="WebURL" type="string"/>
+<Field name="WebNamex2" type="string"/>
+<Field name="WebURLx2" type="string"/>
+</Record>
